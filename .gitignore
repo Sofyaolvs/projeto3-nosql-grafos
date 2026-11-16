@@ -1,0 +1,6 @@
+node_modules/
+# dados baixados/gerados (ficam fora do Git; o carregar.ps1 recria)
+entrega2/dados/*
+!entrega2/dados/.gitkeep
+!entrega2/dados/resumo.json
+!entrega2/dados/tempos-carga.json

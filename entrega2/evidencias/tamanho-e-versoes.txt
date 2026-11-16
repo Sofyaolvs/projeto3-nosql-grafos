@@ -1,0 +1,14 @@
+Neo4j store:
+Versões:
+name, versions[0], edition
+"Neo4j Kernel", "5.26.33", "community"
+8.0.46
+386M	/data/databases/neo4j
+0	/data/databases/store_lock
+960K	/data/databases/system
+258M	/data/transactions/neo4j
+258M	/data/transactions/system
+databases
+dbms
+server_id
+transactions

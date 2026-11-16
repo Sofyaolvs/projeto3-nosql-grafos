@@ -1,0 +1,46 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: rotas-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rotas12345
+      MYSQL_DATABASE: rotas
+    ports:
+      - "3307:3306"
+    command:
+      - --innodb-buffer-pool-size=2G
+      - --cte-max-recursion-depth=100000
+      - --max-execution-time=0
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./dados:/var/lib/mysql-files
+      - ./sql/01-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-protas12345"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  neo4j:
+    image: neo4j:5-community
+    container_name: rotas-neo4j
+    environment:
+      NEO4J_AUTH: neo4j/rotas12345
+      NEO4J_server_memory_heap_initial__size: 2G
+      NEO4J_server_memory_heap_max__size: 2G
+      NEO4J_server_memory_pagecache_size: 2G
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+      - ./dados:/import:ro
+    healthcheck:
+      test: ["CMD-SHELL", "cypher-shell -u neo4j -p rotas12345 'RETURN 1' || exit 1"]
+      interval: 5s
+      timeout: 10s
+      retries: 40
+
+volumes:
+  mysql_data:
+  neo4j_data:

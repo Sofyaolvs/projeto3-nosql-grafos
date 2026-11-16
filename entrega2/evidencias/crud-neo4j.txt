@@ -1,0 +1,10 @@
+destino
+1
+2
+469
+5000000
+origem, destino, bloqueada
+5000000, 0, TRUE
+0, 5000000, TRUE
+restantes
+0

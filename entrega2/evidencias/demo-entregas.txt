@@ -1,0 +1,8 @@
+Depósito 0; paradas: 193, 383, 424, 35695, 92 (a 8 trechos do depósito)
+
+Pares calculados: 15
+Neo4j : 82.2 ms | rota 0 -> 383 -> 193 -> 424 -> 35695 -> 92 -> 0 | 43 trechos
+MySQL : 78.7 ms | rota 0 -> 383 -> 193 -> 424 -> 35695 -> 92 -> 0 | 43 trechos
+
+Matrizes de distância idênticas nos dois bancos: SIM
+Rotas idênticas: SIM

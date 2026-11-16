@@ -1,0 +1,7 @@
+{
+  "fonte": "https://snap.stanford.edu/data/roadNet-CA.txt.gz",
+  "nos": 1965206,
+  "estradasUnicas": 2766607,
+  "relacionamentosDirigidos": 5533214,
+  "linhasNoArquivo": 5533214
+}

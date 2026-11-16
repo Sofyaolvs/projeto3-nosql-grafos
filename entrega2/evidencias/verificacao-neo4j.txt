@@ -1,0 +1,11 @@
+== Neo4j ==
+intersecoes
+1965206
+estradas_dirigidas
+5533214
+estradas_unicas
+2766607
+sem_volta
+0
+tipo
+"INTEGER NOT NULL"
