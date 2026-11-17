@@ -1,10 +1,9 @@
-destino
-1
-2
-469
-5000000
-origem, destino, bloqueada
-5000000, 0, TRUE
-0, 5000000, TRUE
+destino, nome, tipo, comprimento_m, mao_unica
+14209, "Avenida Doutora Ruth Cardoso", "trunk", 25.4, TRUE
+91051, "Avenida Professor Frederico Herman Júnior", "tertiary", 33.4, TRUE
+5000000, "Rua do Projeto 3", "residential", 55.6, FALSE
+origem, destino, nome, bloqueada
+5000000, 0, "Rua do Projeto 3", TRUE
+0, 5000000, "Rua do Projeto 3", TRUE
 restantes
 0

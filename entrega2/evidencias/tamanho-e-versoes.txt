@@ -1,14 +1,2 @@
-Neo4j store:
-Versões:
-name, versions[0], edition
-"Neo4j Kernel", "5.26.33", "community"
-8.0.46
-386M	/data/databases/neo4j
-0	/data/databases/store_lock
-960K	/data/databases/system
-258M	/data/transactions/neo4j
-258M	/data/transactions/system
-databases
-dbms
-server_id
-transactions
+MySQL 8.0.46 : dados 176.3 MB + índices 123.8 MB
+Neo4j 5.26.33 Community: armazenamento do banco 519 MB (/data/databases/neo4j; o log de transações não entra)
