@@ -16,7 +16,7 @@ services:
       - ./dados:/var/lib/mysql-files
       - ./sql/01-schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-protas12345"]
+      test: [ "CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-protas12345" ]
       interval: 5s
       timeout: 5s
       retries: 30
@@ -34,9 +34,9 @@ services:
       - "7687:7687"
     volumes:
       - neo4j_data:/data
-      - ./dados:/import:ro
+      - ./dados:/var/lib/neo4j/import:ro
     healthcheck:
-      test: ["CMD-SHELL", "cypher-shell -u neo4j -p rotas12345 'RETURN 1' || exit 1"]
+      test: [ "CMD-SHELL", "cypher-shell -u neo4j -p rotas12345 'RETURN 1' || exit 1" ]
       interval: 5s
       timeout: 10s
       retries: 40
