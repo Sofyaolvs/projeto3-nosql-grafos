@@ -1,0 +1,81 @@
+{
+    "mysql":  {
+                  "intersecoes":  781489,
+                  "estradas":  1970520,
+                  "mao_unica":  310026,
+                  "com_nome":  1641042,
+                  "km_total":  226896,
+                  "orfas":  0,
+                  "mao_dupla_sem_volta":  0
+              },
+    "neo4j":  {
+                  "intersecoes":  781489,
+                  "estradas":  1970520,
+                  "mao_unica":  310026,
+                  "com_nome":  1641042,
+                  "km_total":  226896,
+                  "mao_dupla_sem_volta":  0
+              },
+    "mysql_dados_mb":  176.3,
+    "mysql_indices_mb":  123.8,
+    "neo4j_mb":  519,
+    "mysql_versao":  "8.0.46",
+    "neo4j_versao":  "5.26.33",
+    "vizinhos_da_0":  "14209, 91051",
+    "demo_raio8":  {
+                       "deposito":  0,
+                       "cidade":  "São Paulo",
+                       "uf":  "SP",
+                       "raio":  8,
+                       "paradas":  [
+                                       14197,
+                                       24578,
+                                       66508,
+                                       91029,
+                                       13970
+                                   ],
+                       "pares":  30,
+                       "neo4j_ms":  203.9,
+                       "mysql_ms":  137,
+                       "rota":  [
+                                    0,
+                                    91029,
+                                    24578,
+                                    13970,
+                                    66508,
+                                    14197,
+                                    0
+                                ],
+                       "trechos":  35,
+                       "matrizes_iguais":  true
+                   },
+    "demo_raio25":  {
+                        "deposito":  0,
+                        "cidade":  "São Paulo",
+                        "uf":  "SP",
+                        "raio":  25,
+                        "paradas":  [
+                                        13982,
+                                        67017,
+                                        109045,
+                                        92301,
+                                        14344,
+                                        107516
+                                    ],
+                        "pares":  42,
+                        "neo4j_ms":  256.2,
+                        "mysql_ms":  22133.8,
+                        "rota":  [
+                                     0,
+                                     13982,
+                                     109045,
+                                     92301,
+                                     107516,
+                                     14344,
+                                     67017,
+                                     0
+                                 ],
+                        "trechos":  104,
+                        "matrizes_iguais":  true
+                    }
+}

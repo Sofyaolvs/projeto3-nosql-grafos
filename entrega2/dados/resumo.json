@@ -1,7 +1,177 @@
 {
-  "fonte": "https://snap.stanford.edu/data/roadNet-CA.txt.gz",
-  "nos": 1965206,
-  "estradasUnicas": 2766607,
-  "relacionamentosDirigidos": 5533214,
-  "linhasNoArquivo": 5533214
+  "fonte": "OpenStreetMap via OSMnx 2.1.2 (network_type=drive), 27 capitais brasileiras",
+  "licenca": "© colaboradores do OpenStreetMap, ODbL",
+  "extraido_em": "2026-11-16",
+  "capitais": 27,
+  "intersecoes": 781489,
+  "estradas": 1970520,
+  "registros": 2752009,
+  "mao_unica": 310026,
+  "com_nome": 1641042,
+  "com_velocidade_max": 206456,
+  "km_total": 226896,
+  "por_cidade": [
+    {
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "intersecoes": 122710,
+      "estradas": 304569
+    },
+    {
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "intersecoes": 73385,
+      "estradas": 175739
+    },
+    {
+      "cidade": "Brasília",
+      "uf": "DF",
+      "intersecoes": 85759,
+      "estradas": 200697
+    },
+    {
+      "cidade": "Salvador",
+      "uf": "BA",
+      "intersecoes": 28252,
+      "estradas": 64820
+    },
+    {
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "intersecoes": 36862,
+      "estradas": 96438
+    },
+    {
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "intersecoes": 32235,
+      "estradas": 82876
+    },
+    {
+      "cidade": "Manaus",
+      "uf": "AM",
+      "intersecoes": 31424,
+      "estradas": 81167
+    },
+    {
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "intersecoes": 33808,
+      "estradas": 87552
+    },
+    {
+      "cidade": "Recife",
+      "uf": "PE",
+      "intersecoes": 19710,
+      "estradas": 49746
+    },
+    {
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "intersecoes": 39770,
+      "estradas": 102313
+    },
+    {
+      "cidade": "Belém",
+      "uf": "PA",
+      "intersecoes": 15101,
+      "estradas": 37578
+    },
+    {
+      "cidade": "Porto Alegre",
+      "uf": "RS",
+      "intersecoes": 21274,
+      "estradas": 50410
+    },
+    {
+      "cidade": "São Luís",
+      "uf": "MA",
+      "intersecoes": 23444,
+      "estradas": 61123
+    },
+    {
+      "cidade": "Maceió",
+      "uf": "AL",
+      "intersecoes": 16309,
+      "estradas": 40144
+    },
+    {
+      "cidade": "Campo Grande",
+      "uf": "MS",
+      "intersecoes": 28830,
+      "estradas": 83235
+    },
+    {
+      "cidade": "Natal",
+      "uf": "RN",
+      "intersecoes": 18612,
+      "estradas": 48250
+    },
+    {
+      "cidade": "Teresina",
+      "uf": "PI",
+      "intersecoes": 28806,
+      "estradas": 80320
+    },
+    {
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "intersecoes": 15786,
+      "estradas": 42705
+    },
+    {
+      "cidade": "Aracaju",
+      "uf": "SE",
+      "intersecoes": 11717,
+      "estradas": 29670
+    },
+    {
+      "cidade": "Cuiabá",
+      "uf": "MT",
+      "intersecoes": 21593,
+      "estradas": 57733
+    },
+    {
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "intersecoes": 14706,
+      "estradas": 39399
+    },
+    {
+      "cidade": "Florianópolis",
+      "uf": "SC",
+      "intersecoes": 9426,
+      "estradas": 20938
+    },
+    {
+      "cidade": "Macapá",
+      "uf": "AP",
+      "intersecoes": 8305,
+      "estradas": 22318
+    },
+    {
+      "cidade": "Rio Branco",
+      "uf": "AC",
+      "intersecoes": 11978,
+      "estradas": 30623
+    },
+    {
+      "cidade": "Vitória",
+      "uf": "ES",
+      "intersecoes": 5531,
+      "estradas": 12299
+    },
+    {
+      "cidade": "Boa Vista",
+      "uf": "RR",
+      "intersecoes": 11300,
+      "estradas": 31599
+    },
+    {
+      "cidade": "Palmas",
+      "uf": "TO",
+      "intersecoes": 14856,
+      "estradas": 36259
+    }
+  ]
 }
