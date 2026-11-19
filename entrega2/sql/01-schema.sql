@@ -24,9 +24,13 @@ CREATE TABLE estrada (
   mao_unica      TINYINT(1) NOT NULL,
   velocidade_max SMALLINT UNSIGNED NULL,  -- km/h, quando informado no OSM
   faixas         TINYINT UNSIGNED NULL,
+
   PRIMARY KEY (origem, destino, chave),
   KEY idx_destino (destino),
   KEY idx_tipo (tipo),
-  CONSTRAINT fk_estrada_origem  FOREIGN KEY (origem)  REFERENCES interseccao (id),
+
+  CONSTRAINT fk_estrada_origem  FOREIGN KEY (origem)  REFERENCES interseccao (id)
+    ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT fk_estrada_destino FOREIGN KEY (destino) REFERENCES interseccao (id)
+    ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
