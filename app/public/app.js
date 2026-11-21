@@ -32,7 +32,30 @@ function badge(id, r, metodo) {
   el.className = "ms " + (r.status === "ok" ? classeMs(metodo) : "erro");
   el.textContent = r.status === "ok" ? `${SERIES[metodo] ? SERIES[metodo][0] : metodo}: ${fmtMs(r.ms)}` : r.status === "timeout" ? "estourou o limite de 30 s" : "erro";
 }
-function guardarTempo(consulta, metodo, r) { ultimos[consulta][metodo] = r.status === "ok" ? r.ms : r.status === "timeout" ? 30000 : null; atualizarGraficoTempos(); }
+function guardarTempo(consulta, metodo, r, fundo = false) {
+  ultimos[consulta][metodo] = r.status === "ok" ? r.ms : r.status === "timeout" ? 30000 : null;
+  atualizarGraficoTempos();
+  if (!fundo) agendarOutra();
+}
+// O gráfico de comparação mostra sempre os dois bancos: quando você consulta um, o outro é medido em segundo plano
+// (uma execução de cada consulta, com os mesmos filtros). O menor caminho em SQL puro fica de fora porque pode levar até 30 s;
+// ele aparece com "Comparar bancos agora" e "Demonstração: menor caminho".
+let temporizadorOutra = null, ocupado = false;
+function agendarOutra() { clearTimeout(temporizadorOutra); temporizadorOutra = setTimeout(() => medirOutra().catch(() => {}), 500); }
+async function medirOutra() {
+  if (ocupado) return;
+  const v = estado.vivo, outra = estado.fonte === "neo4j" ? "mysql" : "neo4j";
+  const mSimples = outra === "neo4j" ? "neo4j" : "mysql-cte", mTrav = outra === "neo4j" ? "neo4j" : "mysql-bfs";
+  const tipos = (tiposAtuais() || []).join(",");
+  const reg = async (consulta, metodo, rota, params) => { const r = await api(rota, params); if (v === estado.vivo && !ocupado) guardarTempo(consulta, metodo, r, true); };
+  await reg("indicadores", mSimples, "indicadores", { fonte: outra, cidade: estado.cidade });
+  await reg("porTipo", mSimples, "porTipo", { fonte: outra, cidade: estado.cidade });
+  if (estado.origem == null) return;
+  await reg("vizinhos", mSimples, "vizinhos", { fonte: outra, origem: estado.origem });
+  await reg("alcance", mTrav, "alcance", { metodo: mTrav, origem: estado.origem, k: estado.k, tipos });
+  if (outra === "mysql") await reg("alcance", "mysql-cte", "alcance", { metodo: "mysql-cte", origem: estado.origem, k: estado.k, tipos }); // SQL puro: rápido no alcance
+  if (estado.destino != null) await reg("rota", mTrav, "rota", { metodo: mTrav, origem: estado.origem, destino: estado.destino, maxSaltos: estado.limite, tipos });
+}
 
 // ---------- gráficos ----------
 let gTipo, gAlcance, gTempos;
@@ -59,7 +82,7 @@ function atualizarGraficoTempos() {
   const consultas = Object.keys(ROTULOS);
   gTempos.data.labels = consultas.map((c) => ROTULOS[c]);
   gTempos.data.datasets = Object.entries(SERIES).map(([m, [nome, v]]) => ({
-    label: nome, backgroundColor: cor(v), data: consultas.map((c) => ultimos[c][m] ?? null),
+    label: m === "mysql-bfs" ? nome + " (só caminhos)" : nome, backgroundColor: cor(v), data: consultas.map((c) => ultimos[c][m] ?? null),
   }));
   gTempos.options.scales.y.type = $("#log").checked ? "logarithmic" : "linear";
   gTempos.options.scales.y.min = $("#log").checked ? 0.5 : 0;
@@ -322,7 +345,7 @@ async function novoPar() {
 
 // ---------- comparação entre os bancos ----------
 async function compararAgora() {
-  const btn = $("#comparar"); btn.disabled = true; $("#demo").disabled = true;
+  const btn = $("#comparar"); ocupado = true; btn.disabled = true; $("#demo").disabled = true;
   const msg = $("#comp-msg"); msg.textContent = "Comparando… (cada consulta roda nos dois bancos, 1 aquecimento + 3 medidas)";
   const tipos = (tiposAtuais() || []).join(",");
   const plano = [
@@ -345,11 +368,11 @@ async function compararAgora() {
     }
     msg.textContent = "Pronto. Mediana de 3 medidas por consulta. Resultados iguais nos bancos: " + (todasIguais ? "sim" : "NÃO (veja o console do servidor)") + ".";
   } catch (e) { msg.textContent = "Erro: " + e.message; }
-  btn.disabled = false; $("#demo").disabled = false;
+  ocupado = false; btn.disabled = false; $("#demo").disabled = false;
 }
 async function demoRota() {
   if (estado.origem == null || estado.destino == null) { $("#comp-msg").textContent = "Escolha origem e destino no mapa primeiro."; return; }
-  const btn = $("#demo"); btn.disabled = true; $("#comparar").disabled = true;
+  const btn = $("#demo"); ocupado = true; btn.disabled = true; $("#comparar").disabled = true;
   const msg = $("#comp-msg"); msg.textContent = `Menor caminho com limite de ${estado.limite} saltos nos três métodos… (o SQL puro pode levar até 30 s)`;
   try {
     const r = await api("comparar", { consulta: "rota", metodos: "neo4j,mysql-bfs,mysql-cte", reps: 3, origem: estado.origem, destino: estado.destino, maxSaltos: estado.limite, tipos: (tiposAtuais() || []).join(",") });
@@ -358,7 +381,7 @@ async function demoRota() {
     const partes = r.resultados.map((x) => `${SERIES[x.metodo][0]}: ${x.status === "ok" ? fmtMs(x.mediana_ms) : "estourou 30 s"}`);
     msg.textContent = `${partes.join(" · ")}. Resultados iguais: ${r.equivalente ? "sim" : "não"}. Dica: reduza o limite de saltos para a distância real e veja o SQL puro se aproximar.`;
   } catch (e) { msg.textContent = "Erro: " + e.message; }
-  btn.disabled = false; $("#comparar").disabled = false;
+  ocupado = false; btn.disabled = false; $("#comparar").disabled = false;
 }
 
 // ---------- inicialização ----------
