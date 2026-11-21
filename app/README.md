@@ -29,7 +29,7 @@ Abra http://localhost:5300. Ele não usa internet (o Chart.js está em `public/v
 | Tipo de via | Todas, só principais, só locais, sem residenciais | você troca o filtro |
 | Alcance (1 a 12) | Quantas interseções ficam a até k trechos da origem | você move o controle |
 | Limite de saltos da rota | Até quantos trechos o menor caminho pode ter | você muda o valor |
-| Mapa | Clique para escolher origem (verde) e destino (vermelho) | você clica |
+| Mapa | Clique para escolher origem (verde) e destino (vermelho). **Role o mouse para aproximar e arraste para mover**: ao chegar perto aparecem as ruas, com o nome ao passar o mouse. Botões: + e − (zoom), ⤧ (ajustar à rota), ⌂ (cidade inteira), ⛶ (tela cheia, Esc sai) | você clica, aproxima ou move |
 | Sugerir par de pontos | Sorteia um par curto, médio ou longo | você clica |
 | Comparar bancos agora | Roda as 5 consultas nos dois bancos (1 aquecimento + 3 medidas) | você clica (pode levar de 30 a 60 s) |
 | Demonstração: menor caminho | O mesmo par nos 3 métodos, com o limite de saltos escolhido | você clica |

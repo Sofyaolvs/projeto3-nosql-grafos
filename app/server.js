@@ -91,6 +91,26 @@ const rotas = {
     return { total: Number(c.n), pontos: rows.map((r) => [r.id, Number(r.lat), Number(r.lon)]) };
   },
 
+  // trechos de via dentro de uma região do mapa (para o zoom). Cada via de mão dupla aparece uma vez.
+  "/api/ruas": async (q) => {
+    const [a, b, c, d] = [q.minLat, q.maxLat, q.minLon, q.maxLon].map(Number);
+    if ([a, b, c, d].some((x) => Number.isNaN(x))) return { status: "erro", erro: "limites inválidos" };
+    const MAX = 25000;
+    const consulta = (extra, params) => my().query(
+      `SELECT o.lat AS olat, o.lon AS olon, d.lat AS dlat, d.lon AS dlon, e.nome, e.tipo, e.origem, e.destino
+         FROM interseccao o JOIN estrada e ON e.origem = o.id JOIN interseccao d ON d.id = e.destino
+        WHERE o.cidade = ? AND o.lat BETWEEN ? AND ? AND o.lon BETWEEN ? AND ? AND (e.mao_unica = 1 OR e.origem < e.destino) ${extra}
+        LIMIT ?`, [q.cidade, a, b, c, d, ...params, MAX + 1]);
+    let [rows] = await consulta("", []);
+    let parcial = false;
+    if (rows.length > MAX) { // muita rua na tela: manda só as vias principais (as locais aparecem ao aproximar)
+      parcial = true;
+      [rows] = await consulta("AND e.tipo NOT IN (?)", [["residential", "living_street", "unclassified", "service"]]);
+    }
+    return { status: "ok", parcial, truncado: rows.length > MAX,
+      segmentos: rows.slice(0, MAX).map((r) => [Number(r.olat), Number(r.olon), Number(r.dlat), Number(r.dlon), r.nome, r.tipo, r.origem, r.destino]) };
+  },
+
   // sugere um par origem/destino com menor caminho perto de `saltos` trechos
   "/api/par": async (q) => {
     const par = await C.parPorDistancia(q.cidade, inteiro(q.saltos, 30, 3, 150), inteiro(q.semente, 1, 1, 1000), 40);

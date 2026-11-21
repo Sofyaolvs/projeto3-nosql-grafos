@@ -147,27 +147,92 @@ async function atualizarTudo() {
   } catch (e) { status("Erro: " + e.message, true); }
 }
 
-// ---------- mapa ----------
-function projecao(cv) {
+// ---------- mapa (zoom, arrastar e ruas da região visível) ----------
+const vista = { z: 1, px: 0, py: 0 };               // zoom e deslocamento sobre a projeção base
+const ruas = { seg: [], truncado: false, parcial: false };           // trechos de via carregados para a região visível
+const ALTURA_MAX_RUAS = 0.25;                        // só carrega ruas quando a região visível tem menos de 0,1 grau de altura
+let temporizadorRuas = null, geracaoRuas = 0, arrasto = null, houveArrasto = false, ultimaDica = 0;
+
+function baseProj(cv) {
   const pts = estado.pontos; if (!pts.length) return null;
   let a = 90, b = -90, c = 180, d = -180;
   for (const [, lat, lon] of pts) { a = Math.min(a, lat); b = Math.max(b, lat); c = Math.min(c, lon); d = Math.max(d, lon); }
   const k = Math.cos(((a + b) / 2) * Math.PI / 180), W = cv.clientWidth, H = cv.clientHeight, m = 12;
   const esc = Math.min((W - 2 * m) / ((d - c) * k || 1), (H - 2 * m) / ((b - a) || 1));
   const ox = (W - (d - c) * k * esc) / 2, oy = (H - (b - a) * esc) / 2;
-  return { xy: (lat, lon) => [ox + (lon - c) * k * esc, H - (oy + (lat - a) * esc)] };
+  return { W, H, xy: (lat, lon) => [ox + (lon - c) * k * esc, H - (oy + (lat - a) * esc)], inv: (x, y) => [a + (H - y - oy) / esc, c + (x - ox) / (k * esc)] };
+}
+function projecao(cv) {
+  const B = baseProj(cv); if (!B) return null;
+  return {
+    W: B.W, H: B.H,
+    xy: (lat, lon) => { const [x, y] = B.xy(lat, lon); return [x * vista.z + vista.px, y * vista.z + vista.py]; },
+    inv: (X, Y) => B.inv((X - vista.px) / vista.z, (Y - vista.py) / vista.z),
+    base: B,
+  };
+}
+function limitesVisiveis(P) { const [latMax, lonMin] = P.inv(0, 0), [latMin, lonMax] = P.inv(P.W, P.H); return { latMin, latMax, lonMin, lonMax }; }
+
+function infoMapa() {
+  const el = $("#mapa-info"); if (!el) return;
+  if (vista.z === 1) el.textContent = "Role o mouse para aproximar; arraste para mover";
+  else if (ruas.seg.length) el.textContent = `${fmt(ruas.seg.length)} trechos de via na tela${ruas.parcial ? " (só as vias principais; aproxime para ver as ruas locais)" : ""}${ruas.truncado ? " (parcial)" : ""}`;
+  else el.textContent = "Aproxime mais para ver as ruas";
+}
+function agendarRuas() { clearTimeout(temporizadorRuas); temporizadorRuas = setTimeout(carregarRuas, 220); }
+async function carregarRuas() {
+  const cv = $("#mapa"), P = projecao(cv); if (!P) return;
+  const L = limitesVisiveis(P);
+  if (L.latMax - L.latMin > ALTURA_MAX_RUAS) { ruas.seg = []; ruas.truncado = false; ruas.parcial = false; infoMapa(); desenharMapa(); return; }
+  const g = ++geracaoRuas;
+  const r = await api("ruas", { cidade: estado.cidade, minLat: L.latMin, maxLat: L.latMax, minLon: L.lonMin, maxLon: L.lonMax });
+  if (g !== geracaoRuas || !r.segmentos) return;
+  ruas.seg = r.segmentos; ruas.truncado = !!r.truncado; ruas.parcial = !!r.parcial; infoMapa(); desenharMapa();
+}
+function resetarVista() { vista.z = 1; vista.px = vista.py = 0; ruas.seg = []; ruas.truncado = false; ruas.parcial = false; infoMapa(); }
+function zoomEm(x, y, f) {
+  const nz = Math.max(1, Math.min(800, vista.z * f)), r = nz / vista.z;
+  vista.px = x - (x - vista.px) * r; vista.py = y - (y - vista.py) * r; vista.z = nz;
+  if (nz === 1) { vista.px = vista.py = 0; }
+  infoMapa(); desenharMapa(); agendarRuas();
+}
+function ajustarRota() {
+  const det = estado.rota && estado.rota.detalhe; const cv = $("#mapa"), B = baseProj(cv);
+  if (!det || !B) return;
+  const xs = det.pontos.map((p) => B.xy(p.lat, p.lon));
+  const x1 = Math.min(...xs.map((q) => q[0])), x2 = Math.max(...xs.map((q) => q[0])), y1 = Math.min(...xs.map((q) => q[1])), y2 = Math.max(...xs.map((q) => q[1]));
+  const m = 40, z = Math.max(1, Math.min(800, Math.min((B.W - 2 * m) / Math.max(x2 - x1, 1), (B.H - 2 * m) / Math.max(y2 - y1, 1))));
+  vista.z = z; vista.px = B.W / 2 - ((x1 + x2) / 2) * z; vista.py = B.H / 2 - ((y1 + y2) / 2) * z;
+  infoMapa(); desenharMapa(); agendarRuas();
+}
+
+const CLASSE_VIA = { motorway: 0, trunk: 0, primary: 0, motorway_link: 0, trunk_link: 0, primary_link: 0, secondary: 1, secondary_link: 1, tertiary: 1, tertiary_link: 1 };
+function desenharRuas(g, P) {
+  const grupos = [[], [], []];
+  for (const s of ruas.seg) grupos[CLASSE_VIA[s[5]] ?? 2].push(s);
+  const estilo = [[cor("--texto"), 2.6, 1], [cor("--suave"), 1.6, 0.95], [cor("--suave"), 0.9, 0.7]];
+  for (const i of [2, 1, 0]) {
+    g.strokeStyle = estilo[i][0]; g.lineWidth = estilo[i][1]; g.globalAlpha = estilo[i][2]; g.beginPath();
+    for (const s of grupos[i]) { const [x1, y1] = P.xy(s[0], s[1]), [x2, y2] = P.xy(s[2], s[3]); g.moveTo(x1, y1); g.lineTo(x2, y2); }
+    g.stroke();
+  }
+  g.globalAlpha = 1;
 }
 function desenharMapa() {
   const cv = $("#mapa"), dpr = window.devicePixelRatio || 1;
   cv.width = cv.clientWidth * dpr; cv.height = cv.clientHeight * dpr;
   const g = cv.getContext("2d"); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, cv.clientWidth, cv.clientHeight);
   const P = projecao(cv); if (!P) return;
-  g.fillStyle = cor("--suave"); g.globalAlpha = 0.45;
-  for (const [, lat, lon] of estado.pontos) { const [x, y] = P.xy(lat, lon); g.fillRect(x - 0.6, y - 0.6, 1.4, 1.4); }
-  g.globalAlpha = 1;
+  if (ruas.seg.length) desenharRuas(g, P);
+  else {
+    g.fillStyle = cor("--suave"); g.globalAlpha = 0.45;
+    const t = Math.min(4, 1.4 + vista.z * 0.15);
+    for (const [, lat, lon] of estado.pontos) { const [x, y] = P.xy(lat, lon); if (x < -5 || y < -5 || x > P.W + 5 || y > P.H + 5) continue; g.fillRect(x - t / 2, y - t / 2, t, t); }
+    g.globalAlpha = 1;
+  }
   const det = estado.rota && estado.rota.detalhe;
   if (det) {
-    g.strokeStyle = cor(SERIES[estado.rota.metodo] ? SERIES[estado.rota.metodo][1] : "--neo"); g.lineWidth = 3; g.lineJoin = "round"; g.beginPath();
+    g.strokeStyle = cor(SERIES[estado.rota.metodo] ? SERIES[estado.rota.metodo][1] : "--neo"); g.lineWidth = 3.5; g.lineJoin = "round"; g.beginPath();
     det.pontos.forEach((p, i) => { const [x, y] = P.xy(p.lat, p.lon); i ? g.lineTo(x, y) : g.moveTo(x, y); });
     g.stroke();
   }
@@ -175,20 +240,74 @@ function desenharMapa() {
   if (estado.origem != null) marca(estado.origem, cor("--ok"));
   if (estado.destino != null) marca(estado.destino, cor("--erro"));
 }
+
+// interseção mais próxima do ponto (x0, y0) da tela: usa as ruas carregadas e, se não houver, a amostra de pontos
+function pontoMaisProximo(P, x0, y0) {
+  let melhor = null, dmin = 1e9;
+  const testar = (id, lat, lon) => { const [x, y] = P.xy(lat, lon); const d = (x - x0) ** 2 + (y - y0) ** 2; if (d < dmin) { dmin = d; melhor = [id, lat, lon]; } };
+  if (ruas.seg.length) { for (const s of ruas.seg) { testar(s[6], s[0], s[1]); testar(s[7], s[2], s[3]); } if (dmin <= 18 * 18) return melhor; melhor = null; dmin = 1e9; }
+  for (const p of estado.pontos) testar(p[0], p[1], p[2]);
+  return dmin <= 30 * 30 ? melhor : null;
+}
+function ruaSobMouse(P, x0, y0) {
+  let melhor = null, dmin = 8 * 8;
+  for (const s of ruas.seg) {
+    const [x1, y1] = P.xy(s[0], s[1]), [x2, y2] = P.xy(s[2], s[3]);
+    const dx = x2 - x1, dy = y2 - y1, l2 = dx * dx + dy * dy || 1;
+    const t = Math.max(0, Math.min(1, ((x0 - x1) * dx + (y0 - y1) * dy) / l2));
+    const d = (x0 - (x1 + t * dx)) ** 2 + (y0 - (y1 + t * dy)) ** 2;
+    if (d < dmin) { dmin = d; melhor = s; }
+  }
+  return melhor;
+}
+function mostrarDica(ev) {
+  if (arrasto) return;
+  const agora = performance.now(); if (agora - ultimaDica < 40) return; ultimaDica = agora; // no máximo ~25 consultas por segundo
+  const cv = $("#mapa"), dica = $("#dica-rua"), P = projecao(cv); if (!P) return;
+  const r = cv.getBoundingClientRect(), x0 = ev.clientX - r.left, y0 = ev.clientY - r.top;
+  const s = ruas.seg.length ? ruaSobMouse(P, x0, y0) : null;
+  if (!s) { dica.hidden = true; return; }
+  dica.textContent = `${s[4] || "(sem nome)"} · ${s[5]}`; dica.hidden = false;
+  dica.style.left = Math.min(x0 + 12, cv.clientWidth - 200) + "px"; dica.style.top = Math.max(y0 - 28, 4) + "px";
+}
 let proximoClique = "origem";
 function cliqueMapa(ev) {
+  if (houveArrasto) { houveArrasto = false; return; }
   const cv = $("#mapa"), P = projecao(cv); if (!P) return;
-  const r = cv.getBoundingClientRect(), x0 = ev.clientX - r.left, y0 = ev.clientY - r.top;
-  let melhor = null, dmin = 1e9;
-  for (const p of estado.pontos) { const [x, y] = P.xy(p[1], p[2]); const d = (x - x0) ** 2 + (y - y0) ** 2; if (d < dmin) { dmin = d; melhor = p; } }
-  if (!melhor || dmin > 30 * 30) return;
+  const r = cv.getBoundingClientRect();
+  const melhor = pontoMaisProximo(P, ev.clientX - r.left, ev.clientY - r.top);
+  if (!melhor) return;
   estado.extra = estado.extra || {}; estado.extra[melhor[0]] = melhor;
   if (proximoClique === "origem") { estado.origem = melhor[0]; estado.destino = null; estado.rota = null; proximoClique = "destino"; $("#rota-info").textContent = "Agora clique no destino."; desenharMapa(); atualizarAlcance(); atualizarVizinhos(); }
   else { estado.destino = melhor[0]; proximoClique = "origem"; atualizarRota(); }
 }
+function ligarMapa() {
+  const cv = $("#mapa"), pos = (e) => { const r = cv.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
+  cv.addEventListener("wheel", (e) => { e.preventDefault(); const [x, y] = pos(e); zoomEm(x, y, e.deltaY < 0 ? 1.3 : 1 / 1.3); }, { passive: false });
+  cv.addEventListener("mousedown", (e) => { arrasto = { x: e.clientX, y: e.clientY, px: vista.px, py: vista.py, moveu: false }; });
+  window.addEventListener("mousemove", (e) => {
+    if (!arrasto) return;
+    const dx = e.clientX - arrasto.x, dy = e.clientY - arrasto.y;
+    if (Math.abs(dx) + Math.abs(dy) > 4) arrasto.moveu = true;
+    if (arrasto.moveu) { vista.px = arrasto.px + dx; vista.py = arrasto.py + dy; $("#dica-rua").hidden = true; desenharMapa(); agendarRuas(); }
+  });
+  window.addEventListener("mouseup", () => { if (arrasto) { houveArrasto = arrasto.moveu; arrasto = null; } });
+  cv.addEventListener("mousemove", mostrarDica);
+  cv.addEventListener("mouseleave", () => { $("#dica-rua").hidden = true; });
+  cv.addEventListener("click", cliqueMapa);
+  const centro = () => [cv.clientWidth / 2, cv.clientHeight / 2];
+  $("#zoom-mais").addEventListener("click", () => zoomEm(...centro(), 1.8));
+  $("#zoom-menos").addEventListener("click", () => zoomEm(...centro(), 1 / 1.8));
+  $("#zoom-tudo").addEventListener("click", () => { resetarVista(); desenharMapa(); });
+  $("#zoom-rota").addEventListener("click", ajustarRota);
+  const alternarCheia = () => { $(".mapa-caixa").classList.toggle("cheia"); setTimeout(() => { desenharMapa(); agendarRuas(); }, 60); };
+  $("#tela-cheia").addEventListener("click", alternarCheia);
+  window.addEventListener("keydown", (e) => { if (e.key === "Escape" && $(".mapa-caixa").classList.contains("cheia")) alternarCheia(); });
+}
+
 async function carregarPontos() {
   const r = await api("pontos", { cidade: estado.cidade, n: 5000 });
-  estado.pontos = r.pontos; desenharMapa();
+  estado.pontos = r.pontos; resetarVista(); desenharMapa();
 }
 async function novoPar() {
   const btn = $("#novo-par"); btn.disabled = true; status("Procurando um par de pontos…");
@@ -198,6 +317,7 @@ async function novoPar() {
   estado.extra = estado.extra || {}; r.pontos.forEach((p) => (estado.extra[p[0]] = p));
   estado.origem = r.origem; estado.destino = r.destino; estado.rota = null; proximoClique = "origem";
   await atualizarTudo();
+  if (vista.z > 1) ajustarRota();
 }
 
 // ---------- comparação entre os bancos ----------
@@ -261,7 +381,7 @@ $("#preset").addEventListener("change", (e) => { estado.preset = e.target.value;
 $("#k").addEventListener("input", (e) => { $("#k-valor").textContent = e.target.value; });
 $("#k").addEventListener("change", (e) => { estado.k = Number(e.target.value); atualizarAlcance(); });
 $("#limite").addEventListener("change", (e) => { estado.limite = Math.max(1, Math.min(400, Number(e.target.value) || 150)); atualizarRota(); });
-$("#mapa").addEventListener("click", cliqueMapa);
+ligarMapa();
 $("#novo-par").addEventListener("click", novoPar);
 $("#comparar").addEventListener("click", compararAgora);
 $("#demo").addEventListener("click", demoRota);

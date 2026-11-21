@@ -62,3 +62,9 @@ td:nth-child(4), td:nth-child(6), td:nth-child(7) { text-align: right; font-vari
   .grade { grid-template-columns: 1fr; }
   .mapa-cartao { grid-row: auto; }
 }
+.zoom-botoes { position: absolute; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 6px; }
+.zoom-botoes button { width: 34px; height: 34px; padding: 0; font-size: 18px; line-height: 1; border-radius: 8px; background: var(--cartao); }
+.dica-rua { position: absolute; pointer-events: none; background: var(--texto); color: var(--cartao); font-size: 12px; padding: 4px 8px; border-radius: 6px; max-width: 260px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; z-index: 3; }
+.mapa-info { position: absolute; left: 8px; bottom: 8px; font-size: 12px; color: var(--suave); background: var(--cartao); border: 1px solid var(--borda); border-radius: 20px; padding: 3px 10px; pointer-events: none; }
+.mapa-caixa.cheia { position: fixed; inset: 12px; z-index: 60; aspect-ratio: auto; box-shadow: 0 0 0 9999px rgba(0, 0, 0, .55); }
+#mapa { touch-action: none; }

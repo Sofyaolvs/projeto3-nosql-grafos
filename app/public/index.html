@@ -57,8 +57,19 @@
   <main class="grade">
     <section class="cartao mapa-cartao">
       <div class="cab"><h2>Rota entre dois pontos</h2><span class="ms" id="ms-rota"></span></div>
-      <p class="dica">Clique no mapa para escolher origem (verde) e destino (vermelho), ou use um par sugerido.</p>
-      <div class="mapa-caixa"><canvas id="mapa" aria-label="Mapa da cidade com a rota"></canvas></div>
+      <p class="dica">Role o mouse para aproximar e arraste para mover: ao chegar perto aparecem as ruas, com o nome ao passar o mouse. Clique para escolher origem (verde) e destino (vermelho).</p>
+      <div class="mapa-caixa">
+        <canvas id="mapa" aria-label="Mapa da cidade com a rota"></canvas>
+        <div class="zoom-botoes">
+          <button type="button" id="zoom-mais" title="Aproximar" aria-label="Aproximar">+</button>
+          <button type="button" id="zoom-menos" title="Afastar" aria-label="Afastar">−</button>
+          <button type="button" id="zoom-rota" title="Ajustar o zoom à rota" aria-label="Ajustar o zoom à rota">⤧</button>
+          <button type="button" id="zoom-tudo" title="Ver a cidade inteira" aria-label="Ver a cidade inteira">⌂</button>
+          <button type="button" id="tela-cheia" title="Mapa em tela cheia (Esc sai)" aria-label="Mapa em tela cheia">⛶</button>
+        </div>
+        <div id="dica-rua" class="dica-rua" hidden></div>
+        <div id="mapa-info" class="mapa-info"></div>
+      </div>
       <div class="acoes">
         <button id="novo-par" type="button">Sugerir par de pontos</button>
         <select id="dist-par" aria-label="Distância do par sugerido">
