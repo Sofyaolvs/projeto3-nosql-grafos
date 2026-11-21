@@ -1,0 +1,1567 @@
+{
+  "resumo": [
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.14,
+      "minimo_ms": 3.08,
+      "maximo_ms": 8,
+      "primeira_execucao_mediana_ms": 13.3,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 2.19,
+      "minimo_ms": 1.22,
+      "maximo_ms": 3.46,
+      "primeira_execucao_mediana_ms": 2.32,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 3.95,
+      "minimo_ms": 2.2,
+      "maximo_ms": 8.08,
+      "primeira_execucao_mediana_ms": 4.05,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.63,
+      "minimo_ms": 2.55,
+      "maximo_ms": 7.8,
+      "primeira_execucao_mediana_ms": 7.98,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 2.59,
+      "minimo_ms": 1.22,
+      "maximo_ms": 6.16,
+      "primeira_execucao_mediana_ms": 2.71,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 8.99,
+      "minimo_ms": 3.36,
+      "maximo_ms": 13.94,
+      "primeira_execucao_mediana_ms": 9.01,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 5.27,
+      "minimo_ms": 3.46,
+      "maximo_ms": 13.27,
+      "primeira_execucao_mediana_ms": 14.1,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 3.31,
+      "minimo_ms": 2.03,
+      "maximo_ms": 4.32,
+      "primeira_execucao_mediana_ms": 3.87,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 14.04,
+      "minimo_ms": 6.29,
+      "maximo_ms": 19.25,
+      "primeira_execucao_mediana_ms": 13.64,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.69,
+      "minimo_ms": 3.05,
+      "maximo_ms": 8.55,
+      "primeira_execucao_mediana_ms": 5.28,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 2.83,
+      "minimo_ms": 1.7,
+      "maximo_ms": 3.91,
+      "primeira_execucao_mediana_ms": 2.73,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 2.05,
+      "minimo_ms": 1.01,
+      "maximo_ms": 2.85,
+      "primeira_execucao_mediana_ms": 1.88,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.16,
+      "minimo_ms": 2.57,
+      "maximo_ms": 9.65,
+      "primeira_execucao_mediana_ms": 5.78,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 2.27,
+      "minimo_ms": 1.52,
+      "maximo_ms": 3.87,
+      "primeira_execucao_mediana_ms": 2.69,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 9.7,
+      "minimo_ms": 4.78,
+      "maximo_ms": 18.43,
+      "primeira_execucao_mediana_ms": 8.14,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.01,
+      "minimo_ms": 2.56,
+      "maximo_ms": 6.68,
+      "primeira_execucao_mediana_ms": 4.1,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 0,
+      "mediana_ms": null,
+      "minimo_ms": null,
+      "maximo_ms": null,
+      "primeira_execucao_mediana_ms": null,
+      "estouros_de_tempo": 5
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 14.24,
+      "minimo_ms": 6.37,
+      "maximo_ms": 18.86,
+      "primeira_execucao_mediana_ms": 12.94,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.62,
+      "minimo_ms": 3.28,
+      "maximo_ms": 12.18,
+      "primeira_execucao_mediana_ms": 40.83,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 7.72,
+      "minimo_ms": 4.65,
+      "maximo_ms": 23.75,
+      "primeira_execucao_mediana_ms": 8.4,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 30.18,
+      "minimo_ms": 14.22,
+      "maximo_ms": 63.05,
+      "primeira_execucao_mediana_ms": 34.91,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.63,
+      "minimo_ms": 2.3,
+      "maximo_ms": 8.23,
+      "primeira_execucao_mediana_ms": 4.33,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 0,
+      "mediana_ms": null,
+      "minimo_ms": null,
+      "maximo_ms": null,
+      "primeira_execucao_mediana_ms": null,
+      "estouros_de_tempo": 5
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 35.34,
+      "minimo_ms": 13.45,
+      "maximo_ms": 56.18,
+      "primeira_execucao_mediana_ms": 41.51,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 5.39,
+      "minimo_ms": 3.25,
+      "maximo_ms": 10.59,
+      "primeira_execucao_mediana_ms": 48.48,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 712.12,
+      "minimo_ms": 53.74,
+      "maximo_ms": 1589.92,
+      "primeira_execucao_mediana_ms": 808.73,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 115.4,
+      "minimo_ms": 50.18,
+      "maximo_ms": 184.77,
+      "primeira_execucao_mediana_ms": 116.11,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 5.2,
+      "minimo_ms": 3.63,
+      "maximo_ms": 9.19,
+      "primeira_execucao_mediana_ms": 5.24,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 0,
+      "mediana_ms": null,
+      "minimo_ms": null,
+      "maximo_ms": null,
+      "primeira_execucao_mediana_ms": null,
+      "estouros_de_tempo": 5
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 124.87,
+      "minimo_ms": 39.14,
+      "maximo_ms": 205.04,
+      "primeira_execucao_mediana_ms": 142.74,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 9.33,
+      "minimo_ms": 4.51,
+      "maximo_ms": 81.75,
+      "primeira_execucao_mediana_ms": 64,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 5399.3,
+      "minimo_ms": 1262.5,
+      "maximo_ms": 29341.89,
+      "primeira_execucao_mediana_ms": 5822.95,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 298.4,
+      "minimo_ms": 123.57,
+      "maximo_ms": 646.66,
+      "primeira_execucao_mediana_ms": 258.17,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 9.08,
+      "minimo_ms": 5.96,
+      "maximo_ms": 54.88,
+      "primeira_execucao_mediana_ms": 8.3,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 20,
+      "mediana_ms": 12206.91,
+      "minimo_ms": 11927.14,
+      "maximo_ms": 15672.6,
+      "primeira_execucao_mediana_ms": 12140.37,
+      "estouros_de_tempo": 3
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "metodo": "mysql-bfs",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 307.78,
+      "minimo_ms": 123.63,
+      "maximo_ms": 546.92,
+      "primeira_execucao_mediana_ms": 303.95,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "metodo": "neo4j",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 4.39,
+      "minimo_ms": 2.5,
+      "maximo_ms": 10.66,
+      "primeira_execucao_mediana_ms": 5.82,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "metodo": "mysql-cte",
+      "itens": 5,
+      "medidas": 50,
+      "mediana_ms": 2,
+      "minimo_ms": 1.31,
+      "maximo_ms": 3.25,
+      "primeira_execucao_mediana_ms": 2.04,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4",
+      "consulta": "Trechos e km por tipo de via (índices do esquema)",
+      "parametro": "São Paulo",
+      "metodo": "neo4j",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 192.21,
+      "minimo_ms": 149.5,
+      "maximo_ms": 883.16,
+      "primeira_execucao_mediana_ms": 796.32,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4",
+      "consulta": "Trechos e km por tipo de via (índices do esquema)",
+      "parametro": "São Paulo",
+      "metodo": "mysql-cte",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 305.18,
+      "minimo_ms": 279.07,
+      "maximo_ms": 437.56,
+      "primeira_execucao_mediana_ms": 425.39,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4",
+      "consulta": "Trechos e km por tipo de via (índices do esquema)",
+      "parametro": "todas as capitais",
+      "metodo": "neo4j",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 547.52,
+      "minimo_ms": 514.36,
+      "maximo_ms": 706.72,
+      "primeira_execucao_mediana_ms": 882.4,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4",
+      "consulta": "Trechos e km por tipo de via (índices do esquema)",
+      "parametro": "todas as capitais",
+      "metodo": "mysql-cte",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 1795.32,
+      "minimo_ms": 1684,
+      "maximo_ms": 1918.74,
+      "primeira_execucao_mediana_ms": 3228.66,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4b",
+      "consulta": "Trechos e km por tipo de via (MySQL com índice de cobertura)",
+      "parametro": "São Paulo",
+      "metodo": "neo4j",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 135.1,
+      "minimo_ms": 116.73,
+      "maximo_ms": 205.26,
+      "primeira_execucao_mediana_ms": 145.1,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4b",
+      "consulta": "Trechos e km por tipo de via (MySQL com índice de cobertura)",
+      "parametro": "São Paulo",
+      "metodo": "mysql-cte",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 252.74,
+      "minimo_ms": 246.85,
+      "maximo_ms": 541.15,
+      "primeira_execucao_mediana_ms": 263.34,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4b",
+      "consulta": "Trechos e km por tipo de via (MySQL com índice de cobertura)",
+      "parametro": "todas as capitais",
+      "metodo": "neo4j",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 545.81,
+      "minimo_ms": 523.03,
+      "maximo_ms": 599.39,
+      "primeira_execucao_mediana_ms": 549.95,
+      "estouros_de_tempo": 0
+    },
+    {
+      "experimento": "E4b",
+      "consulta": "Trechos e km por tipo de via (MySQL com índice de cobertura)",
+      "parametro": "todas as capitais",
+      "metodo": "mysql-cte",
+      "itens": 1,
+      "medidas": 10,
+      "mediana_ms": 310.56,
+      "minimo_ms": 293.84,
+      "maximo_ms": 345.32,
+      "primeira_execucao_mediana_ms": 320.12,
+      "estouros_de_tempo": 0
+    }
+  ],
+  "equivalencias": [
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=3",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=5",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1",
+      "consulta": "Alcance em até k trechos",
+      "parametro": "k=7",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E1b",
+      "consulta": "Alcance em até k trechos, só vias principais",
+      "parametro": "k=10, vias principais",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~10 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~10 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~25 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~25 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~50 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~50 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2a",
+      "consulta": "Menor caminho, limite = distância real",
+      "parametro": "~100 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E2b",
+      "consulta": "Menor caminho, limite = 150 (distância desconhecida)",
+      "parametro": "~100 trechos",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-bfs"
+      ]
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "item": 2,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "item": 3,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "item": 4,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E3",
+      "consulta": "Vizinhos diretos com dados da via",
+      "parametro": "1 interseção",
+      "item": 5,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E4",
+      "consulta": "Trechos e km por tipo de via (índices do esquema)",
+      "parametro": "São Paulo",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E4",
+      "consulta": "Trechos e km por tipo de via (índices do esquema)",
+      "parametro": "todas as capitais",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E4b",
+      "consulta": "Trechos e km por tipo de via (MySQL com índice de cobertura)",
+      "parametro": "São Paulo",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    },
+    {
+      "experimento": "E4b",
+      "consulta": "Trechos e km por tipo de via (MySQL com índice de cobertura)",
+      "parametro": "todas as capitais",
+      "item": 1,
+      "equivalente": true,
+      "metodos_comparados": [
+        "neo4j",
+        "mysql-cte"
+      ]
+    }
+  ],
+  "pares_e2": [
+    {
+      "exp": "E2",
+      "alvo": 10,
+      "item": 1,
+      "origem": 51558,
+      "destino": 51615,
+      "saltos": 8
+    },
+    {
+      "exp": "E2",
+      "alvo": 10,
+      "item": 2,
+      "origem": 76324,
+      "destino": 11953,
+      "saltos": 8
+    },
+    {
+      "exp": "E2",
+      "alvo": 10,
+      "item": 3,
+      "origem": 9928,
+      "destino": 9918,
+      "saltos": 9
+    },
+    {
+      "exp": "E2",
+      "alvo": 10,
+      "item": 4,
+      "origem": 28581,
+      "destino": 28162,
+      "saltos": 9
+    },
+    {
+      "exp": "E2",
+      "alvo": 10,
+      "item": 5,
+      "origem": 7768,
+      "destino": 115735,
+      "saltos": 9
+    },
+    {
+      "exp": "E2",
+      "alvo": 25,
+      "item": 1,
+      "origem": 4766,
+      "destino": 5489,
+      "saltos": 20
+    },
+    {
+      "exp": "E2",
+      "alvo": 25,
+      "item": 2,
+      "origem": 77803,
+      "destino": 9591,
+      "saltos": 19
+    },
+    {
+      "exp": "E2",
+      "alvo": 25,
+      "item": 3,
+      "origem": 46704,
+      "destino": 21278,
+      "saltos": 26
+    },
+    {
+      "exp": "E2",
+      "alvo": 25,
+      "item": 4,
+      "origem": 117419,
+      "destino": 49180,
+      "saltos": 19
+    },
+    {
+      "exp": "E2",
+      "alvo": 25,
+      "item": 5,
+      "origem": 24439,
+      "destino": 70705,
+      "saltos": 24
+    },
+    {
+      "exp": "E2",
+      "alvo": 50,
+      "item": 1,
+      "origem": 5907,
+      "destino": 9520,
+      "saltos": 57
+    },
+    {
+      "exp": "E2",
+      "alvo": 50,
+      "item": 2,
+      "origem": 86057,
+      "destino": 105475,
+      "saltos": 53
+    },
+    {
+      "exp": "E2",
+      "alvo": 50,
+      "item": 3,
+      "origem": 16946,
+      "destino": 35858,
+      "saltos": 41
+    },
+    {
+      "exp": "E2",
+      "alvo": 50,
+      "item": 4,
+      "origem": 589,
+      "destino": 122232,
+      "saltos": 50
+    },
+    {
+      "exp": "E2",
+      "alvo": 50,
+      "item": 5,
+      "origem": 11920,
+      "destino": 120362,
+      "saltos": 56
+    },
+    {
+      "exp": "E2",
+      "alvo": 100,
+      "item": 1,
+      "origem": 113245,
+      "destino": 26128,
+      "saltos": 117
+    },
+    {
+      "exp": "E2",
+      "alvo": 100,
+      "item": 2,
+      "origem": 63532,
+      "destino": 26359,
+      "saltos": 83
+    },
+    {
+      "exp": "E2",
+      "alvo": 100,
+      "item": 3,
+      "origem": 114466,
+      "destino": 47228,
+      "saltos": 78
+    },
+    {
+      "exp": "E2",
+      "alvo": 100,
+      "item": 4,
+      "origem": 45642,
+      "destino": 67235,
+      "saltos": 115
+    },
+    {
+      "exp": "E2",
+      "alvo": 100,
+      "item": 5,
+      "origem": 26035,
+      "destino": 97254,
+      "saltos": 99
+    }
+  ]
+}

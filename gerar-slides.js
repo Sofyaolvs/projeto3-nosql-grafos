@@ -167,7 +167,7 @@ const tblOpts = { border: { type: "solid", color: "D5DEE3", pt: 0.5 } };
 
 // 8. Experimentos + plano
 {
-  const s = base("Experimentos e plano de implementação", "Hipóteses: ainda não medimos nada. Datas de 17/11 a 24/11: confirmar com o professor qual entrega cai em qual dia.");
+  const s = base("Experimentos e plano de implementação", "Plano da Entrega 1 (hipóteses). Os resultados medidos estão nos slides 16 a 19.");
   s.addTable([
     [th("Consulta"), th("Hipótese a testar")],
     [td("Q1. Alcance em k saltos (k de 2 a 5)"), td("Grafo ganha, e a diferença cresce com k")],
@@ -303,6 +303,104 @@ const mono = (t) => ({ text: t, options: { fontFace: "Courier New", fontSize: 11
     "Perto do depósito, os dois ficam na mesma ordem de grandeza; com o alcance maior, a diferença aparece",
     "No MySQL, o menor caminho é uma consulta recursiva que explora toda a região até o limite",
   ]), { x: 0.5, y: 3.7, w: 9, h: 1.3, fontFace: BODY, fontSize: 14, color: INK, valign: "top", margin: 0, isTextBox: true });
+}
+
+// ================= Entregas 3 e 4 (números lidos de app/experimentos/resultados) =================
+const E3 = "Entrega 3", E4 = "Entrega 4";
+const X = (() => {
+  const fs = require("fs"), path = require("path");
+  const lerX = (a) => JSON.parse(fs.readFileSync(path.join(__dirname, "app", "experimentos", "resultados", a), "utf8").replace(/^﻿/, ""));
+  const R = lerX("resumo.json"), A = lerX("ambiente.json");
+  const get = (exp, param, metodo) => R.resumo.find((r) => r.experimento === exp && r.parametro === param && r.metodo === metodo);
+  const fmsx = (x) => (x == null ? "–" : (x < 10 ? Number(x).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : Number(Math.round(x)).toLocaleString("pt-BR")) + " ms");
+  const cel = (r) => (!r ? "–" : r.mediana_ms == null ? "estourou 30 s" : fmsx(r.mediana_ms) + (r.estouros_de_tempo ? ` (estourou em ${r.estouros_de_tempo} de ${r.itens})` : ""));
+  const medicoes = fs.readFileSync(path.join(__dirname, "app", "experimentos", "resultados", "medicoes.csv"), "utf8").split("\n").length - 2;
+  return { R, A, get, fmsx, cel, medicoes, divergentes: R.equivalencias.filter((e) => !e.equivalente).length };
+})();
+const DIST = ["~10 trechos", "~25 trechos", "~50 trechos", "~100 trechos"];
+
+// 16. Metodologia
+{
+  const s = base("Experimentos: metodologia", `Cidade: ${X.A.protocolo.cidade}. ${X.A.maquina.cpu}, ${X.A.maquina.ram_gb} GB de RAM. MySQL ${X.A.mysql.versao} e Neo4j ${X.A.neo4j.versao} Community, em Docker.`, E3);
+  s.addText(bullets([
+    "Três métodos: Neo4j (Cypher), MySQL com SQL puro (CTE recursiva) e MySQL com busca em níveis",
+    "Cinco consultas: alcance em k trechos, menor caminho (com a distância conhecida e desconhecida), vias de uma interseção e agregação por tipo de via",
+    "Índices equivalentes nos dois bancos (cidade e tipo de via); nenhum índice removido",
+    "1 aquecimento e 10 medidas por item, intercaladas entre os métodos; cache aquecido; limite de 30 s",
+    "5 pontos por item, sorteados de forma reproduzível; mediana de todas as medidas",
+  ]), { x: 0.5, y: 1.15, w: 9, h: 2.9, fontFace: BODY, fontSize: 14, color: INK, valign: "top", margin: 0, isTextBox: true });
+  card(s, 0.5, 4.05, 4.35, 1.0, `${D.f(X.medicoes)} medições`, "Gravadas em medicoes.csv", TEAL, 12);
+  card(s, 5.15, 4.05, 4.35, 1.0, `${X.divergentes} divergências`, `Em ${X.R.equivalencias.length} itens, os métodos devolveram o mesmo resultado`, TEAL, 12);
+}
+
+// 17. Onde o Neo4j ganha: menor caminho
+{
+  const s = base("Menor caminho: onde o Neo4j ganha", "Limite de 150 saltos (a aplicação não sabe a distância). 30.000 ms = estourou o limite de 30 s. Escala logarítmica.", E3);
+  const serie = (m) => DIST.map((d) => { const r = X.get("E2b", d, m); return r.mediana_ms == null ? 30000 : Math.round(r.mediana_ms * 10) / 10; });
+  s.addChart(pres.charts.BAR, [
+    { name: "Neo4j", labels: DIST, values: serie("neo4j") },
+    { name: "MySQL, busca em níveis", labels: DIST, values: serie("mysql-bfs") },
+    { name: "MySQL, SQL puro", labels: DIST, values: serie("mysql-cte") },
+  ], { x: 0.5, y: 1.05, w: 6.0, h: 3.95, barDir: "col", barGrouping: "clustered", chartColors: [TEAL, "8A5CC2", "D9822B"],
+    valAxisLogScaleBase: 10, valAxisMinVal: 1, valAxisMaxVal: 100000, valAxisLabelFontSize: 11, catAxisLabelFontSize: 11,
+    valAxisLabelColor: GRAY, catAxisLabelColor: GRAY, valGridLine: { color: "D5DEE3", size: 0.5 }, catGridLine: { style: "none" },
+    showLegend: true, legendPos: "b", legendFontSize: 11, showValue: true, dataLabelFontSize: 9, dataLabelFormatCode: "#,##0", dataLabelColor: INK });
+  const neo = X.get("E2b", DIST[3], "neo4j").mediana_ms, bfs = X.get("E2b", DIST[3], "mysql-bfs").mediana_ms;
+  card(s, 6.7, 1.15, 2.8, 1.75, `${X.cel(X.get("E2b", DIST[3], "neo4j"))}`, `Neo4j em ${DIST[3]}, contra ${X.cel(X.get("E2b", DIST[3], "mysql-bfs"))} da busca em níveis no MySQL (${Math.round(bfs / neo)}×)`, TEAL, 12);
+  card(s, 6.7, 3.05, 2.8, 1.95, "Por quê", "O Neo4j tem o menor caminho como operação nativa e para ao achar o destino. No MySQL, ou a aplicação faz uma consulta por nível, ou a CTE explora a região toda.", TEAL, 12);
+}
+
+// 18. Onde o MySQL empata ou ganha
+{
+  const s = base("Onde o MySQL empata ou ganha", "Cada valor é a mediana de 50 medidas (10 por ponto). Agregação: 10 medidas. O índice de cobertura (tipo, comprimento_m) foi temporário.", E3);
+  const g = X.get;
+  const venc = (a, b) => (a < b ? "Neo4j" : "MySQL");
+  const l = (nome, a, b) => [td(nome, true), td(X.fmsx(a)), td(X.fmsx(b)), td(venc(a, b))];
+  s.addTable([
+    [th("Consulta"), th("Neo4j"), th("MySQL"), th("Mais rápido")],
+    l("Alcance em 5 trechos", g("E1", "k=5", "neo4j").mediana_ms, g("E1", "k=5", "mysql-cte").mediana_ms),
+    l("Vias que saem de uma interseção", g("E3", "1 interseção", "neo4j").mediana_ms, g("E3", "1 interseção", "mysql-cte").mediana_ms),
+    l("Menor caminho curto (~10), distância conhecida", g("E2a", DIST[0], "neo4j").mediana_ms, g("E2a", DIST[0], "mysql-cte").mediana_ms),
+    l("Agregação por tipo, 27 capitais", g("E4", "todas as capitais", "neo4j").mediana_ms, g("E4", "todas as capitais", "mysql-cte").mediana_ms),
+    l("Mesma agregação, MySQL com índice de cobertura", g("E4b", "todas as capitais", "neo4j").mediana_ms, g("E4b", "todas as capitais", "mysql-cte").mediana_ms),
+  ], { x: 0.5, y: 1.15, w: 9, colW: [4.6, 1.4, 1.5, 1.5], rowH: 0.5, ...tblOpts });
+  s.addText(bullets([
+    "Consultas pequenas: a busca por índice do MySQL é barata, e o Neo4j tem um custo fixo por consulta",
+    "Agregação: o resultado depende do índice, e não do paradigma",
+  ]), { x: 0.5, y: 4.3, w: 9, h: 0.8, fontFace: BODY, fontSize: 14, color: INK, valign: "top", margin: 0, isTextBox: true });
+}
+
+// 19. Conclusão dos experimentos
+{
+  const s = base("Conclusão dos experimentos", "As explicações são hipóteses coerentes com os números; não foram isoladas com perfilamento.", E3);
+  const neoR = DIST.map((d) => X.get("E2b", d, "mysql-bfs").mediana_ms / X.get("E2b", d, "neo4j").mediana_ms);
+  card(s, 0.5, 1.15, 4.35, 1.95, "O NoSQL ganha em caminhos", `Menor caminho sem saber a distância: de ${(Math.round(Math.min(...neoR) * 10) / 10).toLocaleString("pt-BR")}× a ${Math.round(Math.max(...neoR))}× mais rápido que a melhor opção no MySQL, e mais de mil vezes que o SQL puro. Está ligado à travessia nativa do grafo.`, TEAL, 13);
+  card(s, 5.15, 1.15, 4.35, 1.95, "O relacional ganha em consultas simples", "Alcance curto e busca por chave: o MySQL foi cerca de 2× mais rápido (poucos milissegundos). Na agregação, depende do índice.", "D9822B", 13);
+  card(s, 0.5, 3.25, 9.0, 1.8, "Limitações", "Uma cidade (São Paulo), 5 pontos por item, cache aquecido, um usuário por vez, tudo na mesma máquina. O menor caminho é em trechos, e não em km. Os estouros de 30 s são limites inferiores.", GRAY, 13);
+}
+
+// 20. Dashboard
+{
+  const s = base("Dashboard", "Código em app/. Roda com: cd app, npm install, npm run dashboard (http://localhost:5300).", E4);
+  s.addImage({ path: require("path").join(__dirname, "docs", "dashboard-topo.png"), x: 0.5, y: 1.1, w: 5.55, h: 3.9, altText: "Captura do dashboard: indicadores, mapa com a rota e gráficos" });
+  s.addText(bullets([
+    "Indicadores, gráficos por tipo de via e por alcance, e mapa com a rota",
+    "Filtros: cidade, tipo de via, alcance, limite de saltos e pontos no mapa",
+    "Alterna entre MySQL e Neo4j, com o mesmo resultado",
+    "Tempo em ms em cada painel e gráfico de comparação",
+    "Demonstração ao vivo do menor caminho nos três métodos",
+  ]), { x: 6.3, y: 1.15, w: 3.2, h: 3.9, fontFace: BODY, fontSize: 13, color: INK, valign: "top", margin: 0, isTextBox: true });
+}
+
+// 21. Conclusões
+{
+  const s = base("Conclusões e próximos passos", "Repositório com código, scripts, modelos, consultas, resultados brutos e README.", E4);
+  s.addText(bullets([
+    `O paradigma de grafos compensou onde a pergunta é de caminho: menor caminho ${(Math.round(Math.min(...DIST.map((d) => X.get("E2b", d, "mysql-bfs").mediana_ms / X.get("E2b", d, "neo4j").mediana_ms)) * 10) / 10).toLocaleString("pt-BR")}× a ${Math.round(Math.max(...DIST.map((d) => X.get("E2b", d, "mysql-bfs").mediana_ms / X.get("E2b", d, "neo4j").mediana_ms)))}× mais rápido que a melhor opção no MySQL`,
+    "Em consultas pontuais e em agregações com bom índice, o MySQL foi igual ou melhor: a escolha depende do tipo de pergunta",
+    "Mesmos dados, mesmos índices e resultados iguais nos dois bancos, com tempos medidos de forma reproduzível",
+    "Próximos passos: caminho por quilômetros (Dijkstra), carga concorrente, cache frio e outras cidades",
+  ]), { x: 0.5, y: 1.15, w: 9, h: 3.9, fontFace: BODY, fontSize: 15, color: INK, valign: "top", margin: 0, isTextBox: true });
 }
 
 pres.writeFile({ fileName: "Entrega1-Projeto3-NoSQL-Grafos.pptx" }).then((f) => console.log("ok", f));
