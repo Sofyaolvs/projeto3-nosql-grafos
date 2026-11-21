@@ -1,0 +1,15 @@
+{
+  "name": "projeto3-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Experimentos (Entrega 3) e dashboard (Entrega 4): Neo4j x MySQL em malhas viárias",
+  "scripts": {
+    "dashboard": "node server.js",
+    "experimentos": "node experimentos/rodar-experimentos.js"
+  },
+  "dependencies": {
+    "chart.js": "4.4.7",
+    "mysql2": "^3.11.0",
+    "neo4j-driver": "^5.26.0"
+  }
+}

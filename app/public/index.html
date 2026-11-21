@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rotas urbanas: Neo4j × MySQL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="titulo">
+      <h1>Rotas urbanas: Neo4j × MySQL</h1>
+      <p>Malha viária das 27 capitais brasileiras (OpenStreetMap), os mesmos dados nos dois bancos</p>
+    </div>
+    <div id="status" class="status" role="status" aria-live="polite">Carregando…</div>
+  </header>
+
+  <section class="controles" aria-label="Filtros e fonte de dados">
+    <fieldset class="grupo">
+      <legend>Fonte de dados</legend>
+      <label class="opcao"><input type="radio" name="fonte" value="mysql"> MySQL</label>
+      <label class="opcao"><input type="radio" name="fonte" value="neo4j" checked> Neo4j</label>
+    </fieldset>
+    <label class="campo" id="campo-metodo">Método no MySQL
+      <select id="metodo-mysql">
+        <option value="mysql-bfs">Busca em níveis (aplicação + SQL)</option>
+        <option value="mysql-cte">SQL puro (consulta recursiva)</option>
+      </select>
+    </label>
+    <label class="campo">Cidade
+      <select id="cidade"></select>
+    </label>
+    <label class="campo">Tipo de via
+      <select id="preset">
+        <option value="todas">Todas as vias</option>
+        <option value="principais">Só vias principais</option>
+        <option value="locais">Só vias locais</option>
+        <option value="sem-residenciais">Sem ruas residenciais</option>
+      </select>
+    </label>
+    <label class="campo">Alcance (trechos): <b id="k-valor">6</b>
+      <input type="range" id="k" min="1" max="12" value="6">
+    </label>
+    <label class="campo">Limite de saltos da rota
+      <input type="number" id="limite" min="1" max="400" value="150">
+    </label>
+  </section>
+
+  <section class="kpis" aria-label="Indicadores da cidade">
+    <article class="kpi"><span class="rot">Interseções</span><strong id="kpi-intersecoes">–</strong></article>
+    <article class="kpi"><span class="rot">Trechos de via</span><strong id="kpi-trechos">–</strong></article>
+    <article class="kpi"><span class="rot">Extensão das vias</span><strong id="kpi-km">–</strong></article>
+    <article class="kpi"><span class="rot">Trechos de mão única</span><strong id="kpi-mu">–</strong></article>
+    <span class="ms" id="ms-indicadores" title="tempo da consulta dos indicadores"></span>
+  </section>
+
+  <main class="grade">
+    <section class="cartao mapa-cartao">
+      <div class="cab"><h2>Rota entre dois pontos</h2><span class="ms" id="ms-rota"></span></div>
+      <p class="dica">Clique no mapa para escolher origem (verde) e destino (vermelho), ou use um par sugerido.</p>
+      <div class="mapa-caixa"><canvas id="mapa" aria-label="Mapa da cidade com a rota"></canvas></div>
+      <div class="acoes">
+        <button id="novo-par" type="button">Sugerir par de pontos</button>
+        <select id="dist-par" aria-label="Distância do par sugerido">
+          <option value="15">curto (~15 trechos)</option>
+          <option value="40" selected>médio (~40 trechos)</option>
+          <option value="90">longo (~90 trechos)</option>
+        </select>
+      </div>
+      <div id="rota-info" class="info">Escolha dois pontos.</div>
+    </section>
+
+    <section class="cartao">
+      <div class="cab"><h2>Trechos por tipo de via</h2><span class="ms" id="ms-porTipo"></span></div>
+      <div class="grafico"><canvas id="g-tipo" aria-label="Gráfico de trechos por tipo de via"></canvas></div>
+    </section>
+
+    <section class="cartao">
+      <div class="cab"><h2>Alcance a partir da origem</h2><span class="ms" id="ms-alcance"></span></div>
+      <p class="dica" id="alcance-info">Interseções alcançadas em até d trechos.</p>
+      <div class="grafico"><canvas id="g-alcance" aria-label="Gráfico do alcance por número de trechos"></canvas></div>
+    </section>
+
+    <section class="cartao larga">
+      <div class="cab"><h2>Comparação de tempos (ms)</h2>
+        <label class="log"><input type="checkbox" id="log" checked> escala logarítmica</label></div>
+      <div class="grafico alto"><canvas id="g-tempos" aria-label="Comparação de tempos entre os bancos"></canvas></div>
+      <div class="acoes">
+        <button id="comparar" type="button" class="primario">Comparar bancos agora</button>
+        <button id="demo" type="button">Demonstração: menor caminho</button>
+        <span id="comp-msg" class="info"></span>
+      </div>
+    </section>
+
+    <section class="cartao larga">
+      <div class="cab"><h2>Vias que saem da origem</h2><span class="ms" id="ms-vizinhos"></span></div>
+      <div class="tabela-caixa">
+        <table id="t-vizinhos"><thead><tr><th>Para a interseção</th><th>Via</th><th>Tipo</th><th>Comprimento (m)</th><th>Mão única</th><th>Vel. máx. (km/h)</th><th>Faixas</th></tr></thead><tbody></tbody></table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">Dados © colaboradores do OpenStreetMap (ODbL). Cada tempo é medido na aplicação, da consulta ao resultado completo.</footer>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
