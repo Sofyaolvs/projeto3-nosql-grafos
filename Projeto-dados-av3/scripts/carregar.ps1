@@ -63,6 +63,10 @@ Medir "neo4j_indice_unico" {
   if ($LASTEXITCODE -ne 0) { throw "constraint falhou" }
   docker exec rotas-neo4j cypher-shell -u neo4j -p $senha "CALL db.awaitIndexes(600);"
 }
+Medir "neo4j_indices_cidade_tipo" {
+  cmd /c "docker exec -i rotas-neo4j cypher-shell -u neo4j -p $senha < cypher\02-indices.cypher"
+  if ($LASTEXITCODE -ne 0) { throw "índices do Neo4j falharam" }
+}
 
 $tempos | ConvertTo-Json | Set-Content dados\tempos-carga.json -Encoding utf8
 Write-Host "Carga concluída. Tempos em dados\tempos-carga.json"

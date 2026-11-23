@@ -26,6 +26,7 @@ services:
     container_name: rotas-neo4j
     environment:
       NEO4J_AUTH: neo4j/rotas12345
+      NEO4J_server_directories_import: /import   # LOAD CSV e neo4j-admin enxergam ./dados
       NEO4J_server_memory_heap_initial__size: 2G
       NEO4J_server_memory_heap_max__size: 2G
       NEO4J_server_memory_pagecache_size: 2G
@@ -34,7 +35,7 @@ services:
       - "7687:7687"
     volumes:
       - neo4j_data:/data
-      - ./dados:/var/lib/neo4j/import:ro
+      - ./dados:/import:ro
     healthcheck:
       test: [ "CMD-SHELL", "cypher-shell -u neo4j -p rotas12345 'RETURN 1' || exit 1" ]
       interval: 5s
