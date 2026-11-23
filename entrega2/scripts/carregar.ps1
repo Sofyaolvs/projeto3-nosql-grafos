@@ -1,6 +1,6 @@
-﻿# Instala e carrega os dois bancos com a malha viária roadNet-CA.
+﻿# Instala e carrega os dois bancos com a malha viária das 27 capitais brasileiras (OpenStreetMap via OSMnx).
 # Uso (PowerShell, dentro de entrega2): .\scripts\carregar.ps1
-# Requisitos: Docker Desktop em execução e Node.js.
+# Requisitos: Docker Desktop em execução e Node.js. Python só é preciso se dados\estradas.csv não existir.
 $ErrorActionPreference = "Continue"  # docker escreve progresso em stderr; erros são checados por $LASTEXITCODE
 Set-Location (Join-Path $PSScriptRoot "..")
 $tempos = [ordered]@{}
@@ -22,12 +22,26 @@ function EsperarSaudavel($container) {
   throw "$container não ficou saudável"
 }
 
-if (-not (Test-Path "dados\arestas_mysql.csv")) { Medir "preparar_dados" { node scripts/preparar-dados.js } }
+# ---- Dados: extrai do OpenStreetMap só se os CSVs ainda não existirem (demora; depende do servidor Overpass) ----
+if (-not (Test-Path "dados\estradas.csv")) {
+  if (-not (Test-Path ".venv\Scripts\python.exe")) {
+    py -m venv .venv
+    if ($LASTEXITCODE -ne 0) { throw "não consegui criar o ambiente Python (instale o Python 3.10 ou superior)" }
+    .\.venv\Scripts\python.exe -m pip install -q -r requirements.txt
+    if ($LASTEXITCODE -ne 0) { throw "pip install falhou" }
+  }
+  Medir "extrair_osm" {
+    .\.venv\Scripts\python.exe scripts\extrair-osm.py
+    if ($LASTEXITCODE -ne 0) { throw "extração do OSM falhou (rode de novo: ela continua de onde parou)" }
+  }
+}
 
-# ---- MySQL ----
+# ---- MySQL (recria as tabelas, para valer também em quem tinha o esquema antigo) ----
 docker compose up -d mysql
 EsperarSaudavel "rotas-mysql"
-docker exec -e MYSQL_PWD=$senha rotas-mysql mysql -uroot rotas -e "SET foreign_key_checks=0; TRUNCATE TABLE estrada; TRUNCATE TABLE interseccao; SET foreign_key_checks=1;"
+docker exec -e MYSQL_PWD=$senha rotas-mysql mysql -uroot rotas -e "DROP TABLE IF EXISTS estrada; DROP TABLE IF EXISTS interseccao;"
+Get-Content sql\01-schema.sql -Raw -Encoding utf8 | docker exec -i -e MYSQL_PWD=$senha rotas-mysql mysql -uroot rotas
+if ($LASTEXITCODE -ne 0) { throw "criação do esquema MySQL falhou" }
 Medir "mysql_carga" {
   Get-Content sql\02-carga.sql -Raw | docker exec -i -e MYSQL_PWD=$senha rotas-mysql mysql -uroot rotas
   if ($LASTEXITCODE -ne 0) { throw "carga MySQL falhou" }
@@ -38,8 +52,8 @@ docker compose stop neo4j | Out-Null
 Medir "neo4j_import" {
   docker compose run --rm --no-deps --entrypoint neo4j-admin neo4j database import full neo4j `
     --overwrite-destination --id-type=integer `
-    --nodes=Intersecao=/import/nos.csv `
-    --relationships=LIGA_A=/import/arestas.csv
+    --nodes=Intersecao=/import/intersecoes.csv `
+    --relationships=LIGA_A=/import/estradas.csv
   if ($LASTEXITCODE -ne 0) { throw "neo4j-admin import falhou" }
 }
 docker compose up -d neo4j

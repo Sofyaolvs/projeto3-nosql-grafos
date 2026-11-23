@@ -1,6 +1,7 @@
 // Exemplo funcionando (estilo "eBay Now": roteamento de entregas) sobre a malha viária.
-// Um depósito e N paradas de entrega. Para cada par de pontos calcula o menor caminho
-// (em número de trechos) no Neo4j e no MySQL, monta a rota pelo vizinho mais próximo
+// Um depósito e N paradas de entrega. Para cada par ordenado de pontos (a malha tem mão única,
+// então ida e volta podem ter tamanhos diferentes) calcula o menor caminho em número de trechos
+// no Neo4j e no MySQL, monta a rota pelo vizinho mais próximo
 // e compara o resultado e o tempo dos dois bancos.
 // Uso: node scripts/demo-entregas.js [--deposito 0] [--paradas 6] [--raio 10] [--semente 1]
 const neo4j = require("neo4j-driver");
@@ -30,7 +31,8 @@ function aleatorio(semente) { let s = semente >>> 0; return () => ((s = (s * 166
   const paradas = [];
   while (paradas.length < PARADAS) { const c = candidatos[Math.floor(rnd() * candidatos.length)]; if (!paradas.includes(c)) paradas.push(c); }
   const pontos = [DEPOSITO, ...paradas];
-  console.log(`Depósito ${DEPOSITO}; paradas: ${paradas.join(", ")} (a ${RAIO} trechos do depósito)\n`);
+  const [[local]] = await pool.query("SELECT cidade, uf FROM interseccao WHERE id = ?", [DEPOSITO]);
+  console.log(`Depósito ${DEPOSITO} (${local.cidade}/${local.uf}); paradas: ${paradas.join(", ")} (a ${RAIO} trechos do depósito)\n`);
 
   // 2) distância entre dois pontos, em cada banco
   const distNeo = async (a, b) => {
@@ -55,7 +57,7 @@ function aleatorio(semente) { let s = semente >>> 0; return () => ((s = (s * 166
   async function matriz(fn) {
     const n = pontos.length, m = Array.from({ length: n }, () => Array(n).fill(0));
     const t0 = process.hrtime.bigint();
-    for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) { const d = await fn(pontos[i], pontos[j]); m[i][j] = m[j][i] = d; }
+    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) if (i !== j) m[i][j] = await fn(pontos[i], pontos[j]);
     return { m, ms: Number(process.hrtime.bigint() - t0) / 1e6 };
   }
   await distNeo(DEPOSITO, paradas[0]); await distSql(DEPOSITO, paradas[0]); // aquecimento
@@ -76,11 +78,21 @@ function aleatorio(semente) { let s = semente >>> 0; return () => ((s = (s * 166
   }
   const rn = rota(neo.m), rs = rota(sql.m);
 
-  console.log(`Pares calculados: ${(pontos.length * (pontos.length - 1)) / 2}`);
+  console.log(`Pares calculados (ida e volta): ${pontos.length * (pontos.length - 1)}`);
   console.log(`Neo4j : ${neo.ms.toFixed(1)} ms | rota ${rn.ordem.join(" -> ")} | ${rn.total} trechos`);
   console.log(`MySQL : ${sql.ms.toFixed(1)} ms | rota ${rs.ordem.join(" -> ")} | ${rs.total} trechos`);
   const igual = JSON.stringify(neo.m) === JSON.stringify(sql.m);
   console.log(`\nMatrizes de distância idênticas nos dois bancos: ${igual ? "SIM" : "NÃO"}`);
   console.log(`Rotas idênticas: ${JSON.stringify(rn) === JSON.stringify(rs) ? "SIM" : "NÃO"}`);
+  // --json arquivo: grava o resultado, para os scripts que geram as evidências e os documentos
+  const iJson = process.argv.indexOf("--json");
+  if (iJson > 0) {
+    require("fs").writeFileSync(process.argv[iJson + 1], JSON.stringify({
+      deposito: DEPOSITO, cidade: local.cidade, uf: local.uf, raio: RAIO, paradas,
+      pares: pontos.length * (pontos.length - 1),
+      neo4j_ms: Math.round(neo.ms * 10) / 10, mysql_ms: Math.round(sql.ms * 10) / 10,
+      rota: rn.ordem, trechos: rn.total, matrizes_iguais: igual,
+    }, null, 2));
+  }
   await driver.close(); await pool.end();
 })().catch((e) => { console.error(e); process.exit(1); });

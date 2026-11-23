@@ -1,11 +1,26 @@
-== Neo4j ==
 intersecoes
-1965206
-estradas_dirigidas
-5533214
-estradas_unicas
-2766607
-sem_volta
+781489
+estradas
+1970520
+mao_unica
+310026
+com_nome
+1641042
+km_total
+226896.0
+mao_dupla_sem_volta
 0
+cidade, intersecoes
+"São Paulo", 122710
+"Brasília", 85759
+"Rio de Janeiro", 73385
+"Goiânia", 39770
+"Fortaleza", 36862
+tipo, estradas
+"residential", 1479312
+"tertiary", 208919
+"secondary", 110211
+"primary", 55444
+"unclassified", 46858
 tipo
 "INTEGER NOT NULL"

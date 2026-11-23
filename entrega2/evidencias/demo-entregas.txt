@@ -1,8 +1,8 @@
-Depósito 0; paradas: 193, 383, 424, 35695, 92 (a 8 trechos do depósito)
+Depósito 0 (São Paulo/SP); paradas: 14197, 24578, 66508, 91029, 13970 (a 8 trechos do depósito)
 
-Pares calculados: 15
-Neo4j : 82.2 ms | rota 0 -> 383 -> 193 -> 424 -> 35695 -> 92 -> 0 | 43 trechos
-MySQL : 78.7 ms | rota 0 -> 383 -> 193 -> 424 -> 35695 -> 92 -> 0 | 43 trechos
+Pares calculados (ida e volta): 30
+Neo4j : 203.9 ms | rota 0 -> 91029 -> 24578 -> 13970 -> 66508 -> 14197 -> 0 | 35 trechos
+MySQL : 137.0 ms | rota 0 -> 91029 -> 24578 -> 13970 -> 66508 -> 14197 -> 0 | 35 trechos
 
 Matrizes de distância idênticas nos dois bancos: SIM
 Rotas idênticas: SIM

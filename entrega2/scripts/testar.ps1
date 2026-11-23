@@ -9,7 +9,7 @@ $senha = "rotas12345"
 $falhas = 0
 
 function Titulo($t) { Write-Host ""; Write-Host "=== $t ===" -ForegroundColor Cyan }
-function MySql($arquivo) { cmd /c "docker exec -i -e MYSQL_PWD=$senha rotas-mysql mysql -uroot rotas -t < $arquivo" }
+function MySql($arquivo) { cmd /c "docker exec -i -e MYSQL_PWD=$senha rotas-mysql mysql -uroot --default-character-set=utf8mb4 rotas -t < $arquivo" }
 function Neo($arquivo) { cmd /c "docker exec -i rotas-neo4j cypher-shell -u neo4j -p $senha --format plain < $arquivo" }
 
 Titulo "0. Os dois contêineres estão no ar?"
@@ -23,7 +23,8 @@ Titulo "1. Volume e integridade: MySQL"
 MySql sql\03-verificacao.sql
 Titulo "1. Volume e integridade: Neo4j"
 Neo cypher\03-verificacao.cypher
-Write-Host "Esperado nos dois: 1965206 interseções, 5533214 estradas (2 sentidos), 2766607 únicas, 0 sem volta." -ForegroundColor Yellow
+$r = Get-Content dados\resumo.json -Raw -Encoding utf8 | ConvertFrom-Json
+Write-Host ("Esperado nos dois: {0} interseções, {1} estradas, {2} de mão única, {3} com nome, {4} km, 0 órfãs, 0 mão dupla sem volta." -f $r.intersecoes, $r.estradas, $r.mao_unica, $r.com_nome, $r.km_total) -ForegroundColor Yellow
 
 Titulo "2. CRUD: MySQL"
 $tem = docker exec -e MYSQL_PWD=$senha rotas-mysql mysql -uroot rotas -N -e "SELECT COUNT(*) FROM information_schema.columns WHERE table_schema='rotas' AND table_name='estrada' AND column_name='bloqueada'"
@@ -31,7 +32,7 @@ if ($tem -ne "1") { Write-Host "(criando a coluna bloqueada, só na primeira vez
 MySql sql\05-crud.sql
 Titulo "2. CRUD: Neo4j"
 Neo cypher\05-crud.cypher
-Write-Host "Esperado: vizinhos 1, 2, 469 e 5000000; update com bloqueada nas duas estradas; restantes = 0." -ForegroundColor Yellow
+Write-Host "Esperado: a mesma lista de vizinhos nos dois bancos, terminando em 5000000 (Rua do Projeto 3); update com bloqueada nas duas estradas; restantes = 0." -ForegroundColor Yellow
 
 Titulo "3. Exemplo funcionando: roteamento de entregas"
 node scripts\demo-entregas.js --deposito 0 --paradas 5 --raio 8
