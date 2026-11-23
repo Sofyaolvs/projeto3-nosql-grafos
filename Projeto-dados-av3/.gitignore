@@ -1,0 +1,5 @@
+node_modules
+package-lock.json
+# dados gerados (regeneráveis com scripts/extrair-osm.py; grandes demais p/ o GitHub)
+dados/*.csv
+dados/cache-osm/

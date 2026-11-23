@@ -1,0 +1,194 @@
+[1/27] São Paulo: 122710 interseções, 304569 estradas, 166 s
+Rio de Janeiro: tentativa 1 falhou ('overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout
+
+This Overpass API server is currently at capacity. All query workers are busy
+and the request queue is full.
+
+## What to do
+
+Retry your request using exponential backoff: wait a short interval, then retry.
+If the request fails again, double the wait time and retry again.
+
+## For heavy or automated use
+
+This public endpoint is intended for browser-based and human-operated tools.
+For automated or high-volume use, run a local Overpass API instance:
+
+https://github.com/b1tw153/Overpass-API/blob/main/README.md
+)
+[2/27] Rio de Janeiro: 73385 interseções, 175739 estradas, 166 s
+Brasília: tentativa 1 falhou ('overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout
+
+This Overpass API server is currently at capacity. All query workers are busy
+and the request queue is full.
+
+## What to do
+
+Retry your request using exponential backoff: wait a short interval, then retry.
+If the request fails again, double the wait time and retry again.
+
+## For heavy or automated use
+
+This public endpoint is intended for browser-based and human-operated tools.
+For automated or high-volume use, run a local Overpass API instance:
+
+https://github.com/b1tw153/Overpass-API/blob/main/README.md
+)
+Brasília: tentativa 2 falhou ('overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout
+
+This Overpass API server is currently at capacity. All query workers are busy
+and the request queue is full.
+
+## What to do
+
+Retry your request using exponential backoff: wait a short interval, then retry.
+If the request fails again, double the wait time and retry again.
+
+## For heavy or automated use
+
+This public endpoint is intended for browser-based and human-operated tools.
+For automated or high-volume use, run a local Overpass API instance:
+
+https://github.com/b1tw153/Overpass-API/blob/main/README.md
+)
+Brasília: tentativa 3 falhou ('overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout
+
+This Overpass API server is currently at capacity. All query workers are busy
+and the request queue is full.
+
+## What to do
+
+Retry your request using exponential backoff: wait a short interval, then retry.
+If the request fails again, double the wait time and retry again.
+
+## For heavy or automated use
+
+This public endpoint is intended for browser-based and human-operated tools.
+For automated or high-volume use, run a local Overpass API instance:
+
+https://github.com/b1tw153/Overpass-API/blob/main/README.md
+)
+Traceback (most recent call last):
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\requests\models.py", line 1116, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofya\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\sofya\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofya\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\_http.py", line 314, in _parse_response
+    response_json: dict[str, Any] | list[dict[str, Any]] = response.json()
+                                                           ~~~~~~~~~~~~~^^
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\requests\models.py", line 1120, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\scripts\extrair-osm.py", line 159, in <module>
+    baixar(i, cidade, uf, consulta)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\scripts\extrair-osm.py", line 78, in baixar
+    G = ox.graph_from_place(consulta, network_type="drive")
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\graph.py", line 396, in graph_from_place
+    G = graph_from_polygon(
+        polygon,
+    ...<4 lines>...
+        custom_filter=custom_filter,
+    )
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\graph.py", line 496, in graph_from_polygon
+    G_buff = _create_graph(response_jsons, bidirectional)
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\graph.py", line 625, in _create_graph
+    for response_json in response_jsons:
+                         ^^^^^^^^^^^^^^
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\_overpass.py", line 402, in _download_overpass_network
+    yield _overpass_request(OrderedDict(data=query_str))
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\_overpass.py", line 488, in _overpass_request
+    response_json = _http._parse_response(response)
+  File "C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\_http.py", line 320, in _parse_response
+    raise ResponseStatusCodeError(msg) from e
+osmnx._errors.ResponseStatusCodeError: 'overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout
+
+This Overpass API server is currently at capacity. All query workers are busy
+and the request queue is full.
+
+## What to do
+
+Retry your request using exponential backoff: wait a short interval, then retry.
+If the request fails again, double the wait time and retry again.
+
+## For heavy or automated use
+
+This public endpoint is intended for browser-based and human-operated tools.
+For automated or high-volume use, run a local Overpass API instance:
+
+https://github.com/b1tw153/Overpass-API/blob/main/README.md
+
+[1/27] São Paulo: já baixada
+[2/27] Rio de Janeiro: já baixada
+Brasília: tentativa 1 falhou ('overpass-api.de' responded: 502 Bad Gateway # 502 Gateway Timeout)
+Brasília: tentativa 2 falhou (HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=180))
+[3/27] Brasília: 85759 interseções, 200697 estradas, 603 s
+Salvador: tentativa 1 falhou (HTTPSConnectionPool(host='overpass-api.de', port=443): Max retries exceeded with url: /api/interpreter (Caused by ConnectTimeoutError(<HTTPSConnection(host='overpass-api.de', port=443) at 0x22564df02d0>, 'Connection to overpass-api.de timed out. (connect timeout=180)')))
+Salvador: tentativa 2 falhou (HTTPSConnectionPool(host='overpass.private.coffee', port=443): Read timed out. (read timeout=180))
+[4/27] Salvador: 28252 interseções, 64820 estradas, 164 s
+[1/27] São Paulo: já baixada
+[2/27] Rio de Janeiro: já baixada
+[3/27] Brasília: já baixada
+[4/27] Salvador: já baixada
+[5/27] Fortaleza: 36862 interseções, 96438 estradas, 53 s
+[6/27] Belo Horizonte: 32235 interseções, 82876 estradas, 114 s
+[7/27] Manaus: 31424 interseções, 81167 estradas, 1375 s
+[8/27] Curitiba: 33808 interseções, 87552 estradas, 102 s
+[9/27] Recife: 19710 interseções, 49746 estradas, 148 s
+[10/27] Goiânia: 39770 interseções, 102313 estradas, 150 s
+[11/27] Belém: 15101 interseções, 37578 estradas, 204 s
+[12/27] Porto Alegre: 21274 interseções, 50410 estradas, 306 s
+[13/27] São Luís: 23444 interseções, 61123 estradas, 157 s
+[14/27] Maceió: 16309 interseções, 40144 estradas, 35 s
+[15/27] Campo Grande: 28830 interseções, 83235 estradas, 1259 s
+[16/27] Natal: 18612 interseções, 48250 estradas, 526 s
+[17/27] Teresina: 28806 interseções, 80320 estradas, 148 s
+[18/27] João Pessoa: 15786 interseções, 42705 estradas, 206 s
+[19/27] Aracaju: 11717 interseções, 29670 estradas, 58 s
+[20/27] Cuiabá: 21593 interseções, 57733 estradas, 723 s
+C:\Users\sofya\Downloads\projeto3-nosql-grafos\entrega2\.venv\Lib\site-packages\osmnx\_overpass.py:271: UserWarning: This area is 25 times your configured Overpass max query area size. It will automatically be divided up into multiple sub-queries accordingly. This may take a long time.
+  multi_poly_proj = utils_geo._consolidate_subdivide_geometry(poly_proj)
+[27/27] Palmas: 14856 interseções, 36259 estradas, 31 s
+[26/27] Boa Vista: 11300 interseções, 31599 estradas, 23 s
+[25/27] Vitória: 5531 interseções, 12299 estradas, 134 s
+[24/27] Rio Branco: 11978 interseções, 30623 estradas, 143 s
+[23/27] Macapá: 8305 interseções, 22318 estradas, 123 s
+[22/27] Florianópolis: 9426 interseções, 20938 estradas, 422 s
+[21/27] Porto Velho: 14706 interseções, 39399 estradas, 770 s
+[20/27] Cuiabá: já baixada
+[19/27] Aracaju: já baixada
+[18/27] João Pessoa: já baixada
+[17/27] Teresina: já baixada
+[16/27] Natal: já baixada
+[15/27] Campo Grande: já baixada
+[14/27] Maceió: já baixada
+[13/27] São Luís: já baixada
+[12/27] Porto Alegre: já baixada
+[11/27] Belém: já baixada
+[10/27] Goiânia: já baixada
+[9/27] Recife: já baixada
+[8/27] Curitiba: já baixada
+[7/27] Manaus: já baixada
+[6/27] Belo Horizonte: já baixada
+[5/27] Fortaleza: já baixada
+[4/27] Salvador: já baixada
+[3/27] Brasília: já baixada
+[2/27] Rio de Janeiro: já baixada
+[1/27] São Paulo: já baixada
