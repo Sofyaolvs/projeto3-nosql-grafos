@@ -1,0 +1,1999 @@
+﻿experimento,consulta,parametro,item,metodo,execucao,tipo,ms,status
+E1,"Alcance em até k trechos","k=3",1,neo4j,0,aquecimento,65.3,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,0,aquecimento,2.49,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,0,aquecimento,4.64,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,1,medida,4.1,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,1,medida,1.91,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,1,medida,3.26,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,2,medida,3.55,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,2,medida,2.11,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,2,medida,3.94,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,3,medida,3.79,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,3,medida,1.98,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,3,medida,3.75,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,4,medida,3.82,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,4,medida,1.85,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,4,medida,5.6,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,5,medida,3.37,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,5,medida,1.22,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,5,medida,3.15,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,6,medida,4.75,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,6,medida,1.73,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,6,medida,2.95,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,7,medida,4.14,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,7,medida,2.19,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,7,medida,3.44,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,8,medida,5.23,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,8,medida,1.86,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,8,medida,3.11,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,9,medida,3.08,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,9,medida,1.76,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,9,medida,3.32,ok
+E1,"Alcance em até k trechos","k=3",1,neo4j,10,medida,8,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-cte,10,medida,1.98,ok
+E1,"Alcance em até k trechos","k=3",1,mysql-bfs,10,medida,5.14,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,0,aquecimento,13.3,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,0,aquecimento,2.24,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,0,aquecimento,3.3,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,1,medida,4.37,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,1,medida,2.88,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,1,medida,3.95,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,2,medida,4.14,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,2,medida,2.42,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,2,medida,3.83,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,3,medida,4.18,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,3,medida,1.61,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,3,medida,2.2,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,4,medida,3.78,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,4,medida,1.43,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,4,medida,3.28,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,5,medida,3.56,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,5,medida,1.76,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,5,medida,6.67,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,6,medida,4.13,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,6,medida,1.98,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,6,medida,3.9,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,7,medida,3.79,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,7,medida,2.47,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,7,medida,4.06,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,8,medida,3.98,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,8,medida,2.42,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,8,medida,3.92,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,9,medida,3.45,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,9,medida,2.06,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,9,medida,3.91,ok
+E1,"Alcance em até k trechos","k=3",2,neo4j,10,medida,3.79,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-cte,10,medida,2.98,ok
+E1,"Alcance em até k trechos","k=3",2,mysql-bfs,10,medida,4.65,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,0,aquecimento,11.28,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,0,aquecimento,2.09,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,0,aquecimento,4.95,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,1,medida,4.56,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,1,medida,1.75,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,1,medida,3.09,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,2,medida,3.74,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,2,medida,1.97,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,2,medida,5.07,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,3,medida,3.92,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,3,medida,2.1,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,3,medida,3.68,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,4,medida,4.17,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,4,medida,1.72,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,4,medida,4.19,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,5,medida,3.78,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,5,medida,2.06,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,5,medida,2.76,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,6,medida,3.96,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,6,medida,2.61,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,6,medida,4.65,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,7,medida,3.75,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,7,medida,2.81,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,7,medida,3.46,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,8,medida,4.67,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,8,medida,2.29,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,8,medida,3.8,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,9,medida,3.82,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,9,medida,1.99,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,9,medida,3.82,ok
+E1,"Alcance em até k trechos","k=3",3,neo4j,10,medida,4.67,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-cte,10,medida,2.33,ok
+E1,"Alcance em até k trechos","k=3",3,mysql-bfs,10,medida,3.45,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,0,aquecimento,15.62,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,0,aquecimento,2.82,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,0,aquecimento,3.74,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,1,medida,4.26,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,1,medida,2.31,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,1,medida,3.75,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,2,medida,3.45,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,2,medida,1.72,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,2,medida,3.09,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,3,medida,3.51,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,3,medida,1.88,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,3,medida,4.52,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,4,medida,3.71,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,4,medida,2.2,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,4,medida,4.22,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,5,medida,4.11,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,5,medida,3.03,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,5,medida,4.17,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,6,medida,4.23,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,6,medida,2.38,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,6,medida,4.39,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,7,medida,4.22,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,7,medida,2.24,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,7,medida,4.31,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,8,medida,4.38,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,8,medida,1.74,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,8,medida,3.31,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,9,medida,4.03,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,9,medida,2.44,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,9,medida,5.1,ok
+E1,"Alcance em até k trechos","k=3",4,neo4j,10,medida,4.76,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-cte,10,medida,2.14,ok
+E1,"Alcance em até k trechos","k=3",4,mysql-bfs,10,medida,4.97,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,0,aquecimento,10.29,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,0,aquecimento,2.32,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,0,aquecimento,4.05,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,1,medida,4.37,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,1,medida,2.19,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,1,medida,4.04,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,2,medida,4.23,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,2,medida,2.54,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,2,medida,4.81,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,3,medida,4.51,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,3,medida,2.86,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,3,medida,6.21,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,4,medida,4.97,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,4,medida,2.55,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,4,medida,6.86,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,5,medida,5.81,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,5,medida,3.46,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,5,medida,8.08,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,6,medida,4.51,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,6,medida,3.1,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,6,medida,2.7,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,7,medida,4.45,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,7,medida,3.08,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,7,medida,5.27,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,8,medida,4.63,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,8,medida,3.11,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,8,medida,5.84,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,9,medida,4.23,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,9,medida,2.31,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,9,medida,7.2,ok
+E1,"Alcance em até k trechos","k=3",5,neo4j,10,medida,4.25,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-cte,10,medida,2.45,ok
+E1,"Alcance em até k trechos","k=3",5,mysql-bfs,10,medida,5.84,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,0,aquecimento,7.52,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,0,aquecimento,2.71,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,0,aquecimento,10.81,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,1,medida,4.87,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,1,medida,2.83,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,1,medida,9.01,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,2,medida,4,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,2,medida,2.16,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,2,medida,8.61,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,3,medida,3.6,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,3,medida,1.84,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,3,medida,8.68,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,4,medida,3.59,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,4,medida,2.22,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,4,medida,13.73,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,5,medida,5.37,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,5,medida,2.72,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,5,medida,13.94,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,6,medida,7.8,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,6,medida,2.76,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,6,medida,7.87,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,7,medida,4.21,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,7,medida,2.55,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,7,medida,11.03,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,8,medida,4.27,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,8,medida,2.78,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,8,medida,9.18,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,9,medida,3.17,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,9,medida,2.86,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,9,medida,8.81,ok
+E1,"Alcance em até k trechos","k=5",1,neo4j,10,medida,4.4,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-cte,10,medida,2.5,ok
+E1,"Alcance em até k trechos","k=5",1,mysql-bfs,10,medida,10.03,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,0,aquecimento,4.77,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,0,aquecimento,1.32,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,0,aquecimento,3.55,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,1,medida,2.59,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,1,medida,1.42,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,1,medida,3.75,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,2,medida,2.55,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,2,medida,1.27,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,2,medida,3.86,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,3,medida,4.25,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,3,medida,1.56,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,3,medida,4.24,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,4,medida,2.74,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,4,medida,1.22,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,4,medida,3.41,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,5,medida,3.36,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,5,medida,1.44,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,5,medida,4.1,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,6,medida,3.48,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,6,medida,1.88,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,6,medida,4.63,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,7,medida,2.58,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,7,medida,1.69,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,7,medida,4.12,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,8,medida,4.43,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,8,medida,1.53,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,8,medida,3.81,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,9,medida,2.88,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,9,medida,1.35,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,9,medida,3.36,ok
+E1,"Alcance em até k trechos","k=5",2,neo4j,10,medida,3.18,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-cte,10,medida,1.57,ok
+E1,"Alcance em até k trechos","k=5",2,mysql-bfs,10,medida,4.1,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,0,aquecimento,7.98,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,0,aquecimento,1.95,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,0,aquecimento,4.84,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,1,medida,4.29,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,1,medida,2.45,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,1,medida,4.7,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,2,medida,4.9,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,2,medida,1.84,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,2,medida,5.66,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,3,medida,4.06,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,3,medida,2.23,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,3,medida,6.36,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,4,medida,4.67,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,4,medida,3.8,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,4,medida,11.02,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,5,medida,5.88,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,5,medida,2.82,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,5,medida,9.4,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,6,medida,5,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,6,medida,2.37,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,6,medida,8.98,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,7,medida,5.11,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,7,medida,2.62,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,7,medida,9.93,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,8,medida,4.21,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,8,medida,2.3,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,8,medida,10.74,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,9,medida,3.32,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,9,medida,1.93,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,9,medida,6.69,ok
+E1,"Alcance em até k trechos","k=5",3,neo4j,10,medida,4.83,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-cte,10,medida,2.71,ok
+E1,"Alcance em até k trechos","k=5",3,mysql-bfs,10,medida,9.97,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,0,aquecimento,12.38,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,0,aquecimento,3.12,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,0,aquecimento,9.01,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,1,medida,5.64,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,1,medida,2.9,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,1,medida,8.14,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,2,medida,4.59,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,2,medida,2.73,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,2,medida,8.61,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,3,medida,4.96,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,3,medida,2.42,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,3,medida,7.9,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,4,medida,5.55,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,4,medida,2.67,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,4,medida,9.87,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,5,medida,5.55,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,5,medida,2.56,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,5,medida,9.42,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,6,medida,4.59,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,6,medida,2.62,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,6,medida,10,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,7,medida,5.56,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,7,medida,2.83,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,7,medida,10.78,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,8,medida,5.03,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,8,medida,3.05,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,8,medida,10.08,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,9,medida,4.32,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,9,medida,2.8,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,9,medida,11.19,ok
+E1,"Alcance em até k trechos","k=5",4,neo4j,10,medida,6.45,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-cte,10,medida,3.32,ok
+E1,"Alcance em até k trechos","k=5",4,mysql-bfs,10,medida,9.14,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,0,aquecimento,10.97,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,0,aquecimento,3.96,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,0,aquecimento,10.07,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,1,medida,5.76,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,1,medida,6.16,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,1,medida,6.2,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,2,medida,3.6,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,2,medida,1.58,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,2,medida,8.55,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,3,medida,5.2,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,3,medida,3.32,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,3,medida,9.33,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,4,medida,5.98,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,4,medida,2.89,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,4,medida,10.33,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,5,medida,5.48,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,5,medida,3.63,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,5,medida,10.86,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,6,medida,5.31,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,6,medida,2.82,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,6,medida,9.15,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,7,medida,6.03,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,7,medida,2.81,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,7,medida,7.03,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,8,medida,5.75,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,8,medida,3.32,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,8,medida,9,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,9,medida,5.67,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,9,medida,3.09,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,9,medida,9.49,ok
+E1,"Alcance em até k trechos","k=5",5,neo4j,10,medida,6.05,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-cte,10,medida,2.32,ok
+E1,"Alcance em até k trechos","k=5",5,mysql-bfs,10,medida,9.72,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,0,aquecimento,60.12,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,0,aquecimento,3.61,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,0,aquecimento,13.64,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,1,medida,5.78,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,1,medida,3.51,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,1,medida,14.48,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,2,medida,6.33,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,2,medida,3.28,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,2,medida,13.97,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,3,medida,5.59,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,3,medida,3.26,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,3,medida,13.29,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,4,medida,5.56,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,4,medida,2.58,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,4,medida,10.49,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,5,medida,4.49,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,5,medida,2.22,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,5,medida,15.33,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,6,medida,5.32,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,6,medida,3.33,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,6,medida,11.25,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,7,medida,3.95,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,7,medida,3.22,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,7,medida,12.38,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,8,medida,6.03,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,8,medida,2.48,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,8,medida,14.12,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,9,medida,6.13,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,9,medida,3.51,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,9,medida,13.35,ok
+E1,"Alcance em até k trechos","k=7",1,neo4j,10,medida,13.27,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-cte,10,medida,2.93,ok
+E1,"Alcance em até k trechos","k=7",1,mysql-bfs,10,medida,13.77,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,0,aquecimento,13.49,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,0,aquecimento,4.82,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,0,aquecimento,16.97,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,1,medida,4.94,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,1,medida,4.32,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,1,medida,14.86,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,2,medida,5.55,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,2,medida,3.66,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,2,medida,14.8,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,3,medida,5.48,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,3,medida,2.18,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,3,medida,6.29,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,4,medida,4.2,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,4,medida,3.4,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,4,medida,17.43,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,5,medida,5.08,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,5,medida,3.34,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,5,medida,16.89,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,6,medida,5.75,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,6,medida,3.11,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,6,medida,17.91,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,7,medida,6.52,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,7,medida,4.12,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,7,medida,18.92,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,8,medida,6.34,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,8,medida,3.98,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,8,medida,7.32,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,9,medida,3.57,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,9,medida,3.66,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,9,medida,16.38,ok
+E1,"Alcance em até k trechos","k=7",2,neo4j,10,medida,6.4,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-cte,10,medida,2.54,ok
+E1,"Alcance em até k trechos","k=7",2,mysql-bfs,10,medida,8.89,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,0,aquecimento,23.08,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,0,aquecimento,3.6,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,0,aquecimento,9.38,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,1,medida,3.46,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,1,medida,2.8,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,1,medida,13.67,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,2,medida,4.19,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,2,medida,3.01,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,2,medida,13.22,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,3,medida,6.22,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,3,medida,3.46,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,3,medida,13.56,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,4,medida,6.21,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,4,medida,2.03,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,4,medida,14.23,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,5,medida,3.9,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,5,medida,2.74,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,5,medida,10.05,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,6,medida,4.28,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,6,medida,2.98,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,6,medida,14.35,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,7,medida,4.99,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,7,medida,3.06,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,7,medida,14.77,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,8,medida,5.68,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,8,medida,3.56,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,8,medida,15.07,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,9,medida,5.53,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,9,medida,2.99,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,9,medida,19.25,ok
+E1,"Alcance em até k trechos","k=7",3,neo4j,10,medida,5.22,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-cte,10,medida,3.31,ok
+E1,"Alcance em até k trechos","k=7",3,mysql-bfs,10,medida,16.51,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,0,aquecimento,13.32,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,0,aquecimento,4.9,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,0,aquecimento,13.36,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,1,medida,4.66,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,1,medida,3.75,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,1,medida,13.33,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,2,medida,5.61,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,2,medida,3.34,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,2,medida,15.89,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,3,medida,5.73,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,3,medida,3.68,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,3,medida,12.98,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,4,medida,5.21,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,4,medida,3.99,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,4,medida,14.62,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,5,medida,4.9,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,5,medida,3.53,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,5,medida,14.49,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,6,medida,5.08,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,6,medida,3.48,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,6,medida,16.56,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,7,medida,5.79,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,7,medida,4.28,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,7,medida,10.28,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,8,medida,4.23,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,8,medida,2.16,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,8,medida,7.51,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,9,medida,5.17,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,9,medida,3.43,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,9,medida,14.09,ok
+E1,"Alcance em até k trechos","k=7",4,neo4j,10,medida,4.25,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-cte,10,medida,2.67,ok
+E1,"Alcance em até k trechos","k=7",4,mysql-bfs,10,medida,16.59,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,0,aquecimento,14.1,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,0,aquecimento,3.87,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,0,aquecimento,15.84,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,1,medida,6.1,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,1,medida,3.47,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,1,medida,13.67,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,2,medida,5.18,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,2,medida,2.87,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,2,medida,14.85,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,3,medida,4.94,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,3,medida,3.31,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,3,medida,12.59,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,4,medida,5.93,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,4,medida,2.75,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,4,medida,12.91,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,5,medida,5.37,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,5,medida,3.67,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,5,medida,14.91,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,6,medida,5.17,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,6,medida,2.67,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,6,medida,12.29,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,7,medida,5.21,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,7,medida,2.91,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,7,medida,13.99,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,8,medida,5.18,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,8,medida,3.52,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,8,medida,12.27,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,9,medida,3.64,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,9,medida,2.24,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,9,medida,11.07,ok
+E1,"Alcance em até k trechos","k=7",5,neo4j,10,medida,5.31,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-cte,10,medida,3.58,ok
+E1,"Alcance em até k trechos","k=7",5,mysql-bfs,10,medida,15.98,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,0,aquecimento,85.02,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,0,aquecimento,4.09,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,0,aquecimento,2.83,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,1,medida,5.33,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,1,medida,3.34,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,1,medida,1.82,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,2,medida,5.45,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,2,medida,2.63,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,2,medida,2.32,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,3,medida,4.81,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,3,medida,3.55,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,3,medida,2.24,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,4,medida,5.89,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,4,medida,3.36,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,4,medida,2.17,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,5,medida,6.05,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,5,medida,3.3,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,5,medida,2.49,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,6,medida,5.33,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,6,medida,2.68,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,6,medida,2.24,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,7,medida,3.96,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,7,medida,2.63,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,7,medida,1.17,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,8,medida,3.32,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,8,medida,1.75,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,8,medida,1.31,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,9,medida,3.54,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,9,medida,2.61,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,9,medida,2.85,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,neo4j,10,medida,8.55,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-cte,10,medida,2.84,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",1,mysql-bfs,10,medida,2.07,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,0,aquecimento,3.8,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,0,aquecimento,2.71,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,0,aquecimento,0.87,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,1,medida,4.74,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,1,medida,3.61,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,1,medida,2.27,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,2,medida,5.26,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,2,medida,2.84,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,2,medida,2.56,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,3,medida,4.57,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,3,medida,1.71,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,3,medida,2.05,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,4,medida,4.88,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,4,medida,3.45,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,4,medida,1.87,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,5,medida,4.89,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,5,medida,3.03,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,5,medida,2.02,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,6,medida,4.31,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,6,medida,2.97,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,6,medida,2.39,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,7,medida,5.48,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,7,medida,3.29,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,7,medida,2.35,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,8,medida,3.91,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,8,medida,3,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,8,medida,1.81,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,9,medida,4.91,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,9,medida,2.87,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,9,medida,2.15,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,neo4j,10,medida,4.76,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-cte,10,medida,2.77,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",2,mysql-bfs,10,medida,2.12,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,0,aquecimento,3.94,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,0,aquecimento,1.72,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,0,aquecimento,1.95,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,1,medida,4.34,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,1,medida,2.66,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,1,medida,2.24,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,2,medida,5.44,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,2,medida,2.73,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,2,medida,2.11,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,3,medida,4.09,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,3,medida,2.58,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,3,medida,1.47,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,4,medida,3.65,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,4,medida,2.38,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,4,medida,1.87,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,5,medida,3.95,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,5,medida,2.34,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,5,medida,1.94,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,6,medida,4.91,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,6,medida,3.13,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,6,medida,2.09,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,7,medida,4.66,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,7,medida,2.48,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,7,medida,1.26,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,8,medida,4.28,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,8,medida,2.67,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,8,medida,2.52,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,9,medida,4.48,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,9,medida,2.28,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,9,medida,1.7,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,neo4j,10,medida,5.17,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-cte,10,medida,1.7,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",3,mysql-bfs,10,medida,1.01,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,0,aquecimento,5.28,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,0,aquecimento,2.86,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,0,aquecimento,1.88,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,1,medida,5.34,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,1,medida,2.76,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,1,medida,2.68,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,2,medida,4.56,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,2,medida,3.51,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,2,medida,2.13,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,3,medida,5.19,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,3,medida,2.56,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,3,medida,2.34,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,4,medida,5.28,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,4,medida,3.58,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,4,medida,2.04,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,5,medida,4.71,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,5,medida,1.91,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,5,medida,2.43,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,6,medida,4.71,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,6,medida,2.23,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,6,medida,2.59,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,7,medida,4.04,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,7,medida,2.32,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,7,medida,1.71,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,8,medida,3.19,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,8,medida,1.95,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,8,medida,1.7,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,9,medida,3.05,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,9,medida,2.14,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,9,medida,1.85,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,neo4j,10,medida,4.31,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-cte,10,medida,3.02,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",4,mysql-bfs,10,medida,1.72,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,0,aquecimento,6.03,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,0,aquecimento,2.73,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,0,aquecimento,1.66,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,1,medida,5.21,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,1,medida,2.85,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,1,medida,1.5,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,2,medida,5.48,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,2,medida,2.82,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,2,medida,1.85,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,3,medida,4.26,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,3,medida,3.31,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,3,medida,2.06,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,4,medida,5.05,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,4,medida,3.08,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,4,medida,2.24,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,5,medida,4.62,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,5,medida,3.91,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,5,medida,1.88,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,6,medida,4.03,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,6,medida,2.92,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,6,medida,1.93,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,7,medida,4.65,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,7,medida,3.06,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,7,medida,1.99,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,8,medida,4.04,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,8,medida,3.01,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,8,medida,2.19,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,9,medida,4.57,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,9,medida,2.39,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,9,medida,1.9,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,neo4j,10,medida,3.77,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-cte,10,medida,2.95,ok
+E1b,"Alcance em até k trechos, só vias principais","k=10, vias principais",5,mysql-bfs,10,medida,2.03,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,0,aquecimento,44.19,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,0,aquecimento,4.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,0,aquecimento,15.4,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,1,medida,5.86,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,1,medida,3.83,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,1,medida,13.04,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,2,medida,5.26,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,2,medida,3.06,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,2,medida,11.93,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,3,medida,5.26,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,3,medida,3.29,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,3,medida,15.54,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,4,medida,5.34,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,4,medida,2.35,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,4,medida,8.13,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,5,medida,4.67,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,5,medida,3.05,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,5,medida,14.18,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,6,medida,5.08,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,6,medida,2.95,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,6,medida,17.81,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,7,medida,6.03,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,7,medida,3.87,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,7,medida,15.56,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,8,medida,6.02,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,8,medida,2.87,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,8,medida,18.39,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,9,medida,5.98,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,9,medida,2.96,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,9,medida,15.59,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,neo4j,10,medida,9.65,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-cte,10,medida,1.95,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",1,mysql-bfs,10,medida,9.03,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,0,aquecimento,4.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-cte,0,aquecimento,30008.8,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,0,aquecimento,9.61,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,1,medida,4.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,1,medida,14.42,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,2,medida,3.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,2,medida,8.36,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,3,medida,2.56,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,3,medida,7.26,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,4,medida,2.62,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,4,medida,7.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,5,medida,2.87,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,5,medida,6.54,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,6,medida,2.79,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,6,medida,7.65,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,7,medida,3.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,7,medida,10.44,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,8,medida,4.52,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,8,medida,8.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,9,medida,3.36,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,9,medida,6.37,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,neo4j,10,medida,2.75,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",1,mysql-bfs,10,medida,6.86,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,0,aquecimento,4.71,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,0,aquecimento,2.69,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,0,aquecimento,7.93,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,1,medida,4.18,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,1,medida,2.39,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,1,medida,10.87,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,2,medida,3.7,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,2,medida,1.84,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,2,medida,8.8,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,3,medida,3.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,3,medida,1.66,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,3,medida,7.8,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,4,medida,3.03,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,4,medida,1.92,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,4,medida,9.42,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,5,medida,2.93,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,5,medida,1.6,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,5,medida,8.01,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,6,medida,4.19,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,6,medida,1.95,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,6,medida,5.73,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,7,medida,3.58,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,7,medida,1.93,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,7,medida,7.68,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,8,medida,3.72,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,8,medida,1.8,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,8,medida,6.25,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,9,medida,3.55,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,9,medida,1.82,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,9,medida,6.07,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,neo4j,10,medida,3.58,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-cte,10,medida,1.93,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",2,mysql-bfs,10,medida,7.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,0,aquecimento,3.6,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-cte,0,aquecimento,30008.76,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,0,aquecimento,12.94,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,1,medida,3.82,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,1,medida,14.55,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,2,medida,4.52,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,2,medida,13.84,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,3,medida,5.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,3,medida,12.19,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,4,medida,3.67,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,4,medida,15.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,5,medida,6.68,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,5,medida,13.61,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,6,medida,5.4,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,6,medida,15.48,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,7,medida,5.83,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,7,medida,11.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,8,medida,4.83,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,8,medida,10.17,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,9,medida,3.94,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,9,medida,11.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,neo4j,10,medida,4.38,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",2,mysql-bfs,10,medida,16.08,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,0,aquecimento,50.64,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,0,aquecimento,2.47,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,0,aquecimento,8.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,1,medida,3.88,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,1,medida,2.27,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,1,medida,6.12,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,2,medida,2.97,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,2,medida,1.75,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,2,medida,6.32,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,3,medida,3.27,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,3,medida,2.13,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,3,medida,8.56,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,4,medida,4.61,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,4,medida,2.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,4,medida,6.19,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,5,medida,3.66,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,5,medida,2.24,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,5,medida,6,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,6,medida,3.2,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,6,medida,2.55,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,6,medida,7.49,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,7,medida,3.74,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,7,medida,2.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,7,medida,6.55,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,8,medida,4.1,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,8,medida,2.68,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,8,medida,8.2,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,9,medida,4.19,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,9,medida,2.83,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,9,medida,9.77,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,neo4j,10,medida,9.19,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-cte,10,medida,2.27,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",3,mysql-bfs,10,medida,10.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,0,aquecimento,3.89,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-cte,0,aquecimento,30008.53,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,0,aquecimento,15.11,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,1,medida,4.32,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,1,medida,14.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,2,medida,3.53,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,2,medida,17.74,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,3,medida,4.37,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,3,medida,15.12,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,4,medida,4.68,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,4,medida,18.06,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,5,medida,3.53,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,5,medida,17.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,6,medida,3.79,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,6,medida,14.73,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,7,medida,3.09,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,7,medida,12.66,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,8,medida,3.84,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,8,medida,12.39,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,9,medida,3.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,9,medida,13.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,neo4j,10,medida,3.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",3,mysql-bfs,10,medida,12.66,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,0,aquecimento,4.17,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,0,aquecimento,2.33,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,0,aquecimento,6.44,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,1,medida,2.86,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,1,medida,1.59,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,1,medida,5.76,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,2,medida,3.12,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,2,medida,1.6,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,2,medida,5.8,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,3,medida,2.99,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,3,medida,1.52,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,3,medida,4.78,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,4,medida,3.01,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,4,medida,1.7,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,4,medida,5.04,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,5,medida,3.93,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,5,medida,1.65,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,5,medida,10.05,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,6,medida,2.57,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,6,medida,1.56,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,6,medida,9.63,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,7,medida,3.08,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,7,medida,1.61,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,7,medida,13.56,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,8,medida,3.15,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,8,medida,2.67,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,8,medida,11.13,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,9,medida,4.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,9,medida,2.28,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,9,medida,11.92,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,neo4j,10,medida,3.52,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-cte,10,medida,1.78,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",4,mysql-bfs,10,medida,8.3,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,0,aquecimento,4.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-cte,0,aquecimento,30008.09,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,0,aquecimento,14.38,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,1,medida,3.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,1,medida,18.36,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,2,medida,5.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,2,medida,14.73,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,3,medida,4.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,3,medida,17.44,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,4,medida,4.4,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,4,medida,18.45,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,5,medida,4.85,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,5,medida,17.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,6,medida,5.32,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,6,medida,15.4,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,7,medida,4.02,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,7,medida,14.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,8,medida,4.32,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,8,medida,17.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,9,medida,5.36,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,9,medida,11.72,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,neo4j,10,medida,5.17,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",4,mysql-bfs,10,medida,14.06,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,0,aquecimento,5.78,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,0,aquecimento,3.16,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,0,aquecimento,15.6,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,1,medida,4.72,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,1,medida,3.26,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,1,medida,16.02,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,2,medida,5.22,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,2,medida,3.55,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,2,medida,16.26,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,3,medida,4.41,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,3,medida,3.29,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,3,medida,15.06,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,4,medida,4.86,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,4,medida,3.12,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,4,medida,15.22,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,5,medida,4.67,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,5,medida,3.67,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,5,medida,16.57,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,6,medida,5.45,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,6,medida,3.23,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,6,medida,16.95,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,7,medida,4.73,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,7,medida,3.22,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,7,medida,17.37,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,8,medida,4.42,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,8,medida,3.39,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,8,medida,14.96,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,9,medida,5.07,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,9,medida,2.14,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,9,medida,10.49,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,neo4j,10,medida,4.83,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-cte,10,medida,3.42,ok
+E2a,"Menor caminho, limite = distância real","~10 trechos",5,mysql-bfs,10,medida,18.43,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,0,aquecimento,5.32,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-cte,0,aquecimento,30009.45,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,0,aquecimento,12.67,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,1,medida,3.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,1,medida,14.78,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,2,medida,2.71,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,2,medida,16.33,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,3,medida,3.06,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,3,medida,12.76,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,4,medida,3.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,4,medida,12.27,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,5,medida,4.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,5,medida,15.72,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,6,medida,4.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,6,medida,18.25,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,7,medida,4.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,7,medida,18.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,8,medida,4.93,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,8,medida,13.82,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,9,medida,3.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,9,medida,17.39,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,neo4j,10,medida,5.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~10 trechos",5,mysql-bfs,10,medida,13.79,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,0,aquecimento,58.6,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,0,aquecimento,12.5,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,0,aquecimento,42.33,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,1,medida,5.33,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,1,medida,12.92,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,1,medida,31.93,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,2,medida,5.43,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,2,medida,12.08,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,2,medida,26.89,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,3,medida,4.18,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,3,medida,11.52,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,3,medida,21.49,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,4,medida,4.05,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,4,medida,11.93,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,4,medida,20.75,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,5,medida,4.12,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,5,medida,11.49,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,5,medida,23.76,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,6,medida,4.02,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,6,medida,12.09,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,6,medida,18.68,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,7,medida,4.64,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,7,medida,12.84,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,7,medida,30.43,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,8,medida,4.29,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,8,medida,12.85,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,8,medida,24.45,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,9,medida,4.17,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,9,medida,12.12,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,9,medida,21.71,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,neo4j,10,medida,12.18,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-cte,10,medida,12.97,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",1,mysql-bfs,10,medida,23.47,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,0,aquecimento,3.76,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-cte,0,aquecimento,30008.12,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,0,aquecimento,41.51,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,1,medida,5.83,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,1,medida,39.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,2,medida,5.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,2,medida,32.72,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,3,medida,4.77,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,3,medida,37.34,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,4,medida,4.29,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,4,medida,33.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,5,medida,4.83,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,5,medida,34.54,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,6,medida,4.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,6,medida,37.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,7,medida,4.42,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,7,medida,30.49,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,8,medida,4.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,8,medida,31.26,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,9,medida,4.19,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,9,medida,33.68,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,neo4j,10,medida,5.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",1,mysql-bfs,10,medida,35.32,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,0,aquecimento,39.37,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,0,aquecimento,5.61,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,0,aquecimento,21.61,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,1,medida,4.21,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,1,medida,4.65,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,1,medida,14.22,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,2,medida,3.92,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,2,medida,4.71,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,2,medida,16.84,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,3,medida,3.95,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,3,medida,5.45,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,3,medida,14.66,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,4,medida,3.53,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,4,medida,5.46,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,4,medida,15.1,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,5,medida,3.65,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,5,medida,6.73,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,5,medida,17.52,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,6,medida,4.17,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,6,medida,5.97,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,6,medida,22.15,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,7,medida,5.42,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,7,medida,5.29,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,7,medida,38.87,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,8,medida,4.22,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,8,medida,5.58,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,8,medida,20.94,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,9,medida,5.12,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,9,medida,6.64,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,9,medida,36.51,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,neo4j,10,medida,9.77,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-cte,10,medida,6.25,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",2,mysql-bfs,10,medida,36.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,0,aquecimento,5.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-cte,0,aquecimento,30009.01,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,0,aquecimento,27.71,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,1,medida,3.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,1,medida,33.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,2,medida,4.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,2,medida,31.62,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,3,medida,4.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,3,medida,30.34,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,4,medida,5.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,4,medida,29.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,5,medida,6.09,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,5,medida,36.78,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,6,medida,5.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,6,medida,40.22,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,7,medida,5.07,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,7,medida,38.75,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,8,medida,4.48,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,8,medida,39.48,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,9,medida,5.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,9,medida,32.45,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,neo4j,10,medida,4.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",2,mysql-bfs,10,medida,35.35,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,0,aquecimento,40.83,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,0,aquecimento,20.87,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,0,aquecimento,54.36,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,1,medida,5.31,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,1,medida,19.42,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,1,medida,48.71,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,2,medida,4.99,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,2,medida,20.65,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,2,medida,63.05,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,3,medida,5.65,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,3,medida,18.44,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,3,medida,61.33,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,4,medida,4.9,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,4,medida,19.61,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,4,medida,46.09,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,5,medida,5.22,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,5,medida,16.88,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,5,medida,62.5,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,6,medida,5.31,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,6,medida,18.07,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,6,medida,57.28,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,7,medida,5.08,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,7,medida,21.14,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,7,medida,56.46,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,8,medida,5.69,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,8,medida,18.96,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,8,medida,48.74,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,9,medida,4.72,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,9,medida,23.75,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,9,medida,49,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,neo4j,10,medida,9.45,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-cte,10,medida,17.79,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",3,mysql-bfs,10,medida,46.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,0,aquecimento,4.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-cte,0,aquecimento,30008.66,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,0,aquecimento,49.37,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,1,medida,5.24,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,1,medida,51.24,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,2,medida,3.89,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,2,medida,54.56,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,3,medida,4.82,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,3,medida,42.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,4,medida,4.97,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,4,medida,56.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,5,medida,5.13,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,5,medida,47.69,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,6,medida,4.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,6,medida,52.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,7,medida,8.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,7,medida,51.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,8,medida,4.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,8,medida,54.92,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,9,medida,4.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,9,medida,50.14,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,neo4j,10,medida,4.55,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",3,mysql-bfs,10,medida,49.05,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,0,aquecimento,4.85,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,0,aquecimento,8.4,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,0,aquecimento,28.16,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,1,medida,4.37,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,1,medida,7.83,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,1,medida,17.48,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,2,medida,4.12,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,2,medida,6.77,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,2,medida,15.18,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,3,medida,3.28,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,3,medida,7.48,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,3,medida,15.61,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,4,medida,3.59,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,4,medida,7.36,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,4,medida,17.12,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,5,medida,4.1,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,5,medida,6.86,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,5,medida,16.57,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,6,medida,3.9,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,6,medida,6.73,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,6,medida,28.24,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,7,medida,4.22,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,7,medida,7.96,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,7,medida,25.56,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,8,medida,4.45,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,8,medida,7.61,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,8,medida,29.92,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,9,medida,4.83,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,9,medida,8.06,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,9,medida,33.17,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,neo4j,10,medida,4.4,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-cte,10,medida,8.32,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",4,mysql-bfs,10,medida,44.44,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,0,aquecimento,4.33,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-cte,0,aquecimento,30011.11,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,0,aquecimento,37.56,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,1,medida,4.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,1,medida,37.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,2,medida,3.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,2,medida,35.53,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,3,medida,3.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,3,medida,23.34,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,4,medida,3.47,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,4,medida,19.66,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,5,medida,2.3,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,5,medida,14.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,6,medida,3.64,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,6,medida,16.31,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,7,medida,3.38,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,7,medida,13.45,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,8,medida,3.55,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,8,medida,18.29,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,9,medida,4.15,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,9,medida,19.66,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,neo4j,10,medida,3.96,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",4,mysql-bfs,10,medida,20.48,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,0,aquecimento,41.97,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,0,aquecimento,7.01,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,0,aquecimento,34.91,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,1,medida,5.45,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,1,medida,7.41,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,1,medida,42.16,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,2,medida,5.4,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,2,medida,8.15,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,2,medida,28.03,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,3,medida,4.59,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,3,medida,6.51,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,3,medida,40.64,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,4,medida,3.38,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,4,medida,6.91,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,4,medida,46.82,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,5,medida,5.12,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,5,medida,7.33,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,5,medida,46.22,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,6,medida,4.98,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,6,medida,6.75,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,6,medida,45.86,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,7,medida,5.35,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,7,medida,6.96,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,7,medida,44.78,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,8,medida,5.07,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,8,medida,7.21,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,8,medida,34.35,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,9,medida,4.38,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,9,medida,7.55,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,9,medida,27.57,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,neo4j,10,medida,9.01,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-cte,10,medida,7.4,ok
+E2a,"Menor caminho, limite = distância real","~25 trechos",5,mysql-bfs,10,medida,38.21,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,0,aquecimento,4,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-cte,0,aquecimento,30009.21,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,0,aquecimento,48.38,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,1,medida,5.74,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,1,medida,51.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,2,medida,4.17,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,2,medida,26.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,3,medida,4.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,3,medida,46.85,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,4,medida,4.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,4,medida,28.38,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,5,medida,4.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,5,medida,34.53,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,6,medida,4.67,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,6,medida,29.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,7,medida,4.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,7,medida,31.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,8,medida,4.07,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,8,medida,36.36,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,9,medida,5.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,9,medida,47.87,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,neo4j,10,medida,5.06,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~25 trechos",5,mysql-bfs,10,medida,44.88,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,0,aquecimento,59.55,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,0,aquecimento,1578.47,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,0,aquecimento,135.7,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,1,medida,4.45,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,1,medida,1550.33,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,1,medida,123.48,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,2,medida,5.03,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,2,medida,1426.36,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,2,medida,173.5,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,3,medida,7.41,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,3,medida,1460.79,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,3,medida,184.77,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,4,medida,7.54,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,4,medida,1454.92,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,4,medida,182.02,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,5,medida,5.68,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,5,medida,1589.92,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,5,medida,167.68,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,6,medida,7.62,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,6,medida,1460.45,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,6,medida,131.26,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,7,medida,6.92,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,7,medida,1511.7,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,7,medida,167.06,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,8,medida,6.17,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,8,medida,1462.87,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,8,medida,170.87,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,9,medida,5.17,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,9,medida,1565.56,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,9,medida,160.61,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,neo4j,10,medida,10.59,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-cte,10,medida,1466.51,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",1,mysql-bfs,10,medida,178.37,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,0,aquecimento,5.84,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-cte,0,aquecimento,30008.84,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,0,aquecimento,167.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,1,medida,7.21,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,1,medida,186.72,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,2,medida,7.93,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,2,medida,189.68,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,3,medida,9.19,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,3,medida,185.51,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,4,medida,6.26,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,4,medida,205.04,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,5,medida,8.36,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,5,medida,198.49,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,6,medida,8.47,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,6,medida,173.83,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,7,medida,6.78,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,7,medida,181.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,8,medida,6.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,8,medida,173.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,9,medida,5.93,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,9,medida,162.35,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,neo4j,10,medida,5.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",1,mysql-bfs,10,medida,184.43,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,0,aquecimento,48.9,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,0,aquecimento,754.45,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,0,aquecimento,143.89,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,1,medida,5.18,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,1,medida,727.95,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,1,medida,136.59,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,2,medida,5.44,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,2,medida,673.13,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,2,medida,87.93,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,3,medida,3.89,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,3,medida,566.13,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,3,medida,91.9,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,4,medida,5.16,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,4,medida,524.42,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,4,medida,91.63,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,5,medida,8.22,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,5,medida,513.47,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,5,medida,89.82,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,6,medida,5.48,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,6,medida,543.01,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,6,medida,94.42,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,7,medida,5.62,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,7,medida,574.28,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,7,medida,105.48,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,8,medida,5.38,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,8,medida,589.83,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,8,medida,88.49,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,9,medida,5.5,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,9,medida,558.53,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,9,medida,103.75,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,neo4j,10,medida,10.33,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-cte,10,medida,707.02,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",2,mysql-bfs,10,medida,113.02,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,0,aquecimento,5.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-cte,0,aquecimento,30011.22,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,0,aquecimento,142.74,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,1,medida,6.55,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,1,medida,133.98,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,2,medida,6.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,2,medida,119.06,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,3,medida,6.25,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,3,medida,136.65,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,4,medida,4.71,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,4,medida,131.38,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,5,medida,6.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,5,medida,116.85,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,6,medida,5.42,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,6,medida,108.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,7,medida,6.07,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,7,medida,121.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,8,medida,5.65,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,8,medida,96.74,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,9,medida,5.24,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,9,medida,98.75,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,neo4j,10,medida,5.12,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",2,mysql-bfs,10,medida,98.23,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,0,aquecimento,48.48,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,0,aquecimento,66.79,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,0,aquecimento,107.42,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,1,medida,3.99,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,1,medida,67.76,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,1,medida,85.57,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,2,medida,3.78,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,2,medida,61.22,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,2,medida,85.26,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,3,medida,5.34,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,3,medida,70.45,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,3,medida,68.84,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,4,medida,3.55,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,4,medida,63.77,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,4,medida,61.38,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,5,medida,3.25,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,5,medida,66.94,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,5,medida,50.18,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,6,medida,4.34,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,6,medida,66.34,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,6,medida,52.19,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,7,medida,3.9,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,7,medida,66.78,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,7,medida,56.67,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,8,medida,3.61,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,8,medida,67.52,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,8,medida,53.8,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,9,medida,4.77,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,9,medida,69.86,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,9,medida,79.89,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,neo4j,10,medida,9.99,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-cte,10,medida,53.74,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",3,mysql-bfs,10,medida,65.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,0,aquecimento,4.33,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-cte,0,aquecimento,30007.96,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,0,aquecimento,72.53,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,1,medida,4.29,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,1,medida,73.96,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,2,medida,3.82,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,2,medida,71.03,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,3,medida,3.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,3,medida,71.33,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,4,medida,4.13,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,4,medida,77.31,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,5,medida,4.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,5,medida,76.47,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,6,medida,3.81,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,6,medida,60.84,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,7,medida,4.06,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,7,medida,64.73,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,8,medida,3.67,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,8,medida,39.14,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,9,medida,4.07,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,9,medida,60.11,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,neo4j,10,medida,3.64,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",3,mysql-bfs,10,medida,46.42,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,0,aquecimento,39.18,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,0,aquecimento,808.73,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,0,aquecimento,116.11,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,1,medida,5.23,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,1,medida,723.81,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,1,medida,117.77,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,2,medida,5.13,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,2,medida,654.76,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,2,medida,107.22,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,3,medida,5.2,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,3,medida,673.99,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,3,medida,74.91,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,4,medida,4.53,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,4,medida,596.7,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,4,medida,103.37,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,5,medida,5.4,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,5,medida,618.24,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,5,medida,132.51,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,6,medida,6.67,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,6,medida,716.43,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,6,medida,99,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,7,medida,4.53,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,7,medida,885.52,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,7,medida,128.84,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,8,medida,5.78,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,8,medida,756.41,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,8,medida,141.06,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,9,medida,6.58,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,9,medida,707.8,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,9,medida,108.48,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,neo4j,10,medida,10.11,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-cte,10,medida,681.17,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",4,mysql-bfs,10,medida,108.6,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,0,aquecimento,5.24,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-cte,0,aquecimento,30010.5,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,0,aquecimento,128.07,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,1,medida,4.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,1,medida,128.32,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,2,medida,5.85,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,2,medida,117.71,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,3,medida,3.84,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,3,medida,145.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,4,medida,5.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,4,medida,105.34,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,5,medida,5.09,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,5,medida,97.88,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,6,medida,4.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,6,medida,97.31,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,7,medida,4.5,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,7,medida,96.43,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,8,medida,5.19,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,8,medida,106.76,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,9,medida,5.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,9,medida,135.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,neo4j,10,medida,5.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",4,mysql-bfs,10,medida,113.77,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,0,aquecimento,38.21,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,0,aquecimento,1367.72,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,0,aquecimento,112.93,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,1,medida,5.51,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,1,medida,1262.53,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,1,medida,147.64,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,2,medida,5.66,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,2,medida,1094.61,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,2,medida,161.91,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,3,medida,7.26,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,3,medida,1214.31,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,3,medida,132.6,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,4,medida,5.51,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,4,medida,1182.64,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,4,medida,124.1,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,5,medida,6.37,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,5,medida,1113.5,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,5,medida,146.57,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,6,medida,4.91,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,6,medida,1154.98,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,6,medida,125.06,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,7,medida,5.29,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,7,medida,1070.56,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,7,medida,124.45,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,8,medida,3.55,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,8,medida,1039.77,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,8,medida,153.46,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,9,medida,3.71,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,9,medida,1062.29,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,9,medida,160.91,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,neo4j,10,medida,9.48,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-cte,10,medida,1110.59,ok
+E2a,"Menor caminho, limite = distância real","~50 trechos",5,mysql-bfs,10,medida,148.74,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,0,aquecimento,4.7,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-cte,0,aquecimento,30010.36,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,0,aquecimento,145.17,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,1,medida,5.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,1,medida,108.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,2,medida,5.12,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,2,medida,138.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,3,medida,4.82,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,3,medida,153.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,4,medida,4.77,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,4,medida,141.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,5,medida,6.33,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,5,medida,154.27,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,6,medida,6.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,6,medida,186.21,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,7,medida,6.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,7,medida,174.66,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,8,medida,3.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,8,medida,129.26,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,9,medida,4.43,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,9,medida,133.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,neo4j,10,medida,5.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~50 trechos",5,mysql-bfs,10,medida,149.37,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,0,aquecimento,47.88,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,0,aquecimento,4574.68,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,0,aquecimento,258.17,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,1,medida,9.45,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,1,medida,4576.35,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,1,medida,229.85,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,2,medida,7.92,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,2,medida,4375.33,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,2,medida,224.23,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,3,medida,8.42,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,3,medida,4273.33,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,3,medida,355.82,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,4,medida,7.67,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,4,medida,4402.3,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,4,medida,248.74,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,5,medida,8.65,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,5,medida,4422.98,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,5,medida,271.77,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,6,medida,8.54,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,6,medida,4588.41,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,6,medida,238.54,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,7,medida,8.55,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,7,medida,4293.79,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,7,medida,259.28,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,8,medida,9.02,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,8,medida,4514.64,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,8,medida,336.54,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,9,medida,9.21,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,9,medida,4355.41,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,9,medida,308.92,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,neo4j,10,medida,20.26,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-cte,10,medida,4521.87,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",1,mysql-bfs,10,medida,281.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,0,aquecimento,8.3,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,0,aquecimento,12242.53,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,0,aquecimento,297.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,1,medida,8.65,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,1,medida,12013.66,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,1,medida,304.79,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,2,medida,9.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,2,medida,12251.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,2,medida,283.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,3,medida,9.06,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,3,medida,12129.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,3,medida,226.92,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,4,medida,8.48,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,4,medida,12105.45,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,4,medida,231.75,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,5,medida,8.14,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,5,medida,12160.21,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,5,medida,261.97,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,6,medida,7.99,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,6,medida,12162.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,6,medida,286.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,7,medida,8.69,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,7,medida,12645.86,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,7,medida,328.26,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,8,medida,10.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,8,medida,12360.11,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,8,medida,316.43,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,9,medida,8.98,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,9,medida,12582.05,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,9,medida,270.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,neo4j,10,medida,7.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-cte,10,medida,15672.6,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",1,mysql-bfs,10,medida,343.03,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,0,aquecimento,57.09,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,0,aquecimento,5822.95,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,0,aquecimento,257.02,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,1,medida,7.99,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,1,medida,5545.61,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,1,medida,313.75,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,2,medida,8.66,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,2,medida,5877.83,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,2,medida,335.99,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,3,medida,9.12,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,3,medida,5346.69,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,3,medida,249.62,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,4,medida,9.47,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,4,medida,5400.28,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,4,medida,242.49,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,5,medida,6.95,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,5,medida,5232.09,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,5,medida,287.87,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,6,medida,8.11,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,6,medida,5489.85,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,6,medida,262.45,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,7,medida,6.93,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,7,medida,5278.73,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,7,medida,267.25,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,8,medida,8.23,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,8,medida,5385.57,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,8,medida,283.02,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,9,medida,8.77,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,9,medida,5398.32,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,9,medida,287.71,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,neo4j,10,medida,14.54,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-cte,10,medida,5451.75,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",2,mysql-bfs,10,medida,266.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,0,aquecimento,7.99,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-cte,0,aquecimento,30009.04,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,0,aquecimento,303.95,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,1,medida,6.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,1,medida,293.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,2,medida,8.48,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,2,medida,280.45,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,3,medida,9.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,3,medida,296.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,4,medida,8.85,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,4,medida,294.95,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,5,medida,8.92,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,5,medida,314.02,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,6,medida,10.39,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,6,medida,250.49,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,7,medida,9.1,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,7,medida,254.5,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,8,medida,7.64,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,8,medida,307.74,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,9,medida,8.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,9,medida,269.08,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,neo4j,10,medida,8.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",2,mysql-bfs,10,medida,307.82,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,0,aquecimento,64,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,0,aquecimento,1738.7,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,0,aquecimento,97.01,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,1,medida,4.51,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,1,medida,1275.9,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,1,medida,151.75,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,2,medida,6.66,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,2,medida,1262.5,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,2,medida,123.57,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,3,medida,7.02,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,3,medida,1287.16,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,3,medida,125.46,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,4,medida,6.5,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,4,medida,1532.48,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,4,medida,163.72,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,5,medida,6.15,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,5,medida,1497.23,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,5,medida,194.58,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,6,medida,6.63,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,6,medida,1407.78,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,6,medida,194.93,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,7,medida,6.07,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,7,medida,1444.49,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,7,medida,138.12,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,8,medida,5.96,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,8,medida,1485.75,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,8,medida,172.71,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,9,medida,6.45,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,9,medida,1278.37,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,9,medida,126.26,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,neo4j,10,medida,10.57,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-cte,10,medida,1306.08,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",3,mysql-bfs,10,medida,170.96,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,0,aquecimento,6.9,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,0,aquecimento,12038.2,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,0,aquecimento,136.42,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,1,medida,6.79,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,1,medida,12003.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,1,medida,180.83,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,2,medida,7.14,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,2,medida,11962.37,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,2,medida,170.99,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,3,medida,6.4,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,3,medida,11927.14,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,3,medida,123.63,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,4,medida,5.96,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,4,medida,11999.7,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,4,medida,177.4,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,5,medida,6.71,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,5,medida,11939.35,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,5,medida,196.32,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,6,medida,7.45,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,6,medida,13978.54,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,6,medida,211.93,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,7,medida,7.15,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,7,medida,12698.42,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,7,medida,170.18,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,8,medida,7.58,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,8,medida,13714.34,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,8,medida,189.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,9,medida,7.22,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,9,medida,15096.88,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,9,medida,257.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,neo4j,10,medida,6.16,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-cte,10,medida,13704.5,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",3,mysql-bfs,10,medida,151.53,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,0,aquecimento,75.22,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,0,aquecimento,14200.49,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,0,aquecimento,421.66,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,1,medida,13.66,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,1,medida,14427.52,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,1,medida,483.71,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,2,medida,14.65,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,2,medida,14945.06,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,2,medida,427.5,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,3,medida,15.86,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,3,medida,15823.69,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,3,medida,646.66,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,4,medida,19.65,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,4,medida,29341.89,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,4,medida,640.02,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,5,medida,33.9,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,5,medida,19253.3,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,5,medida,602.16,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,6,medida,72.63,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,6,medida,15572.73,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,6,medida,546.05,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,7,medida,28.42,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,7,medida,14591.06,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,7,medida,487.58,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,8,medida,27.79,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,8,medida,14410.46,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,8,medida,522.64,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,9,medida,28.3,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,9,medida,18347.51,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,9,medida,542.19,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,neo4j,10,medida,81.75,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-cte,10,medida,18417.89,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",4,mysql-bfs,10,medida,548.02,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,0,aquecimento,29.55,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-cte,0,aquecimento,30008.77,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,0,aquecimento,437.88,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,1,medida,29.42,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,1,medida,508.22,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,2,medida,38.52,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,2,medida,520.01,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,3,medida,31.5,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,3,medida,494.13,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,4,medida,29.23,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,4,medida,527.44,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,5,medida,32.51,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,5,medida,512.59,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,6,medida,38.76,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,6,medida,469.03,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,7,medida,32.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,7,medida,508.41,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,8,medida,27.52,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,8,medida,528.85,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,9,medida,38.91,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,9,medida,542.04,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,neo4j,10,medida,27.29,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",4,mysql-bfs,10,medida,546.92,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,0,aquecimento,295.36,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,0,aquecimento,14733.32,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,0,aquecimento,550.03,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,1,medida,19.56,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,1,medida,17293.22,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,1,medida,481.46,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,2,medida,35.08,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,2,medida,14760.92,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,2,medida,474.65,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,3,medida,17.55,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,3,medida,13498.38,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,3,medida,442.75,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,4,medida,24.83,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,4,medida,14454.86,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,4,medida,456.13,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,5,medida,24.03,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,5,medida,13743.53,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,5,medida,432.52,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,6,medida,36.48,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,6,medida,14666.43,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,6,medida,456.36,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,7,medida,31.48,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,7,medida,14482.91,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,7,medida,534.17,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,8,medida,47.42,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,8,medida,15713.78,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,8,medida,355.02,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,9,medida,45.95,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,9,medida,12495.5,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,9,medida,445.16,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,neo4j,10,medida,48.8,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-cte,10,medida,12364.81,ok
+E2a,"Menor caminho, limite = distância real","~100 trechos",5,mysql-bfs,10,medida,410.17,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,0,aquecimento,38.57,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-cte,0,aquecimento,30009.05,timeout
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,0,aquecimento,410.67,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,1,medida,36.94,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,1,medida,409.27,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,2,medida,47.99,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,2,medida,473.34,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,3,medida,37.87,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,3,medida,436.25,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,4,medida,31.19,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,4,medida,450.8,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,5,medida,54.88,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,5,medida,447.47,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,6,medida,22.76,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,6,medida,358.52,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,7,medida,35.94,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,7,medida,408.31,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,8,medida,33.76,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,8,medida,397.61,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,9,medida,26.78,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,9,medida,400.03,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,neo4j,10,medida,29.28,ok
+E2b,"Menor caminho, limite = 150 (distância desconhecida)","~100 trechos",5,mysql-bfs,10,medida,416.85,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,0,aquecimento,16.7,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,0,aquecimento,3.52,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,1,medida,5.59,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,1,medida,2.47,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,2,medida,7.91,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,2,medida,2.26,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,3,medida,5.04,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,3,medida,1.83,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,4,medida,10.66,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,4,medida,1.81,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,5,medida,4.04,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,5,medida,1.64,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,6,medida,4.71,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,6,medida,1.45,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,7,medida,3.44,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,7,medida,1.84,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,8,medida,2.65,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,8,medida,2,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,9,medida,4.48,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,9,medida,1.86,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,neo4j,10,medida,2.82,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",1,mysql-cte,10,medida,1.31,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,0,aquecimento,3.71,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,0,aquecimento,2.04,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,1,medida,3.29,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,1,medida,1.84,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,2,medida,5.97,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,2,medida,2.7,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,3,medida,4.41,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,3,medida,2.1,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,4,medida,4.05,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,4,medida,1.88,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,5,medida,6.56,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,5,medida,1.68,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,6,medida,4.34,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,6,medida,1.88,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,7,medida,4.83,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,7,medida,2.05,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,8,medida,5.44,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,8,medida,2.47,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,9,medida,6.08,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,9,medida,2.18,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,neo4j,10,medida,5.21,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",2,mysql-cte,10,medida,2.48,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,0,aquecimento,5.82,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,0,aquecimento,2.35,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,1,medida,4.9,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,1,medida,2.71,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,2,medida,6.49,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,2,medida,2.03,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,3,medida,4.64,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,3,medida,2.3,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,4,medida,4.53,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,4,medida,2.32,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,5,medida,3.36,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,5,medida,1.7,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,6,medida,4.57,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,6,medida,2.78,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,7,medida,4.34,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,7,medida,2.2,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,8,medida,3.76,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,8,medida,1.98,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,9,medida,4.28,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,9,medida,2,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,neo4j,10,medida,5.47,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",3,mysql-cte,10,medida,2.18,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,0,aquecimento,4.08,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,0,aquecimento,1.84,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,1,medida,3.7,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,1,medida,1.72,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,2,medida,3.84,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,2,medida,2.11,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,3,medida,4.98,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,3,medida,1.89,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,4,medida,3.13,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,4,medida,1.45,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,5,medida,4.48,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,5,medida,1.74,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,6,medida,3.91,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,6,medida,1.91,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,7,medida,3.63,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,7,medida,1.46,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,8,medida,2.5,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,8,medida,1.85,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,9,medida,3.42,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,9,medida,2.22,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,neo4j,10,medida,4.45,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",4,mysql-cte,10,medida,1.59,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,0,aquecimento,5.95,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,0,aquecimento,2.02,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,1,medida,4.92,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,1,medida,1.87,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,2,medida,3.12,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,2,medida,1.81,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,3,medida,5.11,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,3,medida,3.25,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,4,medida,3.87,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,4,medida,2.14,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,5,medida,3.13,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,5,medida,1.93,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,6,medida,4.36,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,6,medida,2.19,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,7,medida,3.79,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,7,medida,2.23,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,8,medida,4,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,8,medida,2.06,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,9,medida,4.55,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,9,medida,2.78,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,neo4j,10,medida,3.84,ok
+E3,"Vizinhos diretos com dados da via","1 interseção",5,mysql-cte,10,medida,2.15,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,0,aquecimento,796.32,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,0,aquecimento,425.39,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,1,medida,883.16,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,1,medida,367.18,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,2,medida,491,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,2,medida,350.84,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,3,medida,372.96,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,3,medida,437.56,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,4,medida,236.63,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,4,medida,351.19,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,5,medida,157.44,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,5,medida,279.07,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,6,medida,152.56,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,6,medida,288,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,7,medida,149.5,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,7,medida,291.31,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,8,medida,165.57,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,8,medida,295.33,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,9,medida,173.7,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,9,medida,292.84,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,neo4j,10,medida,210.72,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","São Paulo",1,mysql-cte,10,medida,315.03,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,0,aquecimento,882.4,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,0,aquecimento,3228.66,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,1,medida,706.72,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,1,medida,1918.74,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,2,medida,532.05,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,2,medida,1795.32,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,3,medida,610.77,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,3,medida,1822.47,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,4,medida,553.34,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,4,medida,1716.81,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,5,medida,537.15,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,5,medida,1816.34,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,6,medida,555.37,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,6,medida,1714.37,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,7,medida,518.15,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,7,medida,1879.15,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,8,medida,549.76,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,8,medida,1795.32,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,9,medida,545.28,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,9,medida,1684,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,neo4j,10,medida,514.36,ok
+E4,"Trechos e km por tipo de via (índices do esquema)","todas as capitais",1,mysql-cte,10,medida,1729.93,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,0,aquecimento,145.1,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,0,aquecimento,263.34,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,1,medida,205.26,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,1,medida,541.15,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,2,medida,175.29,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,2,medida,267.65,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,3,medida,138.1,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,3,medida,271.95,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,4,medida,132.1,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,4,medida,276.06,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,5,medida,125.26,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,5,medida,247.26,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,6,medida,179.56,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,6,medida,246.85,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,7,medida,168.89,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,7,medida,252.59,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,8,medida,124.97,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,8,medida,252.88,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,9,medida,124.61,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,9,medida,247.27,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,neo4j,10,medida,116.73,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","São Paulo",1,mysql-cte,10,medida,249.45,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,0,aquecimento,549.95,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,0,aquecimento,320.12,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,1,medida,523.03,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,1,medida,296.04,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,2,medida,548.13,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,2,medida,345.32,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,3,medida,552.01,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,3,medida,340.27,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,4,medida,599.39,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,4,medida,313.82,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,5,medida,566.72,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,5,medida,300.02,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,6,medida,533.91,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,6,medida,333.96,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,7,medida,575.2,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,7,medida,296.45,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,8,medida,543.49,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,8,medida,293.84,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,9,medida,536.89,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,9,medida,307.29,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,neo4j,10,medida,543.38,ok
+E4b,"Trechos e km por tipo de via (MySQL com índice de cobertura)","todas as capitais",1,mysql-cte,10,medida,316.06,ok

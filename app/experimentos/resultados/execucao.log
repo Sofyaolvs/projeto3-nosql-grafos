@@ -1,0 +1,75 @@
+Experimentos: cidade=São Paulo, 10 medidas por item, limite 30 s
+
+  E1 k=3 item 1: neo4j=3.96ms  mysql-cte=1.89ms  mysql-bfs=3.38ms
+  E1 k=3 item 2: neo4j=3.89ms  mysql-cte=2.24ms  mysql-bfs=3.92ms
+  E1 k=3 item 3: neo4j=3.94ms  mysql-cte=2.08ms  mysql-bfs=3.74ms
+  E1 k=3 item 4: neo4j=4.17ms  mysql-cte=2.22ms  mysql-bfs=4.26ms
+  E1 k=3 item 5: neo4j=4.48ms  mysql-cte=2.71ms  mysql-bfs=5.84ms
+  E1 k=5 item 1: neo4j=4.24ms  mysql-cte=2.64ms  mysql-bfs=9.09ms
+  E1 k=5 item 2: neo4j=3.03ms  mysql-cte=1.49ms  mysql-bfs=3.98ms
+  E1 k=5 item 3: neo4j=4.75ms  mysql-cte=2.41ms  mysql-bfs=9.19ms
+  E1 k=5 item 4: neo4j=5.29ms  mysql-cte=2.76ms  mysql-bfs=9.65ms
+  E1 k=5 item 5: neo4j=5.71ms  mysql-cte=2.99ms  mysql-bfs=9.24ms
+  E1 k=7 item 1: neo4j=5.69ms  mysql-cte=3.24ms  mysql-bfs=13.56ms
+  E1 k=7 item 2: neo4j=5.52ms  mysql-cte=3.53ms  mysql-bfs=15.62ms
+  E1 k=7 item 3: neo4j=5.11ms  mysql-cte=3ms  mysql-bfs=14.29ms
+  E1 k=7 item 4: neo4j=5.13ms  mysql-cte=3.51ms  mysql-bfs=14.29ms
+  E1 k=7 item 5: neo4j=5.2ms  mysql-cte=3.11ms  mysql-bfs=13.29ms
+  E1b k=10, vias principais item 1: neo4j=5.33ms  mysql-cte=2.76ms  mysql-bfs=2.21ms
+  E1b k=10, vias principais item 2: neo4j=4.82ms  mysql-cte=2.99ms  mysql-bfs=2.13ms
+  E1b k=10, vias principais item 3: neo4j=4.41ms  mysql-cte=2.53ms  mysql-bfs=1.91ms
+  E1b k=10, vias principais item 4: neo4j=4.64ms  mysql-cte=2.44ms  mysql-bfs=2.09ms
+  E1b k=10, vias principais item 5: neo4j=4.6ms  mysql-cte=2.98ms  mysql-bfs=1.96ms
+  E2a ~10 trechos item 1: neo4j=5.6ms  mysql-cte=3.01ms  mysql-bfs=14.86ms
+  E2b ~10 trechos item 1: neo4j=3.08ms  mysql-cte=timeout  mysql-bfs=7.46ms
+  E2a ~10 trechos item 2: neo4j=3.58ms  mysql-cte=1.88ms  mysql-bfs=7.74ms
+  E2b ~10 trechos item 2: neo4j=4.68ms  mysql-cte=timeout  mysql-bfs=13.73ms
+  E2a ~10 trechos item 3: neo4j=3.81ms  mysql-cte=2.26ms  mysql-bfs=7.02ms
+  E2b ~10 trechos item 3: neo4j=3.66ms  mysql-cte=timeout  mysql-bfs=14.77ms
+  E2a ~10 trechos item 4: neo4j=3.1ms  mysql-cte=1.63ms  mysql-bfs=8.97ms
+  E2b ~10 trechos item 4: neo4j=4.74ms  mysql-cte=timeout  mysql-bfs=16.25ms
+  E2a ~10 trechos item 5: neo4j=4.78ms  mysql-cte=3.28ms  mysql-bfs=16.14ms
+  E2b ~10 trechos item 5: neo4j=3.91ms  mysql-cte=timeout  mysql-bfs=15.25ms
+  E2a ~25 trechos item 1: neo4j=4.23ms  mysql-cte=12.11ms  mysql-bfs=23.62ms
+  E2b ~25 trechos item 1: neo4j=4.7ms  mysql-cte=timeout  mysql-bfs=34.11ms
+  E2a ~25 trechos item 2: neo4j=4.19ms  mysql-cte=5.52ms  mysql-bfs=19.23ms
+  E2b ~25 trechos item 2: neo4j=4.97ms  mysql-cte=timeout  mysql-bfs=34.32ms
+  E2a ~25 trechos item 3: neo4j=5.27ms  mysql-cte=19.19ms  mysql-bfs=52.73ms
+  E2b ~25 trechos item 3: neo4j=4.89ms  mysql-cte=timeout  mysql-bfs=51.41ms
+  E2a ~25 trechos item 4: neo4j=4.17ms  mysql-cte=7.55ms  mysql-bfs=21.52ms
+  E2b ~25 trechos item 4: neo4j=3.58ms  mysql-cte=timeout  mysql-bfs=19.66ms
+  E2a ~25 trechos item 5: neo4j=5.1ms  mysql-cte=7.27ms  mysql-bfs=41.4ms
+  E2b ~25 trechos item 5: neo4j=4.65ms  mysql-cte=timeout  mysql-bfs=35.45ms
+  E2a ~50 trechos item 1: neo4j=6.55ms  mysql-cte=1464.69ms  mysql-bfs=169.28ms
+  E2b ~50 trechos item 1: neo4j=7.06ms  mysql-cte=timeout  mysql-bfs=184.97ms
+  E2a ~50 trechos item 2: neo4j=5.46ms  mysql-cte=570.2ms  mysql-bfs=93.16ms
+  E2b ~50 trechos item 2: neo4j=5.86ms  mysql-cte=timeout  mysql-bfs=117.96ms
+  E2a ~50 trechos item 3: neo4j=3.95ms  mysql-cte=66.86ms  mysql-bfs=63.27ms
+  E2b ~50 trechos item 3: neo4j=3.94ms  mysql-cte=timeout  mysql-bfs=67.88ms
+  E2a ~50 trechos item 4: neo4j=5.32ms  mysql-cte=694.48ms  mysql-bfs=108.54ms
+  E2b ~50 trechos item 4: neo4j=5.13ms  mysql-cte=timeout  mysql-bfs=110.27ms
+  E2a ~50 trechos item 5: neo4j=5.51ms  mysql-cte=1112.05ms  mysql-bfs=147.1ms
+  E2b ~50 trechos item 5: neo4j=5.1ms  mysql-cte=timeout  mysql-bfs=145.39ms
+  E2a ~100 trechos item 1: neo4j=8.6ms  mysql-cte=4412.64ms  mysql-bfs=265.52ms
+  E2b ~100 trechos item 1: neo4j=8.67ms  mysql-cte=12206.91ms  mysql-bfs=285.24ms
+  E2a ~100 trechos item 2: neo4j=8.45ms  mysql-cte=5399.3ms  mysql-bfs=275.14ms
+  E2b ~100 trechos item 2: neo4j=8.88ms  mysql-cte=timeout  mysql-bfs=294.08ms
+  E2a ~100 trechos item 3: neo4j=6.48ms  mysql-cte=1356.93ms  mysql-bfs=157.74ms
+  E2b ~100 trechos item 3: neo4j=6.97ms  mysql-cte=12351.01ms  mysql-bfs=179.12ms
+  E2a ~100 trechos item 4: neo4j=28.05ms  mysql-cte=15698.21ms  mysql-bfs=544.12ms
+  E2b ~100 trechos item 4: neo4j=32ms  mysql-cte=timeout  mysql-bfs=516.3ms
+  E2a ~100 trechos item 5: neo4j=33.28ms  mysql-cte=14468.89ms  mysql-bfs=450.65ms
+  E2b ~100 trechos item 5: neo4j=34.85ms  mysql-cte=timeout  mysql-bfs=413.06ms
+  E3 1 interseção item 1: neo4j=4.6ms  mysql-cte=1.84ms
+  E3 1 interseção item 2: neo4j=5.02ms  mysql-cte=2.08ms
+  E3 1 interseção item 3: neo4j=4.55ms  mysql-cte=2.19ms
+  E3 1 interseção item 4: neo4j=3.77ms  mysql-cte=1.8ms
+  E3 1 interseção item 5: neo4j=3.94ms  mysql-cte=2.15ms
+  E4 São Paulo item 1: neo4j=192.21ms  mysql-cte=305.18ms
+  E4 todas as capitais item 1: neo4j=547.52ms  mysql-cte=1795.32ms
+  E4b: criando o índice de cobertura no MySQL (temporário)...
+  E4b São Paulo item 1: neo4j=135.1ms  mysql-cte=252.74ms
+  E4b todas as capitais item 1: neo4j=545.81ms  mysql-cte=310.56ms
+  E4b: índice temporário removido.
+
+Concluído: 1998 medições gravadas em experimentos/resultados/. Itens com resultados diferentes entre métodos: 0.

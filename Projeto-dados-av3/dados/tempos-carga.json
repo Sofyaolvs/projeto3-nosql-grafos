@@ -1,0 +1,5 @@
+﻿{
+    "mysql_carga":  33.7,
+    "neo4j_import":  32.5,
+    "neo4j_indice_unico":  5.2
+}

@@ -1,0 +1,133 @@
+{
+  "data": "2026-11-21T15:08:16.198Z",
+  "maquina": {
+    "cpu": "Intel(R) Core(TM) Ultra 5 225H",
+    "nucleos": 14,
+    "ram_gb": 15.4,
+    "so": "Windows_NT 10.0.26300",
+    "node": "v26.1.0"
+  },
+  "configuracao": {
+    "mysql_buffer_pool_mb": 2048,
+    "neo4j_heap": "2G",
+    "neo4j_pagecache": "2G",
+    "execucao": "Docker Desktop, bancos na mesma máquina que o programa de teste"
+  },
+  "mysql": {
+    "versao": "8.0.46",
+    "indices": [
+      {
+        "tabela": "estrada",
+        "indice": "idx_destino",
+        "colunas": "destino"
+      },
+      {
+        "tabela": "estrada",
+        "indice": "idx_tipo",
+        "colunas": "tipo"
+      },
+      {
+        "tabela": "estrada",
+        "indice": "PRIMARY",
+        "colunas": "origem,destino,chave"
+      },
+      {
+        "tabela": "interseccao",
+        "indice": "idx_cidade",
+        "colunas": "cidade"
+      },
+      {
+        "tabela": "interseccao",
+        "indice": "PRIMARY",
+        "colunas": "id"
+      }
+    ],
+    "tamanho": [
+      {
+        "tabela": "estrada",
+        "dados_mb": 128.7,
+        "indices_mb": 106.3
+      },
+      {
+        "tabela": "interseccao",
+        "dados_mb": 47.6,
+        "indices_mb": 17.5
+      }
+    ]
+  },
+  "neo4j": {
+    "versao": "5.26.33",
+    "edicao": "community",
+    "indices": [
+      {
+        "name": "index_343aff4e",
+        "type": "LOOKUP",
+        "entityType": "NODE",
+        "labelsOrTypes": null,
+        "properties": null,
+        "state": "ONLINE"
+      },
+      {
+        "name": "index_f7700477",
+        "type": "LOOKUP",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": null,
+        "properties": null,
+        "state": "ONLINE"
+      },
+      {
+        "name": "intersecao_cidade",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Intersecao"
+        ],
+        "properties": [
+          "cidade"
+        ],
+        "state": "ONLINE"
+      },
+      {
+        "name": "intersecao_id",
+        "type": "RANGE",
+        "entityType": "NODE",
+        "labelsOrTypes": [
+          "Intersecao"
+        ],
+        "properties": [
+          "id"
+        ],
+        "state": "ONLINE"
+      },
+      {
+        "name": "liga_a_tipo",
+        "type": "RANGE",
+        "entityType": "RELATIONSHIP",
+        "labelsOrTypes": [
+          "LIGA_A"
+        ],
+        "properties": [
+          "tipo"
+        ],
+        "state": "ONLINE"
+      }
+    ]
+  },
+  "volume": {
+    "intersecoes": 781489,
+    "trechos": 1970520
+  },
+  "protocolo": {
+    "cidade": "São Paulo",
+    "aquecimento_por_metodo": 1,
+    "medidas_por_item": 10,
+    "limite_de_tempo_s": 30,
+    "cache": "aquecido",
+    "filtro_vias_principais": [
+      "motorway",
+      "trunk",
+      "primary",
+      "secondary"
+    ]
+  }
+}
