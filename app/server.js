@@ -4,6 +4,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const C = require("./lib/consultas");
+const CRUD = require("./lib/crud");
 const { my, fechar } = require("./lib/db");
 
 const PORTA = Number(process.env.PORT || 5300);
@@ -110,6 +111,12 @@ const rotas = {
     return { status: "ok", parcial, truncado: rows.length > MAX,
       segmentos: rows.slice(0, MAX).map((r) => [Number(r.olat), Number(r.olon), Number(r.dlat), Number(r.dlon), r.nome, r.tipo, r.origem, r.destino]) };
   },
+
+  // CRUD (página crud.html): cada operação roda no banco pedido em `fonte`
+  "/api/crud/criar": async (q) => CRUD.criar(fonteOk(q.fonte), { id: inteiro(q.id, 0, 0), origem: inteiro(q.origem, 0), nome: String(q.nome || "Rua do Projeto 3").slice(0, 100), comprimento: Math.min(5000, Math.max(1, Number(q.comprimento) || 55.6)) }),
+  "/api/crud/ler": async (q) => CRUD.ler(fonteOk(q.fonte), { id: inteiro(q.id, 0, 0) }),
+  "/api/crud/bloquear": async (q) => CRUD.bloquear(fonteOk(q.fonte), { id: inteiro(q.id, 0, 0), bloqueada: q.bloqueada !== "0" }),
+  "/api/crud/apagar": async (q) => CRUD.apagar(fonteOk(q.fonte), { id: inteiro(q.id, 0, 0) }),
 
   // sugere um par origem/destino com menor caminho perto de `saltos` trechos
   "/api/par": async (q) => {

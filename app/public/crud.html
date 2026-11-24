@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CRUD: Neo4j × MySQL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="titulo">
+      <h1>CRUD: Neo4j × MySQL</h1>
+      <p>A mesma operação nos dois bancos, com o comando usado e o tempo de cada um</p>
+    </div>
+    <nav class="abas" aria-label="Páginas"><a href="/">Dashboard</a><a href="crud.html" aria-current="page">CRUD</a></nav>
+    <div id="status" class="status" role="status" aria-live="polite">Pronto.</div>
+  </header>
+
+  <section class="controles" aria-label="Parâmetros do CRUD">
+    <label class="campo">Id da nova interseção
+      <input type="number" id="id" value="5000000" min="5000000" step="1">
+    </label>
+    <label class="campo">Ligar à interseção existente
+      <input type="number" id="origem" value="0" min="0" step="1">
+    </label>
+    <label class="campo">Nome da via
+      <input type="text" id="nome" value="Rua do Projeto 3" maxlength="100">
+    </label>
+    <label class="campo">Comprimento (m)
+      <input type="number" id="comprimento" value="55.6" min="1" max="5000" step="0.1">
+    </label>
+  </section>
+
+  <section class="acoes crud-acoes" aria-label="Operações">
+    <button id="b-criar" type="button">1. Criar (Create)</button>
+    <button id="b-ler" type="button">2. Ler (Read)</button>
+    <button id="b-bloquear" type="button">3. Bloquear via (Update)</button>
+    <button id="b-desbloquear" type="button">Desbloquear</button>
+    <button id="b-apagar" type="button">4. Apagar (Delete)</button>
+    <span class="separador"></span>
+    <button id="b-tudo" type="button">▶ Rodar sequência completa</button>
+  </section>
+  <p class="dica pad">Por segurança, só são alterados ids a partir de 5.000.000, a malha real (até ~781 mil) nunca é tocada. A leitura mostra as vias que saem da interseção escolhida em "Ligar à interseção existente".</p>
+
+  <main class="grade">
+    <section class="cartao" id="painel-neo4j">
+      <div class="cab"><h2>Neo4j <small>(Cypher)</small></h2><span class="ms neo" id="ms-neo4j"></span></div>
+      <pre class="cmd" id="cmd-neo4j">Escolha uma operação.</pre>
+      <p class="info" id="msg-neo4j"></p>
+      <div class="tabela-caixa"><table class="t-crud"><thead><tr><th>Para</th><th>Via</th><th>Tipo</th><th>Comp. (m)</th><th>Mão única</th><th>Bloqueada</th></tr></thead><tbody id="t-neo4j"></tbody></table></div>
+    </section>
+    <section class="cartao" id="painel-mysql">
+      <div class="cab"><h2>MySQL <small>(SQL)</small></h2><span class="ms sql" id="ms-mysql"></span></div>
+      <pre class="cmd" id="cmd-mysql">Escolha uma operação.</pre>
+      <p class="info" id="msg-mysql"></p>
+      <div class="tabela-caixa"><table class="t-crud"><thead><tr><th>Para</th><th>Via</th><th>Tipo</th><th>Comp. (m)</th><th>Mão única</th><th>Bloqueada</th></tr></thead><tbody id="t-mysql"></tbody></table></div>
+    </section>
+
+    <section class="cartao larga">
+      <div class="cab"><h2>Resultado da comparação</h2></div>
+      <p id="igual" class="info">Execute uma leitura para comparar os dois bancos.</p>
+      <div class="tabela-caixa"><table id="t-hist"><thead><tr><th>Operação</th><th>Neo4j (ms)</th><th>MySQL (ms)</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </main>
+
+  <footer class="rodape">O CRUD escreve só na interseção criada aqui. "Apagar" a remove dos dois bancos e deixa a malha como estava.</footer>
+  <script src="crud.js"></script>
+</body>
+</html>
