@@ -143,3 +143,10 @@ svg .no.destino { fill: var(--erro); stroke: var(--erro); }
 svg .no-rot { font: 600 11px system-ui, sans-serif; fill: var(--texto); pointer-events: none; }
 svg .no.origem + .no-rot, svg .no.destino + .no-rot, svg .no.caminho + .no-rot { fill: #fff; }
 @media (max-width: 900px) { .bfs-grade, .tres { grid-template-columns: 1fr; } }
+
+/* ---------- aba "Como foi feito": tamanho máximo em telas grandes (só nesta página) ---------- */
+.pag-arq .topo, .pag-arq .arq, .pag-arq .rodape { max-width: 1320px; margin-left: auto; margin-right: auto; }
+.pag-arq .arq-svg { max-width: 880px; max-height: 62vh; margin-left: auto; margin-right: auto; }
+.pag-arq .bfs-grafo svg { max-width: 440px; margin-left: auto; margin-right: auto; }
+.pag-arq .metodo svg { max-width: 360px; margin-left: auto; margin-right: auto; }
+.pag-arq .bfs-grade { grid-template-columns: minmax(280px, 440px) 1fr; }
