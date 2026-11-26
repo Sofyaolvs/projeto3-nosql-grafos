@@ -36,6 +36,14 @@ Abra http://localhost:5300. Ele não usa internet (o Chart.js está em `public/v
 
 Cada painel mostra o tempo da consulta em ms e o gráfico "Comparação de tempos" coloca os métodos lado a lado.
 
+### Aba "Como foi feito" (http://localhost:5300/arquitetura.html)
+Ilustra, sem precisar dos bancos ligados:
+1. **A arquitetura dos dois alvos dos testes** (Neo4j e MySQL em contêineres Docker, o programa de teste, as três formas de consultar e os mesmos CSVs carregados nos dois).
+2. **Como foi feita a busca em níveis**, passo a passo em um grafo de exemplo: cada nível mostra a fronteira enviada ao MySQL, o SQL executado, as linhas devolvidas, os visitados na memória do programa e quantas idas e voltas ao banco já foram feitas.
+3. **Os três métodos de menor caminho lado a lado** (SQL puro com consulta recursiva, busca em níveis e shortestPath do Neo4j), com o código de cada um.
+
+Os grafos dessa página são pequenos e servem só para ilustrar o método; os tempos reais estão no Dashboard e nos experimentos.
+
 ---
 
 ## 3. Como testar
@@ -75,19 +83,12 @@ Os resultados ficam em:
 | `experimentos/resultados/ambiente.json` | Máquina, versões, índices e protocolo |
 | `experimentos/resultados/execucao.log` | Saída do programa |
 
-Para regerar o documento e os slides com os números novos:
-```powershell
-cd ..
-node gerar-documento-entrega3-4.js     # Entrega3e4-Projeto3-NoSQL-Grafos.docx
-node gerar-slides.js                   # Entrega1-Projeto3-NoSQL-Grafos.pptx (21 slides)
-```
-
 ---
 
 ## 4. Como apresentar (entrega final: 20 minutos)
 
 O enunciado sugere **8 minutos** de conceitos e comparação, **8** de demonstração (dashboard e benchmark) e **4** de conclusões e perguntas.
-Os slides são os de `Entrega1-Projeto3-NoSQL-Grafos.pptx` (21 slides; o canto superior direito mostra a que entrega cada um pertence).
+Os slides não ficam no repositório (cada integrante tem a sua cópia local). A aba "Como foi feito" do dashboard ilustra a arquitetura dos dois alvos, a busca em níveis e os três métodos de menor caminho, e pode ser usada na parte de conceitos ou ao explicar os resultados.
 
 ### Antes de começar (10 minutos antes)
 1. Abra o Docker Desktop e rode `docker compose up -d` na pasta `entrega2`. Espere os dois contêineres ficarem saudáveis (cerca de 30 s).
@@ -130,7 +131,7 @@ Os slides são os de `Entrega1-Projeto3-NoSQL-Grafos.pptx` (21 slides; o canto s
 ## 5. O que entregar (conforme o enunciado)
 | Item | Onde está |
 |---|---|
-| Slides | `Entrega1-Projeto3-NoSQL-Grafos.pptx` (21 slides, Entregas 1 a 4) |
+| Slides | arquivo local da equipe (fora do repositório) |
 | Código-fonte | `app/` (dashboard, consultas, experimentos) e `entrega2/scripts/` |
 | Instruções de execução | este README e `entrega2/README.md` |
 | Modelos | `entrega2/sql/01-schema.sql`, `entrega2/cypher/` e os documentos das Entregas 2 e 3-4 |

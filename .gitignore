@@ -4,3 +4,10 @@ entrega2/dados/*
 !entrega2/dados/.gitkeep
 !entrega2/dados/resumo.json
 !entrega2/dados/tempos-carga.json
+
+# slides, documentos das entregas e os scripts que os geram: ficam só na máquina de cada integrante
+/*.pptx
+/*.docx
+/gerar-*.js
+/package.json
+/package-lock.json

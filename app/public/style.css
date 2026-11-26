@@ -84,3 +84,69 @@ tr.bloq td { color: var(--erro); font-weight: 600; }
 #t-hist th:nth-child(2), #t-hist th:nth-child(3), #t-hist td:nth-child(2), #t-hist td:nth-child(3) { text-align: center; width: 160px; font-variant-numeric: tabular-nums; }
 .crud-acoes button.ativo { background: var(--neo); border-color: var(--neo); color: #fff; font-weight: 600; }
 .crud-acoes button.ativo:disabled { opacity: 1; }
+
+/* ---------- página "Como foi feito" ---------- */
+.arq { display: grid; gap: 14px; padding: 8px 24px 20px; }
+.arq .cartao.larga { grid-column: auto; }
+.arq code { font: 13px ui-monospace, Consolas, monospace; background: var(--fundo); border: 1px solid var(--borda); border-radius: 4px; padding: 0 4px; }
+.sub-titulo { margin: 14px 0 6px; font-size: 15px; }
+.arq-svg { width: 100%; height: auto; display: block; margin: 6px 0; }
+.arq-svg .caixa { fill: var(--cartao); stroke-width: 2.5; }
+.arq-svg .c-app { stroke: var(--bfs); } .arq-svg .c-neo { stroke: var(--neo); } .arq-svg .c-sql { stroke: var(--sql); }
+.arq-svg .camada { fill: var(--fundo); stroke: var(--borda); }
+.arq-svg .destaque-bfs { fill: var(--fundo); stroke: var(--bfs); stroke-width: 2; stroke-dasharray: 6 4; }
+.arq-svg .rotulo { fill: var(--cartao); stroke: var(--borda); }
+.arq-svg text { font-family: system-ui, "Segoe UI", Roboto, sans-serif; fill: var(--texto); }
+.arq-svg .tit { font-size: 17px; font-weight: 700; } .arq-svg .t-neo { fill: var(--neo); } .arq-svg .t-sql { fill: var(--sql); }
+.arq-svg .sub { font-size: 13px; fill: var(--suave); }
+.arq-svg .txt { font-size: 13px; fill: var(--suave); } .arq-svg .txt-b { font-size: 14px; font-weight: 600; }
+.arq-svg .txt-r { font-size: 12px; fill: var(--texto); }
+.arq-svg .seta-linha { fill: none; stroke-width: 2.5; }
+.arq-svg .l-neo { stroke: var(--neo); } .arq-svg .l-sql { stroke: var(--sql); } .arq-svg .l-bfs { stroke: var(--bfs); }
+.m-neo { fill: var(--neo); } .m-sql { fill: var(--sql); } .m-bfs { fill: var(--bfs); } .m-seta { fill: var(--suave); }
+.arq-legenda { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--suave); margin: 4px 0 6px; }
+.arq-legenda.pequena { font-size: 12px; gap: 6px 14px; }
+.arq-legenda .cor { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; border: 1px solid var(--borda); }
+.cor.neo { background: var(--neo); } .cor.sql { background: var(--sql); } .cor.bfs { background: var(--bfs); }
+.cor.origem { background: var(--ok); } .cor.destino { background: var(--erro); } .cor.fronteira { background: var(--destaque); }
+.cor.visitado { background: var(--borda); } .cor.caminho { background: var(--neo); }
+.fluxo { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 6px 0; align-items: stretch; }
+.fluxo li { flex: 1 1 190px; background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px; padding: 8px 12px; display: flex; flex-direction: column; font-size: 13px; color: var(--suave); position: relative; }
+.fluxo li b { color: var(--texto); font-size: 14px; }
+.fluxo li + li::before { content: "→"; position: absolute; left: -14px; top: 50%; transform: translateY(-50%); color: var(--suave); font-weight: 700; }
+.fluxo li.bifurca + li.bifurca::before { content: "+"; }
+.fluxo .c-neo-t { color: var(--neo); } .fluxo .c-sql-t { color: var(--sql); }
+.bfs-grade { display: grid; grid-template-columns: minmax(280px, 1.1fr) 1fr; gap: 16px; align-items: start; }
+.bfs-grafo svg, .metodo svg { width: 100%; height: auto; background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px; display: block; }
+.bfs-paineis { display: grid; gap: 10px; }
+.bfs-painel { background: var(--fundo); border: 1px solid var(--borda); border-radius: 8px; padding: 10px 14px; font-size: 14px; }
+.bfs-painel h3, .metodo h3 { margin: 0 0 6px; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.bfs-painel p { margin: 4px 0; overflow-wrap: anywhere; }
+.bfs-nivel { font-weight: 600; } .bfs-resultado { color: var(--ok); font-weight: 600; }
+.selo { font: 600 12px/1 ui-monospace, Consolas, monospace; color: var(--bfs); border: 1px solid var(--borda); border-radius: 20px; padding: 4px 9px; background: var(--cartao); }
+pre.codigo { margin: 4px 0; padding: 8px 10px; background: var(--cartao); border: 1px solid var(--borda); border-radius: 6px; font: 12.5px/1.45 ui-monospace, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--texto); }
+.campo.inline { flex-direction: row; align-items: center; gap: 8px; }
+.tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 6px; }
+.metodo { background: var(--fundo); border: 1px solid var(--borda); border-radius: 10px; padding: 12px; min-width: 0; }
+.metodo.m-neo h3 { color: var(--neo); } .metodo.m-sql h3 { color: var(--sql); } .metodo.m-bfs h3 { color: var(--bfs); }
+.metodo-txt { font-size: 13px; color: var(--suave); min-height: 58px; margin: 8px 0 4px; }
+/* grafo de exemplo */
+svg .aresta { stroke: var(--borda); stroke-width: 2.5; }
+svg .aresta.ativa { stroke: var(--bfs); stroke-width: 4; }
+svg .aresta.caminho { stroke: var(--neo); stroke-width: 5; }
+svg .no { fill: var(--cartao); stroke: var(--suave); stroke-width: 1.5; }
+svg .no.visitado { fill: var(--suave); fill-opacity: .5; stroke: var(--suave); }
+svg .no.fronteira { fill: var(--destaque); stroke: var(--destaque); }
+svg .no.caminho { fill: var(--neo); stroke: var(--neo); }
+svg .no.origem { fill: var(--ok); stroke: var(--ok); }
+svg .no.destino { fill: var(--erro); stroke: var(--erro); }
+svg .no-rot { font: 600 11px system-ui, sans-serif; fill: var(--texto); pointer-events: none; }
+svg .no.origem + .no-rot, svg .no.destino + .no-rot, svg .no.caminho + .no-rot { fill: #fff; }
+@media (max-width: 900px) { .bfs-grade, .tres { grid-template-columns: 1fr; } }
+
+/* ---------- aba "Como foi feito": tamanho máximo em telas grandes (só nesta página) ---------- */
+.pag-arq .topo, .pag-arq .arq, .pag-arq .rodape { max-width: 1320px; margin-left: auto; margin-right: auto; }
+.pag-arq .arq-svg { max-width: 880px; max-height: 62vh; margin-left: auto; margin-right: auto; }
+.pag-arq .bfs-grafo svg { max-width: 440px; margin-left: auto; margin-right: auto; }
+.pag-arq .metodo svg { max-width: 360px; margin-left: auto; margin-right: auto; }
+.pag-arq .bfs-grade { grid-template-columns: minmax(280px, 440px) 1fr; }
