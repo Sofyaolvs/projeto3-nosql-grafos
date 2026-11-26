@@ -36,6 +36,14 @@ Abra http://localhost:5300. Ele não usa internet (o Chart.js está em `public/v
 
 Cada painel mostra o tempo da consulta em ms e o gráfico "Comparação de tempos" coloca os métodos lado a lado.
 
+### Aba "Como foi feito" (http://localhost:5300/arquitetura.html)
+Ilustra, sem precisar dos bancos ligados:
+1. **A arquitetura dos dois alvos dos testes** (Neo4j e MySQL em contêineres Docker, o programa de teste, as três formas de consultar e os mesmos CSVs carregados nos dois).
+2. **Como foi feita a busca em níveis**, passo a passo em um grafo de exemplo: cada nível mostra a fronteira enviada ao MySQL, o SQL executado, as linhas devolvidas, os visitados na memória do programa e quantas idas e voltas ao banco já foram feitas.
+3. **Os três métodos de menor caminho lado a lado** (SQL puro com consulta recursiva, busca em níveis e shortestPath do Neo4j), com o código de cada um.
+
+Os grafos dessa página são pequenos e servem só para ilustrar o método; os tempos reais estão no Dashboard e nos experimentos.
+
 ---
 
 ## 3. Como testar

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como foi feito: Neo4j × MySQL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="titulo">
+      <h1>Como foi feito</h1>
+      <p>A arquitetura dos dois alvos dos testes e como cada método encontra o menor caminho</p>
+    </div>
+    <nav class="abas" aria-label="Páginas"><a href="/">Dashboard</a><a href="crud.html">CRUD</a><a href="arquitetura.html" aria-current="page">Como foi feito</a></nav>
+  </header>
+
+  <main class="arq">
+    <!-- 1. Arquitetura -->
+    <section class="cartao larga">
+      <div class="cab"><h2>1. Arquitetura dos alvos dos testes</h2></div>
+      <p class="dica">Tudo roda na mesma máquina, em contêineres Docker. O programa de teste (o dashboard e os experimentos) fala com os dois bancos pelo mesmo módulo de consultas, <code>lib/consultas.js</code>.</p>
+      <svg class="arq-svg" viewBox="0 0 960 560" role="img" aria-labelledby="t-arq d-arq">
+        <title id="t-arq">Arquitetura dos alvos dos testes</title>
+        <desc id="d-arq">O programa de teste em Node.js consulta o Neo4j por Cypher e o MySQL por SQL, de duas formas: consulta recursiva e busca em níveis.</desc>
+        <defs>
+          <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="m-seta"/></marker>
+          <marker id="seta-neo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="m-neo"/></marker>
+          <marker id="seta-sql" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="m-sql"/></marker>
+          <marker id="seta-bfs" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="m-bfs"/></marker>
+        </defs>
+
+        <!-- Programa de teste -->
+        <rect class="caixa c-app" x="10" y="130" width="236" height="300" rx="12"/>
+        <text class="tit" x="128" y="160" text-anchor="middle">Programa de teste</text>
+        <text class="sub" x="128" y="180" text-anchor="middle">Node.js</text>
+        <rect class="camada" x="24" y="196" width="208" height="40" rx="8"/>
+        <text class="txt" x="128" y="220" text-anchor="middle">dashboard e experimentos</text>
+        <rect class="camada" x="24" y="244" width="208" height="40" rx="8"/>
+        <text class="txt" x="128" y="268" text-anchor="middle">lib/consultas.js</text>
+        <rect class="camada" x="24" y="292" width="100" height="40" rx="8"/>
+        <text class="txt" x="74" y="316" text-anchor="middle">neo4j-driver</text>
+        <rect class="camada" x="132" y="292" width="100" height="40" rx="8"/>
+        <text class="txt" x="182" y="316" text-anchor="middle">mysql2</text>
+        <rect class="destaque-bfs" x="24" y="344" width="208" height="72" rx="8"/>
+        <text class="txt-b" x="128" y="366" text-anchor="middle">Busca em níveis:</text>
+        <text class="txt" x="128" y="386" text-anchor="middle">o laço e a lista de visitados</text>
+        <text class="txt" x="128" y="404" text-anchor="middle">ficam aqui, no programa</text>
+
+        <!-- Neo4j -->
+        <rect class="caixa c-neo" x="410" y="10" width="540" height="260" rx="12"/>
+        <text class="tit t-neo" x="430" y="38">Alvo 1 · Neo4j (grafo)</text>
+        <text class="sub" x="930" y="38" text-anchor="end">5.26 Community · porta 7687 (Bolt) · heap 2 GB</text>
+        <rect class="camada" x="428" y="54" width="504" height="52" rx="8"/>
+        <text class="txt-b" x="440" y="76">Processador de consultas (Cypher)</text>
+        <text class="txt" x="440" y="96">planeja e executa; o menor caminho (shortestPath) é uma operação nativa</text>
+        <rect class="camada" x="428" y="114" width="504" height="44" rx="8"/>
+        <text class="txt-b" x="440" y="134">Cache de páginas · 2 GB</text>
+        <text class="txt" x="440" y="151">o grafo inteiro cabe na memória</text>
+        <rect class="camada" x="428" y="166" width="504" height="88" rx="8"/>
+        <text class="txt-b" x="440" y="186">Armazenamento nativo de grafo</text>
+        <text class="txt" x="440" y="206">(:Intersecao) ─[:LIGA_A]→ (:Intersecao)</text>
+        <text class="txt" x="440" y="225">cada nó guarda ponteiros diretos para seus relacionamentos</text>
+        <text class="txt" x="440" y="244">índices: unicidade em id · cidade · tipo da via</text>
+
+        <!-- MySQL -->
+        <rect class="caixa c-sql" x="410" y="290" width="540" height="260" rx="12"/>
+        <text class="tit t-sql" x="430" y="318">Alvo 2 · MySQL (relacional)</text>
+        <text class="sub" x="930" y="318" text-anchor="end">8.0.46 · porta 3307 · buffer pool 2 GB</text>
+        <rect class="camada" x="428" y="334" width="504" height="52" rx="8"/>
+        <text class="txt-b" x="440" y="356">Otimizador e executor SQL</text>
+        <text class="txt" x="440" y="376">JOINs e a consulta recursiva (WITH RECURSIVE)</text>
+        <rect class="camada" x="428" y="394" width="504" height="44" rx="8"/>
+        <text class="txt-b" x="440" y="414">InnoDB · buffer pool 2 GB</text>
+        <text class="txt" x="440" y="431">as tabelas e os índices ficam na memória</text>
+        <rect class="camada" x="428" y="446" width="504" height="88" rx="8"/>
+        <text class="txt-b" x="440" y="466">Tabelas</text>
+        <text class="txt" x="440" y="486">interseccao (id PK · idx_cidade)</text>
+        <text class="txt" x="440" y="505">estrada (PK origem, destino, chave · idx_destino · idx_tipo)</text>
+        <text class="txt" x="440" y="524">cada trecho de via é uma linha, ligada por duas chaves estrangeiras</text>
+
+        <!-- Setas -->
+        <path class="seta-linha l-neo" d="M246,215 C330,215 330,110 408,110" marker-end="url(#seta-neo)"/>
+        <rect class="rotulo" x="258" y="148" width="136" height="24" rx="6"/>
+        <text class="txt-r" x="326" y="165" text-anchor="middle">Cypher: 1 consulta</text>
+
+        <path class="seta-linha l-sql" d="M246,310 C330,310 330,376 408,376" marker-end="url(#seta-sql)"/>
+        <rect class="rotulo" x="244" y="296" width="166" height="38" rx="6"/>
+        <text class="txt-r" x="327" y="312" text-anchor="middle">SQL puro: 1 consulta</text>
+        <text class="txt-r" x="327" y="328" text-anchor="middle">recursiva, tudo no banco</text>
+
+        <path class="seta-linha l-bfs" d="M246,384 C330,384 330,462 408,462" marker-end="url(#seta-bfs)"/>
+        <rect class="rotulo" x="244" y="396" width="166" height="38" rx="6"/>
+        <text class="txt-r" x="327" y="412" text-anchor="middle">Busca em níveis: 1 consulta</text>
+        <text class="txt-r" x="327" y="428" text-anchor="middle">SQL por nível (N idas e voltas)</text>
+      </svg>
+
+      <div class="arq-legenda" aria-label="Legenda">
+        <span><i class="cor neo"></i> Neo4j</span>
+        <span><i class="cor sql"></i> MySQL, SQL puro (consulta recursiva)</span>
+        <span><i class="cor bfs"></i> MySQL, busca em níveis (laço no programa)</span>
+      </div>
+
+      <h3 class="sub-titulo">Os mesmos dados nos dois alvos</h3>
+      <ol class="fluxo">
+        <li><b>OpenStreetMap</b><span>extraído com o OSMnx, uma capital por vez</span></li>
+        <li><b>2 arquivos CSV</b><span><code>intersecoes.csv</code> e <code>estradas.csv</code></span></li>
+        <li class="bifurca"><b class="c-neo-t">Neo4j</b><span><code>neo4j-admin import</code>, mais índices de cidade e tipo</span></li>
+        <li class="bifurca"><b class="c-sql-t">MySQL</b><span><code>LOAD DATA INFILE</code>, com chaves e índices do esquema</span></li>
+      </ol>
+      <p class="dica">Os dois bancos recebem exatamente os mesmos arquivos e têm os mesmos totais. Cada estrada de mão dupla vira dois trechos (um em cada sentido) e a de mão única vira um.</p>
+    </section>
+
+    <!-- 2. Busca em níveis -->
+    <section class="cartao larga">
+      <div class="cab"><h2>2. Como foi feita a busca em níveis</h2></div>
+      <p class="dica">Em SQL puro não dá para parar a consulta recursiva quando ela acha o destino. Por isso fizemos uma segunda versão: o programa conduz a busca, nível a nível, e o MySQL só responde "para onde se vai saindo destas interseções". Aperte <b>Próximo</b> e acompanhe cada ida e volta ao banco.</p>
+      <div class="bfs-grade">
+        <div class="bfs-grafo">
+          <svg id="bfs-svg" viewBox="0 0 420 330" role="img" aria-label="Grafo de exemplo da busca em níveis"></svg>
+          <div class="arq-legenda pequena">
+            <span><i class="cor origem"></i> origem</span>
+            <span><i class="cor destino"></i> destino</span>
+            <span><i class="cor fronteira"></i> fronteira (nível atual)</span>
+            <span><i class="cor visitado"></i> já visitado</span>
+            <span><i class="cor caminho"></i> caminho final</span>
+          </div>
+        </div>
+        <div class="bfs-paineis">
+          <div class="bfs-painel">
+            <h3>Programa (Node.js)</h3>
+            <p id="bfs-nivel" class="bfs-nivel"></p>
+            <p><b>Fronteira enviada ao MySQL:</b> <span id="bfs-enviada"></span></p>
+            <p><b>Nova fronteira (destinos ainda não visitados):</b> <span id="bfs-fronteira"></span></p>
+            <p><b>Visitados (na memória do programa):</b> <span id="bfs-visitados"></span></p>
+            <p id="bfs-resultado" class="bfs-resultado"></p>
+          </div>
+          <div class="bfs-painel">
+            <h3>MySQL <span class="selo" id="bfs-idas"></span></h3>
+            <pre class="codigo" id="bfs-sql"></pre>
+            <p><b>Linhas devolvidas:</b> <span id="bfs-linhas"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="acoes">
+        <label class="campo inline">Destino
+          <select id="bfs-destino" aria-label="Interseção de destino"></select>
+        </label>
+        <button type="button" id="bfs-voltar">← Voltar</button>
+        <button type="button" id="bfs-proximo" class="primario">Próximo nível →</button>
+        <button type="button" id="bfs-auto">▶ Automático</button>
+        <button type="button" id="bfs-reiniciar">Reiniciar</button>
+      </div>
+      <p class="dica">No dashboard, o grafo tem centenas de milhares de interseções e a fronteira cresce a cada nível. Os ids são enviados em lotes de até 5.000 por consulta. Cada nível é uma ida e volta ao banco, e por isso o tempo cresce com a distância.</p>
+    </section>
+
+    <!-- 3. Três métodos -->
+    <section class="cartao larga">
+      <div class="cab"><h2>3. Os três métodos lado a lado</h2></div>
+      <p class="dica">O mesmo par de pontos, buscado de três formas. As marcações mostram o que cada método percorre neste grafo de exemplo.</p>
+      <div class="tres">
+        <article class="metodo m-sql">
+          <h3>MySQL, SQL puro</h3>
+          <svg id="mini-cte" viewBox="0 0 420 330" role="img" aria-label="A consulta recursiva explora todo o grafo até o limite"></svg>
+          <p id="txt-cte" class="metodo-txt"></p>
+          <pre class="codigo">WITH RECURSIVE r (node, depth) AS (
+  SELECT :origem, 0
+  UNION DISTINCT
+  SELECT e.destino, r.depth + 1
+    FROM r JOIN estrada e ON e.origem = r.node
+   WHERE r.depth &lt; :limite
+)
+SELECT MIN(depth) FROM r WHERE node = :destino</pre>
+        </article>
+        <article class="metodo m-bfs">
+          <h3>MySQL, busca em níveis</h3>
+          <svg id="mini-bfs" viewBox="0 0 420 330" role="img" aria-label="A busca em níveis para ao achar o destino"></svg>
+          <p id="txt-bfs" class="metodo-txt"></p>
+          <pre class="codigo">visitados = {origem}; fronteira = [origem]
+repita até achar o destino:
+  linhas = SQL(fronteira)   -- 1 ida e volta
+  novos  = destinos ainda não visitados
+  fronteira = novos
+
+-- SQL de cada nível:
+SELECT DISTINCT origem, destino
+  FROM estrada WHERE origem IN (:fronteira)</pre>
+        </article>
+        <article class="metodo m-neo">
+          <h3>Neo4j, shortestPath</h3>
+          <svg id="mini-neo" viewBox="0 0 420 330" role="img" aria-label="O Neo4j devolve o caminho em uma só consulta"></svg>
+          <p id="txt-neo" class="metodo-txt"></p>
+          <pre class="codigo">MATCH (a:Intersecao {id: $origem}),
+      (b:Intersecao {id: $destino})
+MATCH p = shortestPath(
+  (a)-[:LIGA_A*..150]->(b))
+RETURN length(p),
+       [n IN nodes(p) | n.id]</pre>
+        </article>
+      </div>
+      <p class="dica">Nos experimentos, o Neo4j respondeu em poucos milissegundos em qualquer distância; a busca em níveis cresceu com a distância; e o SQL puro estourou o limite de 30 s com o limite de saltos folgado. As medianas estão no documento das Entregas 3 e 4.</p>
+    </section>
+  </main>
+
+  <footer class="rodape">Os grafos desta página são exemplos pequenos para ilustrar o método. Os números e os tempos reais estão no Dashboard e nos experimentos.</footer>
+  <script src="arquitetura.js"></script>
+</body>
+</html>
