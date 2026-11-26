@@ -7,10 +7,12 @@ const {
   LevelFormat, WidthType, ShadingType, BorderStyle, PageNumber, Footer,
 } = require("docx");
 
+// pasta com os dados e as evidências: "Projeto-dados-av3" (atual) ou "entrega2" (nome antigo)
+const PASTA_DADOS = ["Projeto-dados-av3", "entrega2"].find((p) => require("fs").existsSync(require("path").join(__dirname, p, "dados", "resumo.json"))) || "Projeto-dados-av3";
 const lerJson = (p) => JSON.parse(fs.readFileSync(path.join(__dirname, p), "utf8").replace(/^﻿/, ""));
 const R = lerJson("app/experimentos/resultados/resumo.json");
 const A = lerJson("app/experimentos/resultados/ambiente.json");
-const RES = lerJson("entrega2/dados/resumo.json");
+const RES = lerJson(PASTA_DADOS + "/dados/resumo.json");
 const medicoes = fs.readFileSync(path.join(__dirname, "app/experimentos/resultados/medicoes.csv"), "utf8").split("\n").length - 2;
 
 const FONT = "Calibri", INK = "12263A", TEAL = "1F7A8C";
@@ -100,7 +102,7 @@ const body = [
   h2("2.2 Índices (os mesmos critérios nos dois bancos)"),
   bullet([b("MySQL: "), t(idxMy.join("; ") + ".")]),
   bullet([b("Neo4j: "), t(idxNeo.join("; ") + ".")]),
-  p("O Neo4j recebeu índices em cidade e tipo de via equivalentes aos do MySQL (arquivo entrega2/cypher/02-indices.cypher). Nenhum índice foi removido de nenhum banco. Na agregação (E4), medimos também o MySQL com um índice de cobertura temporário (tipo, comprimento_m), criado só para a medição e removido depois."),
+  p("O Neo4j recebeu índices em cidade e tipo de via equivalentes aos do MySQL (arquivo Projeto-dados-av3/cypher/02-indices.cypher). Nenhum índice foi removido de nenhum banco. Na agregação (E4), medimos também o MySQL com um índice de cobertura temporário (tipo, comprimento_m), criado só para a medição e removido depois."),
   h2("2.3 Métodos comparados"),
   bullet([b("Neo4j (Cypher): "), t("travessia nativa e shortestPath.")]),
   bullet([b("MySQL, SQL puro: "), t("consulta recursiva (WITH RECURSIVE). Tem de receber um limite de saltos e não para quando acha o destino.")]),
@@ -186,7 +188,7 @@ const body = [
   ]),
   gap(),
   h2("4.2 Como executar"),
-  ...code(["cd entrega2", ".\\scripts\\carregar.ps1        # uma vez: sobe e carrega os dois bancos", "cd ..\\app", "npm install", "npm run dashboard             # abre em http://localhost:5300"]),
+  ...code(["cd Projeto-dados-av3", ".\\scripts\\carregar.ps1        # uma vez: sobe e carrega os dois bancos", "cd ..\\app", "npm install", "npm run dashboard             # abre em http://localhost:5300"]),
   gap(),
   p("O guia completo, com o roteiro de apresentação, está em app/README.md."),
 

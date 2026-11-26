@@ -33,8 +33,10 @@ function table(widths, header, rows, mono = false) {
   });
 }
 
-// Números lidos dos resultados reais (rode entrega2\scripts\gerar-evidencias.ps1 antes de gerar o documento)
-const ler = (a) => JSON.parse(fs.readFileSync(require("path").join(__dirname, "entrega2", a), "utf8").replace(/^﻿/, ""));
+// pasta com os dados e as evidências: "Projeto-dados-av3" (atual) ou "entrega2" (nome antigo)
+const PASTA_DADOS = ["Projeto-dados-av3", "entrega2"].find((p) => require("fs").existsSync(require("path").join(__dirname, p, "dados", "resumo.json"))) || "Projeto-dados-av3";
+// Números lidos dos resultados reais (rode Projeto-dados-av3\scripts\gerar-evidencias.ps1 antes de gerar o documento)
+const ler = (a) => JSON.parse(fs.readFileSync(require("path").join(__dirname, PASTA_DADOS, a), "utf8").replace(/^﻿/, ""));
 const r = ler("dados/resumo.json"), tc = ler("dados/tempos-carga.json"), n = ler("evidencias/numeros.json");
 const d8 = n.demo_raio8, d25 = n.demo_raio25;
 const f = (x) => Number(x).toLocaleString("pt-BR");
@@ -195,9 +197,9 @@ const body = [
   p([b("Como ler esses tempos: "), t("cada um é uma única execução, e não uma medição. Servem como indício, não como resultado. Há também uma diferença de método: no MySQL o menor caminho é uma consulta recursiva (CTE) que explora toda a região até o limite de saltos, sem parar quando acha o destino, enquanto o shortestPath do Neo4j é um algoritmo próprio de caminho mínimo. Essa diferença é, em si, uma característica do paradigma, mas a Entrega 3 vai medir com rigor: 10 execuções por consulta, medianas, cache controlado e também os casos em que o MySQL empata ou vence.")]),
 
   h1("9. Como reproduzir"),
-  ...code(["cd entrega2", "npm install", ".\\scripts\\carregar.ps1", ".\\scripts\\testar.ps1"]),
+  ...code(["cd Projeto-dados-av3", "npm install", ".\\scripts\\carregar.ps1", ".\\scripts\\testar.ps1"]),
   gap(),
-  p("As instruções completas, as portas e as verificações estão em entrega2/README.md."),
+  p("As instruções completas, as portas e as verificações estão em Projeto-dados-av3/README.md."),
 
   h1("10. Limitações e próximos passos"),
   bullet("O menor caminho do exemplo ainda é em número de trechos. Os dados já têm o comprimento de cada trecho; o caminho em quilômetros fica para as próximas entregas."),

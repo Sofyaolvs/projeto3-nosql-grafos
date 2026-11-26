@@ -87,7 +87,7 @@ Para regerar o documento e os slides com os números novos:
 ```powershell
 cd ..
 node gerar-documento-entrega3-4.js     # Entrega3e4-Projeto3-NoSQL-Grafos.docx
-node gerar-slides.js                   # Entrega1-Projeto3-NoSQL-Grafos.pptx (21 slides)
+node gerar-slides.js                   # Entrega1-Projeto3-NoSQL-Grafos.pptx (24 slides)
 ```
 
 ---
@@ -95,7 +95,7 @@ node gerar-slides.js                   # Entrega1-Projeto3-NoSQL-Grafos.pptx (21
 ## 4. Como apresentar (entrega final: 20 minutos)
 
 O enunciado sugere **8 minutos** de conceitos e comparação, **8** de demonstração (dashboard e benchmark) e **4** de conclusões e perguntas.
-Os slides são os de `Entrega1-Projeto3-NoSQL-Grafos.pptx` (21 slides; o canto superior direito mostra a que entrega cada um pertence).
+Os slides são os de `Entrega1-Projeto3-NoSQL-Grafos.pptx` (24 slides; o canto superior direito mostra a que entrega cada um pertence). Os slides 22 a 24 ilustram a arquitetura dos dois alvos, a busca em níveis e os três métodos de menor caminho (a mesma coisa da aba "Como foi feito" do dashboard), e podem ser usados na parte de conceitos ou ao explicar os resultados.
 
 ### Antes de começar (10 minutos antes)
 1. Abra o Docker Desktop e rode `docker compose up -d` na pasta `entrega2`. Espere os dois contêineres ficarem saudáveis (cerca de 30 s).
@@ -138,7 +138,7 @@ Os slides são os de `Entrega1-Projeto3-NoSQL-Grafos.pptx` (21 slides; o canto s
 ## 5. O que entregar (conforme o enunciado)
 | Item | Onde está |
 |---|---|
-| Slides | `Entrega1-Projeto3-NoSQL-Grafos.pptx` (21 slides, Entregas 1 a 4) |
+| Slides | `Entrega1-Projeto3-NoSQL-Grafos.pptx` (24 slides, Entregas 1 a 4) |
 | Código-fonte | `app/` (dashboard, consultas, experimentos) e `entrega2/scripts/` |
 | Instruções de execução | este README e `entrega2/README.md` |
 | Modelos | `entrega2/sql/01-schema.sql`, `entrega2/cypher/` e os documentos das Entregas 2 e 3-4 |

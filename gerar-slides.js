@@ -8,10 +8,12 @@ pres.layout = "LAYOUT_16x9"; // 10 x 5.625
 pres.title = "Projeto 3 - NoSQL orientado a grafos - Entrega 1";
 pres.author = "Equipe";
 
-// Números lidos dos resultados reais (rode entrega2\scripts\gerar-evidencias.ps1 antes de gerar os slides)
+// pasta com os dados e as evidências: "Projeto-dados-av3" (atual) ou "entrega2" (nome antigo)
+const PASTA_DADOS = ["Projeto-dados-av3", "entrega2"].find((p) => require("fs").existsSync(require("path").join(__dirname, p, "dados", "resumo.json"))) || "Projeto-dados-av3";
+// Números lidos dos resultados reais (rode Projeto-dados-av3\scripts\gerar-evidencias.ps1 antes de gerar os slides)
 const D = (() => {
   const fs = require("fs"), path = require("path");
-  const ler = (a) => JSON.parse(fs.readFileSync(path.join(__dirname, "entrega2", a), "utf8").replace(/^﻿/, ""));
+  const ler = (a) => JSON.parse(fs.readFileSync(path.join(__dirname, PASTA_DADOS, a), "utf8").replace(/^﻿/, ""));
   const r = ler("dados/resumo.json"), tc = ler("dados/tempos-carga.json"), n = ler("evidencias/numeros.json");
   const f = (x) => Number(x).toLocaleString("pt-BR");
   const s1 = (x) => Number(x).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -264,7 +266,7 @@ const mono = (t) => ({ text: t, options: { fontFace: "Courier New", fontSize: 11
 
 // 13. Evidência
 {
-  const s = base("Evidência do volume", "Saídas reais em entrega2/evidencias. Os tamanhos são de estruturas diferentes, não uma disputa de eficiência.", E2);
+  const s = base("Evidência do volume", `Saídas reais em ${PASTA_DADOS}/evidencias. Os tamanhos são de estruturas diferentes, não uma disputa de eficiência.`, E2);
   const m = D.n.mysql, g = D.n.neo4j;
   s.addTable([
     [th("Verificação", INK), th("MySQL", INK), th("Neo4j", INK)],
@@ -401,6 +403,131 @@ const DIST = ["~10 trechos", "~25 trechos", "~50 trechos", "~100 trechos"];
     "Mesmos dados, mesmos índices e resultados iguais nos dois bancos, com tempos medidos de forma reproduzível",
     "Próximos passos: caminho por quilômetros (Dijkstra), carga concorrente, cache frio e outras cidades",
   ]), { x: 0.5, y: 1.15, w: 9, h: 3.9, fontFace: BODY, fontSize: 15, color: INK, valign: "top", margin: 0, isTextBox: true });
+}
+
+// ================= Ilustrações (as mesmas da aba "Como foi feito" do dashboard) =================
+const ORANGE = "D9822B", PURPLE = "8A5CC2";
+const G = (() => {
+  const COLS = 5, LINS = 5, ORIGEM = 0, DESTINO = 12;
+  const nos = Array.from({ length: COLS * LINS }, (_, i) => ({ id: i, c: i % COLS, l: Math.floor(i / COLS) }));
+  const cortadas = new Set(["7-8", "11-16", "13-18", "16-17", "2-7"]);
+  const umaMao = { "6-7": [6, 7], "12-13": [12, 13], "16-21": [16, 21], "18-19": [19, 18], "3-4": [3, 4] };
+  const arestas = [];
+  for (let l = 0; l < LINS; l++) for (let c = 0; c < COLS; c++) {
+    const i = l * COLS + c;
+    for (const j of [c < COLS - 1 ? i + 1 : null, l < LINS - 1 ? i + COLS : null]) { if (j === null || cortadas.has(i + "-" + j)) continue; arestas.push({ a: i, b: j, mao: umaMao[i + "-" + j] || null }); }
+  }
+  const adj = new Map(nos.map((n) => [n.id, []]));
+  for (const e of arestas) { if (e.mao) adj.get(e.mao[0]).push(e.mao[1]); else { adj.get(e.a).push(e.b); adj.get(e.b).push(e.a); } }
+  for (const v of adj.values()) v.sort((x, y) => x - y);
+  // busca em níveis: uma consulta por nível, como no programa
+  const pai = new Map([[ORIGEM, null]]), nivel = new Map([[ORIGEM, 0]]); let fronteira = [ORIGEM]; const passos = [];
+  while (fronteira.length && !pai.has(DESTINO)) {
+    const novos = []; for (const o of fronteira) for (const d of adj.get(o)) if (!pai.has(d)) { pai.set(d, o); nivel.set(d, passos.length + 1); novos.push(d); }
+    passos.push({ nivel: passos.length + 1, enviada: fronteira, novos }); fronteira = novos;
+  }
+  const caminho = []; for (let v = DESTINO; v !== null; v = pai.get(v)) caminho.unshift(v);
+  // consulta recursiva: toca tudo até o limite de 12 saltos
+  const prof = new Set([ORIGEM]); let f = [ORIGEM];
+  for (let d = 1; d <= 12 && f.length; d++) { const n = []; for (const o of f) for (const x of adj.get(o)) if (!prof.has(x)) { prof.add(x); n.push(x); } f = n; }
+  return { nos, arestas, ORIGEM, DESTINO, passos, caminho, nivel, visitados: pai.size, cteTocados: prof.size, total: nos.length };
+})();
+// desenha o grafo de exemplo em (x0, y0) com largura w; `estilo(id)` devolve { fill, line, txt }
+function desenharGrafo(s, x0, y0, w, h, estilo, aresta = () => null) {
+  const kx = (w - 0.6) / 4, ky = (h - 0.6) / 4, ox = (c) => x0 + 0.3 + c * kx, oy = (l) => y0 + 0.3 + l * ky;
+  for (const e of G.arestas) {
+    const [de, para] = e.mao || [e.a, e.b], A = G.nos[de], B = G.nos[para];
+    const x1 = ox(A.c), y1 = oy(A.l), x2 = ox(B.c), y2 = oy(B.l), cor = aresta(de, para) || { color: "B8C4CC", width: 1.5 };
+    s.addShape(pres.shapes.LINE, { x: Math.min(x1, x2), y: Math.min(y1, y2), w: Math.abs(x2 - x1), h: Math.abs(y2 - y1), flipH: x2 < x1, flipV: y2 < y1, line: { ...cor, ...(e.mao ? { endArrowType: "triangle" } : {}) } });
+  }
+  for (const n of G.nos) {
+    const st = estilo(n.id), r = 0.15;
+    s.addShape(pres.shapes.OVAL, { x: ox(n.c) - r, y: oy(n.l) - r, w: 2 * r, h: 2 * r, fill: { color: st.fill }, line: { color: st.line, width: 1.25 } });
+    s.addText(String(n.id), { x: ox(n.c) - r, y: oy(n.l) - r, w: 2 * r, h: 2 * r, align: "center", valign: "middle", fontFace: BODY, fontSize: 9, bold: true, color: st.txt, margin: 0, isTextBox: true });
+  }
+}
+const camada = (s, x, y, w, h, t1, t2) => {
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h, fill: { color: PALE }, line: { color: PALE }, rectRadius: 0.06 });
+  s.addText([{ text: t1, options: { bold: true, breakLine: true } }, { text: t2, options: {} }], { x: x + 0.1, y, w: w - 0.2, h, fontFace: BODY, fontSize: 10.5, color: INK, margin: 0, valign: "middle", isTextBox: true });
+};
+
+// 22. Arquitetura dos alvos dos testes
+{
+  const s = base("Arquitetura dos alvos dos testes", "Tudo na mesma máquina, em Docker. Os dois bancos recebem os mesmos CSV (OSM/OSMnx): neo4j-admin import e LOAD DATA INFILE.", E3);
+  // programa de teste
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.4, y: 1.1, w: 2.35, h: 3.95, fill: { color: WHITE }, line: { color: PURPLE, width: 2 }, rectRadius: 0.1 });
+  s.addText("Programa de teste", { x: 0.5, y: 1.15, w: 2.15, h: 0.3, align: "center", fontFace: BODY, fontSize: 14, bold: true, color: INK, margin: 0, isTextBox: true });
+  s.addText("Node.js", { x: 0.5, y: 1.43, w: 2.15, h: 0.22, align: "center", fontFace: BODY, fontSize: 10.5, color: GRAY, margin: 0, isTextBox: true });
+  camada(s, 0.52, 1.75, 2.11, 0.5, "dashboard e experimentos", "");
+  camada(s, 0.52, 2.33, 2.11, 0.5, "lib/consultas.js", "");
+  camada(s, 0.52, 2.91, 2.11, 0.5, "neo4j-driver e mysql2", "");
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 0.52, y: 3.55, w: 2.11, h: 1.38, fill: { color: WHITE }, line: { color: PURPLE, width: 1.5, dashType: "dash" }, rectRadius: 0.06 });
+  s.addText([{ text: "Busca em níveis:", options: { bold: true, breakLine: true } }, { text: "o laço e a lista de visitados ficam aqui, no programa", options: {} }], { x: 0.6, y: 3.6, w: 1.95, h: 1.28, fontFace: BODY, fontSize: 11, color: INK, margin: 0, valign: "middle", align: "center", isTextBox: true });
+  // Neo4j
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 4.0, y: 1.1, w: 5.6, h: 1.85, fill: { color: WHITE }, line: { color: TEAL, width: 2 }, rectRadius: 0.1 });
+  s.addText("Alvo 1 · Neo4j (grafo)", { x: 4.12, y: 1.14, w: 2.9, h: 0.28, fontFace: BODY, fontSize: 13, bold: true, color: TEAL, margin: 0, isTextBox: true });
+  s.addText("5.26 Community · porta 7687 · heap 2 GB", { x: 6.4, y: 1.14, w: 3.1, h: 0.28, align: "right", fontFace: BODY, fontSize: 10, color: GRAY, margin: 0, isTextBox: true });
+  camada(s, 4.12, 1.48, 5.36, 0.4, "Processador de consultas (Cypher)", "shortestPath é nativo");
+  camada(s, 4.12, 1.93, 5.36, 0.38, "Cache de páginas · 2 GB", "o grafo cabe na memória");
+  camada(s, 4.12, 2.36, 5.36, 0.5, "Armazenamento nativo: (:Intersecao)-[:LIGA_A]→(:Intersecao)", "ponteiros diretos entre nós · índices: id, cidade, tipo");
+  // MySQL
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 4.0, y: 3.1, w: 5.6, h: 1.95, fill: { color: WHITE }, line: { color: ORANGE, width: 2 }, rectRadius: 0.1 });
+  s.addText("Alvo 2 · MySQL (relacional)", { x: 4.12, y: 3.14, w: 3.1, h: 0.28, fontFace: BODY, fontSize: 13, bold: true, color: ORANGE, margin: 0, isTextBox: true });
+  s.addText("8.0.46 · porta 3307 · buffer pool 2 GB", { x: 6.4, y: 3.14, w: 3.1, h: 0.28, align: "right", fontFace: BODY, fontSize: 10, color: GRAY, margin: 0, isTextBox: true });
+  camada(s, 4.12, 3.48, 5.36, 0.4, "Otimizador e executor SQL", "JOINs e consulta recursiva (WITH RECURSIVE)");
+  camada(s, 4.12, 3.93, 5.36, 0.38, "InnoDB · buffer pool 2 GB", "tabelas e índices na memória");
+  camada(s, 4.12, 4.36, 5.36, 0.6, "Tabelas: interseccao (id PK · idx_cidade) e estrada", "PK origem, destino, chave · idx_destino · idx_tipo · chaves estrangeiras");
+  // setas
+  const seta = (y, cor, rot) => {
+    s.addShape(pres.shapes.LINE, { x: 2.78, y, w: 1.2, h: 0, line: { color: cor, width: 2.25, endArrowType: "triangle" } });
+    s.addText(rot, { x: 2.78, y: y - 0.5, w: 1.2, h: 0.46, align: "center", valign: "bottom", fontFace: BODY, fontSize: 10, color: INK, margin: 0, isTextBox: true });
+  };
+  seta(1.95, TEAL, "Cypher: 1 consulta");
+  seta(3.6, ORANGE, "SQL puro: 1 consulta recursiva");
+  seta(4.5, PURPLE, "Busca em níveis: 1 consulta por nível");
+}
+
+// 23. Busca em níveis
+{
+  const s = base("Busca em níveis: como foi feita", `Exemplo pequeno: origem 0, destino ${G.DESTINO}. No dashboard (aba "Como foi feito") a animação é passo a passo.`, E3);
+  const tons = ["", "E4D8F3", "C9ADEB", "A982DB", "8A5CC2"]; // um tom mais forte por nível
+  desenharGrafo(s, 0.4, 1.1, 4.5, 3.1,
+    (id) => id === G.ORIGEM ? { fill: "2E8B57", line: "2E8B57", txt: WHITE }
+      : id === G.DESTINO ? { fill: "C0392B", line: "C0392B", txt: WHITE }
+      : G.nivel.has(id) ? { fill: tons[Math.min(G.nivel.get(id), 4)], line: PURPLE, txt: INK }
+      : { fill: WHITE, line: "9AA8B2", txt: GRAY },
+    (de, para) => (G.caminho.some((v, i) => i && G.caminho[i - 1] === de && v === para) ? { color: TEAL, width: 3.5 } : null));
+  s.addText(`Mais escuro = nível mais distante. Em branco: nem foi visitado (a busca parou ao achar o destino).`, { x: 0.5, y: 4.35, w: 4.4, h: 0.6, fontFace: BODY, fontSize: 10.5, color: GRAY, margin: 0, valign: "top", isTextBox: true });
+  const linhas = G.passos.map((p) => [td(String(p.nivel), true), td(`origem IN (${p.enviada.join(", ")})`), td(p.novos.join(", "))]);
+  s.addTable([[th("Nível", PURPLE), th("Fronteira enviada ao MySQL", PURPLE), th("Novos", PURPLE)], ...linhas],
+    { x: 5.1, y: 1.15, w: 4.5, colW: [0.7, 2.5, 1.3], rowH: 0.34, ...tblOpts });
+  s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: 5.1, y: 3.35, w: 4.5, h: 0.78, fill: { color: PALE }, line: { color: PALE }, rectRadius: 0.06 });
+  s.addText("SELECT DISTINCT origem, destino\n  FROM estrada WHERE origem IN (:fronteira)", { x: 5.2, y: 3.35, w: 4.3, h: 0.78, fontFace: "Courier New", fontSize: 10.5, color: INK, margin: 0, valign: "middle", isTextBox: true });
+  s.addText(bullets([
+    `${G.passos.length} idas e voltas ao banco, uma por nível`,
+    "Os visitados ficam na memória do programa",
+    "Para ao achar o destino",
+  ]), { x: 5.1, y: 4.2, w: 4.5, h: 0.9, fontFace: BODY, fontSize: 12, color: INK, valign: "top", margin: 0, isTextBox: true });
+}
+
+// 24. Os três métodos
+{
+  const s = base("Os três métodos lado a lado", "O mesmo par de pontos, com o grafo de exemplo. Os tempos medidos estão nos slides 17 e 18.", E3);
+  const col = (i, cor, titulo, destaque, sub, codigo) => {
+    const x = 0.4 + i * 3.1;
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y: 1.1, w: 2.95, h: 3.95, fill: { color: WHITE }, line: { color: cor, width: 2 }, rectRadius: 0.1 });
+    s.addText(titulo, { x: x + 0.12, y: 1.15, w: 2.7, h: 0.3, fontFace: BODY, fontSize: 14, bold: true, color: cor, margin: 0, isTextBox: true });
+    s.addText(destaque, { x: x + 0.12, y: 1.5, w: 2.7, h: 0.45, fontFace: HEAD, fontSize: 20, bold: true, color: INK, margin: 0, isTextBox: true });
+    s.addText(sub, { x: x + 0.12, y: 1.95, w: 2.7, h: 0.62, fontFace: BODY, fontSize: 11, color: GRAY, margin: 0, valign: "top", isTextBox: true });
+    s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: x + 0.1, y: 2.65, w: 2.75, h: 2.3, fill: { color: PALE }, line: { color: PALE }, rectRadius: 0.06 });
+    s.addText(codigo, { x: x + 0.17, y: 2.7, w: 2.62, h: 2.2, fontFace: "Courier New", fontSize: 9, color: INK, margin: 0, valign: "top", isTextBox: true });
+  };
+  col(0, ORANGE, "MySQL, SQL puro", `${G.cteTocados} de ${G.total}`, "interseções percorridas até o limite de 12 saltos, mesmo depois de achar o destino. Uma consulta.",
+    "WITH RECURSIVE r(node,depth) AS (\n SELECT :origem, 0\n UNION DISTINCT\n SELECT e.destino, r.depth+1\n  FROM r JOIN estrada e\n   ON e.origem = r.node\n WHERE r.depth < :limite)\nSELECT MIN(depth) FROM r\n WHERE node = :destino");
+  col(1, PURPLE, "MySQL, busca em níveis", `${G.visitados} de ${G.total}`, `interseções percorridas; para ao achar o destino, mas faz ${G.passos.length} idas e voltas ao banco.`,
+    "visitados = {origem}\nfronteira = [origem]\nrepita até achar o destino:\n  linhas = SQL(fronteira)\n  novos = não visitados\n  fronteira = novos\n\n-- SQL de cada nível\nSELECT DISTINCT origem, destino\n FROM estrada\n WHERE origem IN (:fronteira)");
+  col(2, TEAL, "Neo4j, shortestPath", `1 consulta`, `A busca roda dentro do banco e devolve o caminho de ${G.caminho.length - 1} trechos.`,
+    "MATCH (a:Intersecao {id: $o}),\n      (b:Intersecao {id: $d})\nMATCH p = shortestPath(\n  (a)-[:LIGA_A*..150]->(b))\nRETURN length(p),\n  [n IN nodes(p) | n.id]");
 }
 
 pres.writeFile({ fileName: "Entrega1-Projeto3-NoSQL-Grafos.pptx" }).then((f) => console.log("ok", f));
